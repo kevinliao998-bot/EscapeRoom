@@ -1,0 +1,7 @@
+GitHub 權限實測紀錄
+儲存庫：kevinliao998-bot/EscapeRoom
+測試帳號：K-BVL
+測試分支：main
+測試方式：Safari 的 GitHub 網頁介面
+階段：檔案上傳測試
+本檔案僅用於驗證上傳及編輯權限，不是作業內容。
