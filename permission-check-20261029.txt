@@ -1,0 +1,5 @@
+GitHub permission check
+Repository: kevinliao998-bot/EscapeRoom
+Account under test: K-BVL
+Stage: uploaded
+Temporary test data only.
