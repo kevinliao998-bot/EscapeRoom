@@ -4,7 +4,7 @@
 
 | 素材 | 作者與來源 | 授權／署名 |
 | --- | --- | --- |
-| 3 張車站地面、8 張設備／物件、4 件物品圖示、16 幀林澄 | 專案團隊／Codex 輔助，以 `tools/draw_art.py` 原創繪製；逐像素命令 `tools/art-source.json` | 本次原創圖像採 CC0-1.0；無外部圖片。角色表為 64×96，4×4 幀 |
+| 3 張車站地面、7 張設備／物件、4 件物品圖示、16 幀林澄 | 專案團隊／Codex 輔助，以 `tools/draw_art.py` 原創繪製；逐像素命令 `tools/art-source.json` | 本次原創圖像採 CC0-1.0；無外部圖片。角色表為 64×96，4×4 幀 |
 | 波形／滴水／紙張／金屬的合成提示 | 原創 Web Audio 程式 `Game/src/audio.ts` | 隨本專案程式；無採樣、無外部音檔、無人聲克隆。是合成提示，不宣稱寫實錄音 |
 | Fusion Pixel Font 12px zh_hant，2026.10.25 | TakWolf 與上游作者；https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.10.25 | SIL OFL 1.1，保留 `Game/public/fonts/LICENSE-OFL` 及完整 LICENSES 子目錄；上游工具另有 MIT |
 | Phaser 3.90.0 | Phaser Studio／貢獻者；https://github.com/phaserjs/phaser/tree/v3.90.0 | MIT，隨 npm 發行之 LICENSE；建置包附 THIRD-PARTY-NOTICES.md |
