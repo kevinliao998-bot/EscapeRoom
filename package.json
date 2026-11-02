@@ -1,0 +1,10 @@
+{
+  "name": "after-the-yellow-light",
+  "version": "1.0.0",
+  "private": true,
+  "description": "《黃燈之後》純前端密室逃脫，MW 網頁與機關",
+  "scripts": {
+    "test": "node --test Game/tests/*.test.cjs",
+    "start": "node Game/serve.cjs"
+  }
+}
