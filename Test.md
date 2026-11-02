@@ -9,7 +9,7 @@
 - 存檔模擬：正常往返、上一份有效快照、兩份損壞、儲存被拒絕。損壞原檔保持保留。
 - 流程圖主要節點 13 個，ID 唯一；Verify.md 共 V2_01–V2_16；供電入口到出口只有一條有效路徑。
 - `npm run build`：TypeScript 檢查、Vite 7.3.7 正式建置通過。
-- `python3 tools/check_art.py`：貼圖實際使用 14 色（允許 18 色，≤32），透明度僅 0／255；8 組指定正文配色均 ≥4.5:1；569 個繁體漢字無缺字。資料見 docs/asset-manifest.json。
+- `python3 tools/check_art.py`：貼圖實際使用 14 色（允許 18 色，≤32），透明度僅 0／255；8 組指定正文配色均 ≥4.5:1；570 個繁體漢字無缺字。資料見 docs/asset-manifest.json。
 - `npm audit`：本次檢查已知漏洞 0；只代表當次套件資料庫結果，不是長期安全保證。
 - 13 份 `_legacy_docs/` 與歸檔清單 SHA256 相同；`agent.md` 沒有修改。
 
