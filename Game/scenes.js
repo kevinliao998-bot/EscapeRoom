@@ -76,7 +76,7 @@
       ${text(968,249,frame.sign,36,'#c5c7d0','transform="rotate(-16 968 249)"')}
       <path d="M1072 375L1265 313V707L1072 607Z" fill="#404043" stroke="#8f9197" stroke-width="4"/>
       <path d="M1092 388L1242 344V655L1092 586Z" fill="#303133"/>${text(1121,450,'安全梯',23,'#b5b7bf','transform="rotate(-12 1121 450)"')}
-      <path d="M602 770Q690 714 798 747T917 796Q756 843 602 810Z" fill="#8f9097" opacity=".17"/>${footprint}
+      <path d="M602 770Q690 714 798 747T917 796Q756 843 602 810Z" fill="#8f9097" opacity=".17"/><g class="water-shimmer" fill="none" stroke="#d8cfb9" stroke-width="1.3"><path d="M643 782Q748 765 846 786M683 800Q752 791 810 800"/></g>${footprint}
       <g stroke="#d5cfc3" opacity=".5"><path d="M678 615L218 900" stroke-width="11"/><path d="M746 615L1220 900" stroke-width="11"/></g>
     `,'LEVEL 00 · CONCOURSE');
   }
@@ -131,6 +131,7 @@
       <path d="M193 311L537 352V620L193 678Z" fill="#323235"/>
       <g fill="none" stroke="${s.flags.batteryInstalled?'#d5cfc3':'#797a80'}" stroke-width="9"><path d="M231 586L311 490L420 518L496 414"/><path d="M311 490L381 405" opacity=".35"/></g>
       <g fill="${s.flags.batteryInstalled?'#d5cfc3':'#888990'}">${[[231,586],[311,490],[420,518],[496,414]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="9"/>`).join('')}</g>
+      ${s.flags.filmMounted?'<path d="M209 328L526 365V605L209 655Z" fill="#d3c3a012" stroke="#d3c3a04d" stroke-width="2"/>':''}${s.flags.overlayFixed?'<path d="M216 333L260 339V358L216 352Z" fill="#b5a17d" stroke="#d7c6a5"/>':''}
       ${text(220,360,'路線校正',25)}${rect(330,691,134,56,'#505154')}${text(350,727,'電池槽',20)}
       <path d="M680 300H885V342H680Z" fill="#9b9ca3"/>${text(704,329,'北澤 ←',24,'#3e3e41')}
       <path d="M600 561L566 900M851 561L1230 900" stroke="#2f2f31" stroke-width="7"/>

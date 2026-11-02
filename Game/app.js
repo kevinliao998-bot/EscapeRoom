@@ -1,10 +1,11 @@
 (function(){
   'use strict';
-  const Core=globalThis.YellowCore,C=globalThis.YellowContent,Audio=globalThis.YellowAudio;
+  const Core=globalThis.YellowCore,C=globalThis.YellowContent,Audio=globalThis.YellowAudio,M=globalThis.YellowInteractions;
   const $=id=>document.getElementById(id), esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const SAVE='yellow-light-save-v1',PREF='yellow-light-preferences-v1';
-  let state=Core.createState(),saved=null,screen='title',sequence=[],lastFocus=null,toastTimer=null,storageWarned=false;
+  let state=Core.createState(),saved=null,screen='title',sequence=[],lastFocus=null,toastTimer=null,storageWarned=false,journalActive=null;
   const prefs={large:false,reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,master:.35,ambient:.3,effects:.6};
+  const immersion=YellowImmersion.create({model:M,content:C,getState:()=>state,getScreen:()=>screen,onSelect:selectItem,onUse:useAt,onCancel:()=>selectItem(null),toast});
   try{const v=JSON.parse(localStorage.getItem(PREF)||'null');if(v&&typeof v==='object')for(const k of Object.keys(prefs))if(typeof v[k]===typeof prefs[k]&&(typeof v[k]==='boolean'||Number.isFinite(v[k])&&v[k]>=0&&v[k]<=1))prefs[k]=v[k];}catch{}
   try{const raw=localStorage.getItem(SAVE);if(raw){saved=Core.restore(raw);if(!saved)$('save-notice').textContent='原存檔無法驗證，可以安全開始新的探索。';}}catch{$('save-notice').textContent='此瀏覽器暫時無法儲存，仍可開始遊玩。';storageWarned=true;}
   function preference(){document.documentElement.classList.toggle('large-text',prefs.large);document.body.classList.toggle('reduce-motion',prefs.reduced);Audio.configure(prefs);try{localStorage.setItem(PREF,JSON.stringify(prefs));}catch{}}
@@ -16,27 +17,40 @@
     catch{$('save-state').textContent='未能儲存';if(!storageWarned){storageWarned=true;toast('此瀏覽器暫時無法儲存。遊戲仍可繼續，但刷新後可能失去進度。',true);}}
   }
   function run(type,data={},options={}){
-    const r=Core.dispatch(state,{type,...data});state=r.state;
-    if(r.ok){persist();if(options.render!==false)render();}
+    const previous=[...state.inventory],r=Core.dispatch(state,{type,...data});state=r.state;
+    if(r.ok){persist();if(options.render!==false){immersion.closeInspection(false);render();}immersion.sync(state,previous);}
     if(options.toast!==false&&r.message)toast(r.message,!r.ok);
-    if(options.audio!==false)Audio.play(r.event);
+    if(options.audio!==false)Audio.play(options.cue||r.event);
     return r;
   }
-  function showModal(title,body,tag='調查紀錄'){
-    if(!$('modal').open)lastFocus=document.activeElement;
+  function showModal(title,body,tag='調查紀錄',kind=''){
+    const wasOpen=$('modal').open,wasJournal=$('modal').dataset.kind==='journal';
+    immersion.closeInspection(false);immersion.hideCursor();
+    if(!wasOpen)lastFocus=document.activeElement;
+    $('modal').dataset.kind=kind;
     $('modal-title').textContent=title;$('modal-tag').textContent=tag;$('modal-body').innerHTML=body;
-    if(!$('modal').open)$('modal').showModal();
-    $('modal-close').focus();
+    if(!wasOpen)$('modal').showModal();
+    if(wasOpen&&wasJournal&&kind==='journal')$('modal-body').querySelector('.journal-sheet h3')?.focus({preventScroll:true});else $('modal-close').focus();
   }
   function closeModal(){$('modal').close();if(lastFocus&&document.contains(lastFocus))lastFocus.focus();else $('notebook-button').focus();}
   $('modal-close').addEventListener('click',closeModal);
   $('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();}});
   $('modal').addEventListener('cancel',e=>{e.preventDefault();closeModal();});
-  function noteData(id){if(id.startsWith('memory')){const v=C.snapshots[Number(id.slice(6))];return{title:v.title,tag:'走廊快照',text:`時鐘：${v.clock}\n站牌：${v.sign}\n水漬：${v.trace}\n\n${v.change}`};}return C.notes[id];}
-  function openNote(id,back=false){const n=noteData(id);if(!n)return;showModal(n.title,`<div class="prose">${esc(n.text)}</div>${back?'<div class="modal-actions"><button data-modal="notebook">返回筆記清單</button></div>':''}`,n.tag);}
-  function notebook(){
+  function noteData(id){
+    if(id.startsWith('memory')){const v=C.snapshots[Number(id.slice(6))];return{title:v.title,tag:'走廊快照',text:`時鐘：${v.clock}\n站牌：${v.sign}\n水漬：${v.trace}\n\n${v.change}`};}
+    return M.observation(id,state.started?state:(saved||state),C);
+  }
+  function openNote(id,back=false){
+    const n=noteData(id);if(!n)return;
+    if(back||['facts','broadcast','mapGuide'].includes(id)){notebook(id);return;}
+    if(screen==='game'&&M.describe(state.room,state).some(h=>h.id===id&&h.kind==='inspect')){if($('modal').open)closeModal();immersion.inspect(id,n,state);return;}
+    showModal(n.title,`<div class="prose">${esc(n.text)}</div>`,n.tag,id==='message'?'message':'');
+  }
+  function notebook(active=null){
     const notes=state.started?state.notes:(saved?saved.notes:[]);
-    showModal('調查筆記',notes.length?`<p class="quiet">只收錄已取得的紀錄。點選標題可重新核對。</p><div class="note-list">${notes.map(id=>{const n=noteData(id);return `<button class="note-row" data-note="${id}"><span>${esc(n.title)}</span><small>${esc(n.tag)} ↗</small></button>`;}).join('')}</div>`:'<p class="prose">開始探索後，線索與紀錄會留在這裡。</p>','EVIDENCE / 調查檔案');
+    const choice=typeof active==='string'?active:journalActive;
+    journalActive=notes.includes(choice)?choice:(notes[0]||null);
+    showModal('調查手帳',immersion.journal(notes,journalActive,noteData),'林澄 / 現場筆記','journal');
   }
   function compare(index=state.loop){
     if(!state.started){toast('開始調查後，就可以比較走廊的紀錄。');return;}
@@ -74,23 +88,20 @@
     showModal('遊玩設定',`<label class="check-row"><input id="setting-large" type="checkbox" ${prefs.large?'checked':''}>放大介面文字</label><label class="check-row"><input id="setting-reduced" type="checkbox" ${prefs.reduced?'checked':''}>減少轉場與動態效果</label><p class="quiet">字幕與文字替代線索始終可用。聲音是補充，不影響解題。</p>${[['master','主音量'],['ambient','環境音'],['effects','機關音效']].map(([k,n])=>`<label class="control-label" for="volume-${k}">${n}</label><input type="range" id="volume-${k}" data-volume="${k}" min="0" max="100" value="${Math.round(prefs[k]*100)}">`).join('')}<div class="modal-actions"><button data-operation="audio-toggle">${Audio.isEnabled()?'關閉聲音':'開啟聲音'}</button></div>`,'ACCESSIBILITY / 舒適地探索');
   }
   function confirmNew(){showModal('重新開始調查？','<p class="prose">這會取代目前在此瀏覽器的進度，清空已取得的物品、線索與遊玩計時。聲音、字級等設定會保留。</p><div class="modal-actions"><button class="primary" data-operation="confirm-new">確定重新開始</button><button data-operation="cancel">保留進度</button></div>','新的調查');}
-  function enterNew(){state=Core.createState();screen='game';run('start',{}, {toast:false});if($('modal').open)closeModal();openNote('message');}
+  function enterNew(){immersion.reset();journalActive=null;state=Core.createState();screen='game';run('start',{}, {toast:false});if($('modal').open)closeModal();openNote('message');}
   function goMenu(){persist();screen='title';if($('modal').open)closeModal();render();$('start-button').focus();}
   function resume(){if(!saved){toast('還沒有可繼續的存檔。');return;}state=Core.restore(Core.serialize(saved));screen=state.ending?'ending':'game';render();if(screen==='game')focusScene();}
   function currentPuzzle(){const f=state.flags;return !f.trusted?'trace':!f.power?'power':!f.broadcast?'sound':!f.archive?'archive':'map';}
   function actionButton(label,action,data='',arrow='↗'){return `<button class="action-button" data-action="${action}" ${data}>${label}<span aria-hidden="true">${arrow}</span></button>`;}
-  function hotspots(){
-    const list={corridor:[['飲水機貼紙','sticker',21,64],['時鐘','clock',46,24],['站名牌','sign',75,25],['地面水漬','puddle',52,82],['安全梯間','stairs',83,58]],stairs:[['撬片','pry',80,63],['維修員名牌','badge',81,76]],office:[['檢修盒','panel',19,52],['備用電源','power',25,69],['維修刻痕','soundGuide',73,45],['廣播控制台','sound',49,57]],archive:[['事故報告','report',31,70],['維修簿','book',50,70],['失聯名冊','roster',66,70]],platform:[['路線圖','map',25,55],['維修門','exit',80,58]]}[state.room];
-    $('hotspots').innerHTML=list.filter(([_,id])=>!(id==='pry'&&state.flags.pry||id==='badge'&&state.flags.badge)).map(([label,id,x,y])=>`<button class="hotspot" style="--x:${x}%;--y:${y}%" data-hotspot="${id}">${label}</button>`).join('');
-  }
+  function hotspots(){immersion.renderHotspots(state);}
   function renderGame(){
     const room=C.rooms[state.room],f=state.flags;
     $('room-code').textContent=`${room.code} / ${room.label}`;$('room-name').textContent=room.name;$('scene-description').textContent=room.description;
     $('loop-label').textContent=state.room==='corridor'?C.snapshots[state.loop].title:'第零層';$('timer').textContent=time(state.elapsed);
     $('scene-art').innerHTML=YellowScenes.draw(state.room,state);hotspots();
     $('compare-button').hidden=state.loop===0;
-    $('inventory-items').innerHTML=state.inventory.length?state.inventory.map(id=>`<button class="item" data-item="${id}" aria-pressed="${state.selected===id}" aria-label="選取${C.items[id].name}"><span aria-hidden="true">${C.items[id].symbol}</span>${C.items[id].name}</button>`).join(''):'<span class="inventory-empty">尚未取得物品</span>';
-    $('selected-description').textContent=state.selected?C.items[state.selected].description:'點選物品，再點場景中合適的位置。';
+    $('inventory-items').innerHTML=state.inventory.length?state.inventory.map(id=>`<button class="item" data-item="${id}" aria-pressed="${state.selected===id}" aria-label="選取${C.items[id].name}"><span class="item-art" aria-hidden="true">${immersion.itemIcon(id)}</span>${C.items[id].name}</button>`).join(''):'<span class="inventory-empty">尚未取得物品</span>';
+    immersion.sync(state);
     let objective='',description='',actions='';
     if(state.room==='corridor'){
       objective=f.trusted?'沿著留下的痕跡。':'找到可信的方向。';description=f.trusted?'鞋印帶你找到安全梯間。先收集維修工具，再進入站務室。':'時鐘、站名、地面，哪一項是實際接觸留下的痕跡？每次繞行的紀錄都能重看。';
@@ -100,7 +111,7 @@
       objective='帶上維修工具。';description='工具箱裡有一片撬片和一枚金屬名牌。它們都能幫助你操作接下來的設備。';
       if(!f.pry)actions+=actionButton('取得撬片','collect','data-item="pry"');if(!f.badge)actions+=actionButton('取得維修員名牌','collect','data-item="badge"');actions+=actionButton('返回迴圈走廊','nav','data-room="corridor"','←');
     }else if(state.room==='office'){
-      objective=f.broadcast?'聲音從哪裡來？':f.power?'讓波形彼此吻合。':'先恢復備用電源。';description=f.broadcast?'求救訊息裡有重複的剪接標記。前往檔案室，核對記錄中的人與時間。':f.power?'看維修刻痕，依長短排列三段測試音。聲音關閉也能完成。':'檢修盒卡住了。從背包選取合適工具，再點檢修盒。';
+      objective=f.broadcast?'聲音從哪裡來？':f.power?'讓波形彼此吻合。':'先恢復備用電源。';description=f.broadcast?'求救訊息裡有重複的剪接標記。前往檔案室，核對記錄中的人與時間。':f.power?'看維修刻痕，依長短排列三段測試音。聲音關閉也能完成。':(f.boxOpen?'檢修盒已打開。接通盒內的備用電源，讓控制台恢復供電。':'檢修盒卡住了。可將撬片拖到盒蓋，或選取工具後點擊檢修盒。');
       actions=actionButton('檢查備用電源','panel')+actionButton('查看音序刻痕','note','data-id="soundGuide"')+actionButton('操作廣播控制台','sound');if(f.broadcast)actions+=actionButton('進入檔案室','nav','data-room="archive"');actions+=actionButton('返回迴圈走廊','nav','data-room="corridor"','←');
     }else if(state.room==='archive'){
       objective=f.archive?'把紀錄帶到月台。':'讓三份紀錄說同一件事。';description=f.archive?'你已確認事故分鐘與 M0 支線。帶著透明路線片和電池，找出維修出口。':'報告、維修簿與名冊，各自留下一部分事實。它們能證明什麼，又不能證明什麼？';
@@ -118,30 +129,36 @@
     $('title-screen').hidden=screen!=='title';$('game-screen').hidden=screen!=='game';$('ending-screen').hidden=screen!=='ending';
     $('continue-button').hidden=!saved;$('start-button').firstChild.textContent=saved?'重新開始調查 ':'進入第零層 ';
     $('note-count').textContent=(state.started?state.notes:saved?.notes||[]).length;
-    if(screen==='game')renderGame();
+    if(screen==='game')renderGame();else{immersion.closeInspection(false);immersion.hideCursor();}
     if(screen==='ending'){
       const e=C.endings[state.ending];$('ending-label').textContent=e.label;$('ending-title').textContent=e.title;$('ending-copy').textContent=e.text;$('ending-quote').textContent=e.quote;$('ending-time').textContent='調查時間 '+time(state.elapsed);$('ending-notes').textContent=state.notes.length+' 份調查紀錄';
     }
   }
-  function observe(id){const r=run('observe',{id},{toast:false});if(r.ok)openNote(id);}
+  function observe(id){const r=run('observe',{id},{toast:false,render:false,audio:false});if(r.ok){$('note-count').textContent=state.notes.length;Audio.play(M.cueFor(id)||'paper');openNote(id);}}
+  function selectItem(item){run('select',{item},{toast:false,render:false,audio:false});}
+  function useAt(item,id){const target=M.targetFor(id);if(!target){toast('物品不適合用在這裡，仍保留在背包。',true);Audio.play('error');return;}const r=run('use',{item,target});if(r.ok&&target==='map')mapPanel(r.message);}
+
   function focusScene(){const heading=$('room-name');heading.focus({preventScroll:true});heading.scrollIntoView({block:'start',behavior:'instant'});}
   function navigate(room){const r=run('navigate',{room},{toast:false});if(r.ok){if($('modal').open)closeModal();focusScene();}else toast(r.message,true);}
   function hotspot(id){
+    if(state.selected){useAt(state.selected,id);return;}
     if(['sticker','clock','sign','puddle','soundGuide','report','book','roster','mapGuide'].includes(id))observe(id);
-    else if(id==='stairs')navigate('stairs');else if(id==='pry'||id==='badge')run('collect',{item:id});
+    else if(id==='stairs')navigate('stairs');else if(id==='pry'||id==='badge')run('collect',{item:id},{cue:'metal'});
     else if(id==='panel')panelBox();else if(id==='power'){if(!state.flags.boxOpen)panelBox();else run('power');}
     else if(id==='sound')soundPanel();else if(id==='map')mapPanel();else if(id==='exit')finalChoice();
   }
   $('app').addEventListener('click',e=>{
     const b=e.target.closest('button');if(!b)return;
     if(b.dataset.hotspot)return hotspot(b.dataset.hotspot);
-    if(b.classList.contains('item')){run('select',{item:state.selected===b.dataset.item?null:b.dataset.item},{toast:false});return;}
+    if(b.classList.contains('item')){selectItem(state.selected===b.dataset.item?null:b.dataset.item);return;}
     const a=b.dataset.action;
-    if(a==='nav')navigate(b.dataset.room);else if(a==='advance')run('advance');else if(a==='compare')compare();else if(a==='trace')tracePanel();else if(a==='collect')run('collect',{item:b.dataset.item});else if(a==='note')observe(b.dataset.id);else if(a==='panel')panelBox();else if(a==='sound')soundPanel();else if(a==='archive')archivePanel();else if(a==='map')mapPanel();else if(a==='exit')finalChoice();
+    if(a==='nav')navigate(b.dataset.room);else if(a==='advance')run('advance');else if(a==='compare')compare();else if(a==='trace')tracePanel();else if(a==='collect')run('collect',{item:b.dataset.item},{cue:'metal'});else if(a==='note')observe(b.dataset.id);else if(a==='panel')panelBox();else if(a==='sound')soundPanel();else if(a==='archive')archivePanel();else if(a==='map')mapPanel();else if(a==='exit')finalChoice();
   });
   $('modal-body').addEventListener('click',async e=>{
     const b=e.target.closest('button');if(!b)return;
-    if(b.dataset.note){if(state.started&&['report','book','roster'].includes(b.dataset.note))run('observe',{id:b.dataset.note},{toast:false});openNote(b.dataset.note,true);return;}
+    if(b.dataset.journalNote){journalActive=b.dataset.journalNote;Audio.play('paper');notebook(journalActive);return;}
+    if(b.dataset.pinNote){const feedback=immersion.togglePin(b.dataset.pinNote,state.started?state.notes:(saved?saved.notes:[]));notebook(b.dataset.pinNote);if(feedback){const p=document.createElement('p');p.className='journal-feedback';p.setAttribute('role','status');p.textContent=feedback;$('modal-body').querySelector('.journal-pin').after(p);}return;}
+    if(b.dataset.note){if(state.started&&!state.ending&&['report','book','roster','mapGuide','soundGuide'].includes(b.dataset.note))run('observe',{id:b.dataset.note},{toast:false,render:false,audio:false});openNote(b.dataset.note,true);return;}
     if(b.dataset.observe){observe(b.dataset.observe);return;}
     if(b.dataset.memory){compare(Number(b.dataset.memory));return;}
     if(b.dataset.modal==='notebook'){notebook();return;}if(b.dataset.modal==='compare'){compare();return;}
