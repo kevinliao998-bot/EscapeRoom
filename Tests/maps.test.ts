@@ -11,6 +11,8 @@ import {
 for (const [scene, m] of Object.entries(maps))
   test(`${m.name}：所有必要互動點、返回門與地面可達`, () => {
     const id = scene as keyof typeof maps;
+    if (id === "corridor") assert.equal(walkable(id, 14, 13), false);
+    if (id === "office") assert.equal(walkable(id, 14, 12), false);
     assert.ok(
       walkable(id, tile(m.spawn.x, m.spawn.y).x, tile(m.spawn.x, m.spawn.y).y),
     );

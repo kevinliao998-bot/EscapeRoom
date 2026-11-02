@@ -21,6 +21,9 @@ test("存檔往返、備援恢復及保留損壞原檔", () => {
   assert.equal(load(m).state?.card, false);
   assert.equal(m.getItem(SAVE), "broken");
   assert.ok(load(m).warning);
+  save(s, m);
+  assert.equal(m.getItem(SAVE + "-corrupt"), "broken");
+  m.setItem(SAVE, "broken");
   m.setItem(PREV, "also broken");
   assert.equal(load(m).state, null);
   assert.equal(m.getItem(PREV), "also broken");

@@ -47,6 +47,7 @@ test("前三次返回每次只改一項，之後不再增加", () => {
   for (let i = 0; i < 6; i++) s = step(s, "enter");
   assert.equal(s.loop, 3);
   assert.equal(s.scene, "corridor");
+  assert.match(act(s, { type: "enter" }).message, /不再變化/);
   assert.ok(valid(s));
 });
 test("先拿卡漏拿撬片仍能返回；錯誤不消耗唯一物品", () => {
