@@ -76,7 +76,7 @@
   function confirmNew(){showModal('重新開始調查？','<p class="prose">這會取代目前在此瀏覽器的進度，清空已取得的物品、線索與遊玩計時。聲音、字級等設定會保留。</p><div class="modal-actions"><button class="primary" data-operation="confirm-new">確定重新開始</button><button data-operation="cancel">保留進度</button></div>','新的調查');}
   function enterNew(){state=Core.createState();screen='game';run('start',{}, {toast:false});if($('modal').open)closeModal();openNote('message');}
   function goMenu(){persist();screen='title';if($('modal').open)closeModal();render();$('start-button').focus();}
-  function resume(){if(!saved){toast('還沒有可繼續的存檔。');return;}state=Core.restore(Core.serialize(saved));screen=state.ending?'ending':'game';render();if(screen==='game')$('room-name').focus({preventScroll:true});}
+  function resume(){if(!saved){toast('還沒有可繼續的存檔。');return;}state=Core.restore(Core.serialize(saved));screen=state.ending?'ending':'game';render();if(screen==='game')focusScene();}
   function currentPuzzle(){const f=state.flags;return !f.trusted?'trace':!f.power?'power':!f.broadcast?'sound':!f.archive?'archive':'map';}
   function actionButton(label,action,data='',arrow='↗'){return `<button class="action-button" data-action="${action}" ${data}>${label}<span aria-hidden="true">${arrow}</span></button>`;}
   function hotspots(){
@@ -124,7 +124,8 @@
     }
   }
   function observe(id){const r=run('observe',{id},{toast:false});if(r.ok)openNote(id);}
-  function navigate(room){const r=run('navigate',{room},{toast:false});if(r.ok){if($('modal').open)closeModal();$('room-name').focus({preventScroll:true});}else toast(r.message,true);}
+  function focusScene(){const heading=$('room-name');heading.focus({preventScroll:true});heading.scrollIntoView({block:'start',behavior:'instant'});}
+  function navigate(room){const r=run('navigate',{room},{toast:false});if(r.ok){if($('modal').open)closeModal();focusScene();}else toast(r.message,true);}
   function hotspot(id){
     if(['sticker','clock','sign','puddle','soundGuide','report','book','roster','mapGuide'].includes(id))observe(id);
     else if(id==='stairs')navigate('stairs');else if(id==='pry'||id==='badge')run('collect',{item:id});
