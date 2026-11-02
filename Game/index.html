@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark"><meta name="description" content="觀察不一致的紀錄，在城市地底的第零層找出離開的方向。純前端 2D 密室逃脫。">
+  <title>黃燈之後 · 第零層調查紀錄</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script><script defer src="core.js"></script><script defer src="scenes.js"></script><script defer src="audio.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#actions">跳至場景操作</a>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand"><span class="brand-mark" aria-hidden="true">0</span><span>黃燈之後<small>AFTER THE YELLOW LIGHT</small></span></a>
+    <div class="station-heading"><span class="live-dot" aria-hidden="true"></span>第零層 · 調查紀錄</div>
+    <nav aria-label="遊戲工具"><button id="notebook-button">調查筆記 <span id="note-count">0</span></button><button id="audio-button" aria-pressed="false">聲音：關</button><button id="settings-button">設定</button><button id="menu-button">主選單</button></nav>
+  </header>
+  <main id="app">
+    <section id="title-screen" class="title-screen" aria-labelledby="game-title">
+      <div class="title-art" id="title-art"></div>
+      <div class="title-wash"></div>
+      <div class="title-copy"><p class="eyebrow">一段聲音，能證明一個人仍在嗎？</p><h1 id="game-title">黃燈<span>之後</span></h1><p class="intro">凌晨 1:17，失蹤一年的妹妹傳來一段語音。<br>你循著訊息走入城市地底，<br>而同一台飲水機，已經是第三次出現。</p><div class="title-actions"><button class="button primary" id="start-button">進入第零層 <span aria-hidden="true">↗</span></button><button class="button" id="continue-button" hidden>繼續調查</button></div><p id="save-notice" class="quiet">進度保存在此瀏覽器。沒有倒數懲罰。</p><div class="title-detail"><span>01 / 觀察</span><span>02 / 核對</span><span>03 / 決定</span></div></div>
+      <div class="title-foot"><span>第一人稱 · 2D 點擊式解謎</span><span>全程字幕 · 可靜音遊玩</span></div>
+    </section>
+    <section id="game-screen" class="game-screen" hidden aria-label="探索場景">
+      <div class="exploration">
+        <div class="scene-caption"><div><span class="eyebrow" id="room-code">01 / CONCOURSE</span><h1 id="room-name" tabindex="-1">迴圈走廊</h1></div><div class="scene-meta"><span id="loop-label"></span><span id="timer" aria-label="已遊玩時間">00:00</span><span id="save-state">本機存檔</span></div></div>
+        <div id="scene" class="scene"><div id="scene-art" class="scene-art"></div><div id="hotspots" class="hotspots" aria-label="可調查的物件"></div><div class="scene-frame" aria-hidden="true"></div></div>
+        <div class="scene-bottom"><p id="scene-description"></p><button class="small-button" id="compare-button">紀錄對照</button></div>
+        <section class="inventory" aria-labelledby="inventory-label"><div><h2 id="inventory-label">隨身物品</h2><p id="selected-description">點選物品，再點場景中合適的位置。</p></div><div id="inventory-items" class="inventory-items"></div></section>
+      </div>
+      <aside class="investigation" id="actions" aria-label="場景操作" tabindex="-1"><div class="aside-top"><span class="eyebrow">CURRENT OBJECTIVE</span><span id="stage-count">01 / 05</span></div><h2 id="objective"></h2><p id="objective-description"></p><div id="room-actions" class="room-actions"></div><div class="aside-separator"></div><div class="hint-block"><div class="hint-header"><span>需要另一個觀察方向？</span><span id="hint-level"></span></div><button class="button secondary" id="hint-button">查看逐級提示</button><p id="hint-text" class="hint-text"></p></div><div class="aside-bottom"><span class="small-square" aria-hidden="true"></span><p>錯誤嘗試不會失去物品。<br>線索可隨時重新檢查。</p></div></aside>
+    </section>
+    <section id="ending-screen" class="ending-screen" hidden aria-labelledby="ending-title"><div class="ending-lines" aria-hidden="true"></div><p class="eyebrow" id="ending-label"></p><h1 id="ending-title"></h1><p id="ending-copy"></p><blockquote id="ending-quote"></blockquote><div class="ending-summary"><span id="ending-time"></span><span id="ending-notes"></span></div><div class="title-actions"><button class="button primary" id="ending-menu">回主選單</button><button class="button" id="ending-notebook">重看調查筆記</button></div></section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="modal-head"><div><p class="eyebrow" id="modal-tag"></p><h2 id="modal-title"></h2></div><button id="modal-close" class="close-button" aria-label="關閉視窗">×</button></div><div id="modal-body" class="modal-body"></div></dialog>
+  <footer class="site-footer"><span>黃燈之後 / THE ZERO LEVEL</span><span>相信可以被核對的痕跡。</span></footer>
+  <noscript><p>此遊戲需要開啟 JavaScript。遊戲資料只保存在本機。</p></noscript>
+</body>
+</html>
