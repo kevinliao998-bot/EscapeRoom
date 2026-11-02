@@ -28,6 +28,7 @@ export function save(s: State, storage: Storage = localStorage): string {
   try {
     const prev = storage.getItem(SAVE);
     if (prev && restore(prev)) storage.setItem(PREV, prev);
+    else if (prev) storage.setItem(SAVE + "-corrupt", prev);
     storage.setItem(SAVE, serialize(s));
     return "";
   } catch {

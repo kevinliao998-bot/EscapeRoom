@@ -122,6 +122,8 @@ export const center = (p: { x: number; y: number }) => ({
 });
 export function walkable(scene: SceneId, x: number, y: number) {
   if (x < 4 || x > 27 || y < 6 || y > 13) return false;
+  if (scene === "corridor" && x >= 13 && x <= 18 && y >= 12) return false;
+  if (scene === "office" && x >= 11 && x <= 20 && y >= 12) return false;
   return !maps[scene].spots.some(
     (s) => s.art && tile(s.x, s.y).x === x && tile(s.x, s.y).y === y,
   );

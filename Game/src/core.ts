@@ -100,9 +100,14 @@ export function act(
           s.position = { x: 104, y: 199 };
           say("門禁燈亮起。這一次，門後不再是同一條走廊。");
         } else {
+          const changed = s.loop < 3;
           s.loop = Math.min(3, s.loop + 1);
           s.position = { x: 104, y: 151 };
-          say("你又回到走廊。門禁燈未啟動；有一樣細節變了。");
+          say(
+            changed
+              ? "你又回到走廊。門禁燈未啟動；有一樣細節變了。"
+              : "這次細節不再變化。門禁燈未啟動；不變的標籤仍在原處。",
+          );
         }
       }
       break;

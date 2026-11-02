@@ -203,10 +203,14 @@ export class Station extends Phaser.Scene {
       g.fillStyle(s.door ? 0xf2a33a : 0x3f5b57);
       g.fillRect(428, 94, 6, 3);
     }
+    const savedTile = tile(s.position.x, s.position.y);
+    const point = walkable(s.scene, savedTile.x, savedTile.y)
+      ? s.position
+      : maps[s.scene].spawn;
     this.player = this.add
-      .sprite(s.position.x, s.position.y, "person", 0)
+      .sprite(point.x, point.y, "person", 0)
       .setOrigin(0.5, 1)
-      .setDepth(s.position.y + 1);
+      .setDepth(point.y + 1);
   }
   update(time: number, delta: number) {
     if (!this.player) return;
