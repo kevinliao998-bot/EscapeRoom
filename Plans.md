@@ -9,3 +9,6 @@
 採用可直接開啟的靜態檔案與一般 script 標籤，不用 fetch、ES modules、外部套件或 CDN。核心狀態、文案、場景、聲音及畫面分離；Node 只用於測試與選用本機預覽伺服器。畫面全部繁體中文。
 
 具體答案屬 MW 為可玩性補齊的暫行規格，集中在 content.js；不改寫原始 brief.md。所有鎖門與成功條件由核心驗證，不只依賴畫面隱藏按鈕。
+
+
+情境互動改版仍由 MW（yy）負責：以 interaction-model.js 管理可操作範圍、immersion.js/css 管理場景特寫／Pointer Events 拖放／手帳。SC 的原始劇本與 TI 的協作規範不變。完成本機與瀏覽器自查後更新既有草稿 PR，交 TI 及組員驗收，不自行合併 main。
