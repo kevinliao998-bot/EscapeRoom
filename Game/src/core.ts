@@ -243,6 +243,9 @@ export function act(
         const n = copy(s.checkpoint);
         n.checkpoint = copy(s.checkpoint);
         n.seenEndings = [...s.seenEndings];
+        n.read = Array.from(new Set([...n.read, ...s.read]));
+        for (const [id, level] of Object.entries(s.hints))
+          n.hints[id] = Math.max(n.hints[id] || 0, level);
         n.lastEnding = null;
         return { state: n, message: "回到維修門前。你可以重新選擇。" };
       }

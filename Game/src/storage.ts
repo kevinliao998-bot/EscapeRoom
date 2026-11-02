@@ -1,11 +1,12 @@
 import { restore, serialize, type State } from "./core.ts";
 export const SAVE = "after-amber-v2-save",
   PREV = SAVE + "-previous";
-export function load(storage: Storage = localStorage): {
+export function load(storage?: Storage): {
   state: State | null;
   warning: string;
 } {
   try {
+    storage ??= localStorage;
     const raw = storage.getItem(SAVE);
     if (!raw) return { state: null, warning: "" };
     const s = restore(raw);
@@ -24,8 +25,9 @@ export function load(storage: Storage = localStorage): {
     };
   }
 }
-export function save(s: State, storage: Storage = localStorage): string {
+export function save(s: State, storage?: Storage): string {
   try {
+    storage ??= localStorage;
     const prev = storage.getItem(SAVE);
     if (prev && restore(prev)) storage.setItem(PREV, prev);
     else if (prev) storage.setItem(SAVE + "-corrupt", prev);
@@ -36,8 +38,9 @@ export function save(s: State, storage: Storage = localStorage): string {
   }
 }
 
-export function exportSave(s: State, storage: Storage = localStorage): string {
+export function exportSave(s: State, storage?: Storage): string {
   try {
+    storage ??= localStorage;
     return storage.getItem(SAVE) || serialize(s);
   } catch {
     return serialize(s);

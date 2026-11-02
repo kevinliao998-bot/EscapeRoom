@@ -249,10 +249,10 @@ export class Station extends Phaser.Scene {
       const t = tile(nx, ny);
       if (
         [
-          [-3, -5],
-          [3, -5],
-          [-3, -1],
-          [3, -1],
+          [-4, -6],
+          [4, -6],
+          [-4, 0],
+          [4, 0],
         ].every(([xx, yy]) => {
           const c = tile(nx + xx, ny + yy);
           return walkable(s.scene, c.x, c.y);
