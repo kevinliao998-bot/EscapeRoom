@@ -41,4 +41,19 @@ test("本機儲存被禁用時不崩潰且明確提示", () => {
   assert.ok(load(storage).warning);
   assert.ok(save(fresh(), storage));
   assert.deepEqual(JSON.parse(exportSave(fresh(), storage)), fresh());
+  const old = Object.getOwnPropertyDescriptor(globalThis, "localStorage");
+  try {
+    Object.defineProperty(globalThis, "localStorage", {
+      configurable: true,
+      get() {
+        throw Error("denied getter");
+      },
+    });
+    assert.ok(load().warning);
+    assert.ok(save(fresh()));
+    assert.deepEqual(JSON.parse(exportSave(fresh())), fresh());
+  } finally {
+    if (old) Object.defineProperty(globalThis, "localStorage", old);
+    else Reflect.deleteProperty(globalThis, "localStorage");
+  }
 });

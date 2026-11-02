@@ -106,7 +106,11 @@ test("獎勵冪等、裝配任意順序、拒絕未供電與跳步，取回不�
   assert.ok(s.checkpoint);
 });
 test("結局甲乙、選擇前檢查點及完成後讀檔均可恢復", () => {
-  let s = choice();
+  let s = step(
+    choice(),
+    { type: "read", value: "tag" },
+    { type: "hint", value: "P05" },
+  );
   for (const e of ["A", "B"]) {
     s = step(s, { type: "end", value: e });
     assert.equal(s.lastEnding, e);
@@ -115,6 +119,8 @@ test("結局甲乙、選擇前檢查點及完成後讀檔均可恢復", () => {
     s = step(s, "reselect");
     assert.ok(s.door);
     assert.equal(s.lastEnding, null);
+    assert.ok(s.read.includes("tag"));
+    assert.equal(s.hints.P05, 1);
   }
   assert.deepEqual(s.seenEndings, ["A", "B"]);
 });
