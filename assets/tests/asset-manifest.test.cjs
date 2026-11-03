@@ -28,8 +28,8 @@ test('圖像使用指定的極簡色彩規格、繁中替代文字及有效 SVG 
     assert.ok(asset.noFlashing);
     const svg = fs.readFileSync(path.join(__dirname, '..', asset.path), 'utf8');
     assert.match(svg, /<svg[\s>]/, asset.id);
-    assert.match(svg, /<title>/, asset.id);
-    assert.match(svg, /<desc>/, asset.id);
+    assert.match(svg, /<title\\b/, asset.id);
+    assert.match(svg, /<desc\\b/, asset.id);
     const ids = [...svg.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
     assert.equal(new Set(ids).size, ids.length, asset.id);
   }
