@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="office-title office-desc">
+  <title id="office-title">站務室控制台</title>
+  <desc id="office-desc">深色極簡站務室，桌上有檢修盒與控制台。控制台用長波、短波和雙短波顯示音序線索。</desc>
+  <defs>
+    <linearGradient id="o-bg" x2="0" y2="1"><stop stop-color="#25282e"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="o-wall" x2="0" y2="1"><stop stop-color="#24272d"/><stop offset="1" stop-color="#191b20"/></linearGradient>
+    <linearGradient id="o-desk" x2="0" y2="1"><stop stop-color="#42454b"/><stop offset=".15" stop-color="#25282e"/><stop offset="1" stop-color="#15171b"/></linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#o-bg)"/>
+  <path d="M0 0h1280v450H0z" fill="url(#o-wall)"/>
+  <path d="M0 450h1280v270H0z" fill="#121418"/>
+  <path d="M0 450h1280" stroke="#cbb18b" stroke-opacity=".28" stroke-width="2"/>
+  <g transform="translate(174 96)">
+    <rect width="390" height="220" rx="12" fill="#111317" stroke="#676a70" stroke-width="2"/>
+    <text x="24" y="38" fill="#b1b0b3" font-size="15" font-family="sans-serif" letter-spacing="2">BACKUP CONTROL</text>
+    <rect x="22" y="58" width="346" height="122" rx="6" fill="#0c0e11" stroke="#3b3e44"/>
+    <path d="M44 116h54m18 0h14m17 0h13m20 0h51m18 0h12m15 0h11" stroke="#cbb18b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M44 154h20m15 0h18m85 0h19m15 0h16m16 0h20" stroke="#f1eee8" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="343" cy="202" r="6" fill="#cbb18b"/>
+  </g>
+  <g transform="translate(697 115)">
+    <rect width="360" height="168" rx="8" fill="#17191e" stroke="#76787d"/>
+    <path d="M18 55h324M18 110h324" stroke="#b1b0b3" stroke-opacity=".2"/>
+    <text x="30" y="36" fill="#b1b0b3" font-size="14" font-family="sans-serif">維修刻痕</text>
+    <path d="M42 82h76" stroke="#cbb18b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M154 73v18m18-18v18" stroke="#f1eee8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M246 73v18m18-18v18m18-18v18m18-18v18" stroke="#cbb18b" stroke-width="4" stroke-linecap="round"/>
+    <text x="80" y="145" fill="#b1b0b3" font-size="12" text-anchor="middle" font-family="sans-serif">長音</text>
+    <text x="180" y="145" fill="#b1b0b3" font-size="12" text-anchor="middle" font-family="sans-serif">短音</text>
+    <text x="282" y="145" fill="#b1b0b3" font-size="12" text-anchor="middle" font-family="sans-serif">雙短音</text>
+  </g>
+  <path d="M112 435h1060l-88 66H200z" fill="url(#o-desk)" stroke="#77797e" stroke-opacity=".5"/>
+  <path d="M200 501h884v150H200z" fill="#17191e"/>
+  <g transform="translate(292 382)">
+    <rect width="170" height="56" rx="6" fill="#101216" stroke="#77797e"/>
+    <path d="M14 14h142v28H14z" fill="#202329"/>
+    <circle cx="148" cy="28" r="6" fill="#cbb18b"/>
+  </g>
+  <g transform="translate(770 366)">
+    <rect width="198" height="68" rx="8" fill="#121418" stroke="#77797e"/>
+    <path d="M24 18h150M24 34h118M24 50h134" stroke="#b1b0b3" stroke-opacity=".42"/>
+  </g>
+  <text x="120" y="112" fill="#cbb18b" font-size="16" font-family="sans-serif" letter-spacing="3">LEVEL ZERO / STATION CONTROL</text>
+</svg>
