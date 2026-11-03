@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="stairs-title stairs-desc">
+  <title id="stairs-title">安全梯間</title>
+  <desc id="stairs-desc">安靜的混凝土樓梯間。向上的樓梯、維修門和牆邊的撬片與名牌清楚可辨。</desc>
+  <defs>
+    <linearGradient id="s-bg" x2="0" y2="1"><stop stop-color="#22252b"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="s-wall" x2="1"><stop stop-color="#1b1e23"/><stop offset=".7" stop-color="#292c32"/><stop offset="1" stop-color="#15171b"/></linearGradient>
+    <linearGradient id="s-metal" x2="1"><stop stop-color="#4a4d53"/><stop offset=".5" stop-color="#202329"/><stop offset="1" stop-color="#67696c"/></linearGradient>
+    <linearGradient id="s-warm" x2="0" y2="1"><stop stop-color="#cbb18b" stop-opacity=".24"/><stop offset="1" stop-color="#cbb18b" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#s-bg)"/>
+  <path d="M0 0h1280v190L730 350H0Z" fill="#202329"/>
+  <path d="M0 0h730v350H0Z" fill="url(#s-wall)"/>
+  <path d="M730 0h550v720H730z" fill="#17191e"/>
+  <path d="M0 540 730 350v370H0Z" fill="#15171b"/>
+  <path d="M730 350 1280 530v190H730Z" fill="#111317"/>
+  <path d="M0 540 730 350M730 350 1280 530" stroke="#b1b0b3" stroke-opacity=".18"/>
+  <g transform="translate(248 122)">
+    <path d="M0 0h320v390H0z" fill="#111317" stroke="#77797e" stroke-width="3"/>
+    <path d="M24 26h270v336H24z" fill="url(#s-metal)" stroke="#a3a19b" stroke-opacity=".35"/>
+    <path d="M278 195v52" stroke="#cbb18b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M55 58h188v4H55zM55 336h188v4H55z" fill="#d0c7b6" opacity=".22"/>
+    <text x="160" y="394" fill="#b1b0b3" text-anchor="middle" font-size="17" font-family="sans-serif">SERVICE STAIR</text>
+  </g>
+  <g transform="translate(802 256)">
+    <path d="M0 295h320v-34H48v-34h224v-34H96v-34h176v-34H144v-34h128V91H192V57h80V23H240V0h-8v23h-48v34h-48v34H96v34H48v34H0z" fill="#272a30" stroke="#76787d" stroke-opacity=".5"/>
+    <path d="M12 282h288M60 248h204M108 214h156M156 180h108M204 146h60M252 112h20" stroke="#cbb18b" stroke-opacity=".35" stroke-width="2"/>
+    <path d="M-10 295h340" stroke="#77797e" stroke-width="3"/>
+  </g>
+  <path d="M248 170h320v80H248z" fill="url(#s-warm)"/>
+  <g transform="translate(148 568)">
+    <rect width="86" height="16" rx="8" fill="#cbb18b"/>
+    <circle cx="118" cy="8" r="12" fill="#b1b0b3" stroke="#f1eee8"/>
+    <path d="M128 8h38" stroke="#b1b0b3" stroke-width="4"/>
+  </g>
+  <text x="182" y="625" fill="#b1b0b3" font-size="14" font-family="sans-serif">維修工具</text>
+</svg>
