@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="corridor-title corridor-desc">
+  <title id="corridor-title">迴圈走廊</title>
+  <desc id="corridor-desc">空曠的地下轉運站走廊。飲水機位於右側，時鐘與站名牌在牆上，前方地面有一片可供檢查的水漬。</desc>
+  <defs>
+    <linearGradient id="c-bg" x2="0" y2="1"><stop stop-color="#202329"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="c-left" x2="1" y2=".4"><stop stop-color="#17191e"/><stop offset="1" stop-color="#262930"/></linearGradient>
+    <linearGradient id="c-right" x2="0" y2=".4"><stop stop-color="#292c32"/><stop offset="1" stop-color="#15171b"/></linearGradient>
+    <linearGradient id="c-floor" x2="0" y2="1"><stop stop-color="#282b31"/><stop offset="1" stop-color="#111317"/></linearGradient>
+    <linearGradient id="c-light" x2="0" y2="1"><stop stop-color="#cbb18b" stop-opacity=".22"/><stop offset="1" stop-color="#cbb18b" stop-opacity="0"/></linearGradient>
+    <linearGradient id="c-dispenser" x2="1"><stop stop-color="#343840"/><stop offset=".45" stop-color="#1c1f24"/><stop offset="1" stop-color="#3a3d42"/></linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#c-bg)"/>
+  <path d="M0 0h1280v185L710 350H570L0 185Z" fill="#1b1e23"/>
+  <path d="M0 0h570v350L0 540Z" fill="url(#c-left)"/>
+  <path d="M1280 0H710v350l570 190Z" fill="url(#c-right)"/>
+  <path d="M0 540 570 350h140l570 190v180H0Z" fill="url(#c-floor)"/>
+  <path d="M0 540 570 350M1280 540 710 350" stroke="#73716d" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M640 350 120 720M640 350 340 720M640 350 940 720M640 350 1160 720" stroke="#b1b0b3" stroke-opacity=".12"/>
+  <path d="M0 600h1280M0 666h1280" stroke="#b1b0b3" stroke-opacity=".10"/>
+  <path d="M560 0h160l-28 350H588Z" fill="url(#c-light)"/>
+  <path d="M80 78h260v20H80zM940 78h260v20H940z" fill="#cbb18b" opacity=".72"/>
+  <path d="M132 98v12m156-12v12M994 98v12m156-12v12" stroke="#111317" stroke-width="3"/>
+  <g transform="translate(170 208)">
+    <rect width="116" height="86" rx="8" fill="#15171b" stroke="#686a70"/>
+    <circle cx="58" cy="42" r="30" fill="#0c0e11" stroke="#cbb18b" stroke-opacity=".65" stroke-width="2"/>
+    <path d="M58 42V21m0 21 16 9" stroke="#f1eee8" stroke-width="2" stroke-linecap="round"/>
+    <text x="58" y="74" fill="#b1b0b3" font-size="12" text-anchor="middle" font-family="sans-serif">01:16</text>
+  </g>
+  <g transform="translate(876 198)">
+    <rect width="210" height="58" rx="5" fill="#111317" stroke="#77797e"/>
+    <path d="M16 14h178" stroke="#cbb18b" stroke-width="2"/>
+    <text x="105" y="42" fill="#f1eee8" font-size="21" text-anchor="middle" font-family="sans-serif">北澤　→</text>
+  </g>
+  <g transform="translate(1005 374)">
+    <rect width="128" height="202" rx="12" fill="url(#c-dispenser)" stroke="#74767a"/>
+    <rect x="18" y="17" width="92" height="74" rx="6" fill="#101216" stroke="#5d6066"/>
+    <path d="M31 29h66v36H31z" fill="#1e2428"/>
+    <path d="M42 102h44v32H42z" fill="#111317" stroke="#676a6c"/>
+    <path d="M64 134v17" stroke="#cbb18b" stroke-width="3"/>
+    <rect x="27" y="163" width="74" height="20" rx="3" fill="#0c0e11"/>
+    <path d="M10 196h108" stroke="#cbb18b" stroke-opacity=".34"/>
+  </g>
+  <path d="M680 602c45-17 102-14 134 4 24 13 7 29-34 32-42 3-102-6-119-18-10-7-3-14 19-18Z" fill="#8a9a9c" opacity=".18"/>
+  <path d="M694 614c37 2 72 8 99 9" stroke="#cbb18b" stroke-opacity=".3" stroke-width="2"/>
+  <circle cx="630" cy="354" r="3" fill="#cbb18b" opacity=".7"/>
+</svg>
