@@ -1,0 +1,44 @@
+{
+  "roomOrder": ["corridor", "stairs", "office", "archive", "platform"],
+  "puzzleOrder": ["corridor-trace", "office-signal", "archive-records", "platform-route"],
+  "stateRules": [
+    {
+      "when": "玩家比較三次走廊紀錄並選擇鞋印",
+      "then": ["stairs-unlocked", "pry-available", "badge-available"]
+    },
+    {
+      "when": "撬片開啟檢修盒且備用電源啟動，玩家輸入正確音序",
+      "then": ["broadcast-unlocked", "archive-unlocked"]
+    },
+    {
+      "when": "玩家比對事故時間 01:17 和維修支線 M0",
+      "then": ["film-available", "battery-available", "platform-unlocked"]
+    },
+    {
+      "when": "透明片缺口朝上、名牌固定、電池接通且路線節點相鄰",
+      "then": ["maintenance-door-unlocked", "ending-choice-enabled"]
+    }
+  ],
+  "roomOrder": ["corridor", "stairs", "office", "archive", "platform"],
+  "endings": [
+    {
+      "id": "leave",
+      "requiredEvidence": ["maintenance-log", "broadcast-loop", "powered-lights"],
+      "choice": "關閉記憶迴路並離開",
+      "consequence": "系統停止重播；林澄帶走紀錄，但林沐的下落未明。"
+    },
+    {
+      "id": "stay",
+      "requiredEvidence": ["broadcast-loop", "roster-imprint"],
+      "choice": "回應自稱林沐的聲音並留下",
+      "consequence": "玩家留下尋找來源；聲音身分仍無法證明，出口關閉。"
+    }
+  ],
+  "invariants": [
+    "房間只能依序解鎖，不可略過必要謎題。",
+    "錯誤操作不消耗道具、不清除已取得證據、不啟動失敗倒數。",
+    "結局選擇前必須完成月台路線並解鎖維修門。",
+    "音訊可關閉；所有必要線索均有文字或視覺替代。",
+    "任何線索都不能把重播聲音當成林沐本人已獲證實。"
+  ]
+}
