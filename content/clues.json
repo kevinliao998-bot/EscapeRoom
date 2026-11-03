@@ -1,0 +1,93 @@
+[
+  {
+    "id": "loop-snapshots",
+    "title": "迴圈紀錄",
+    "source": "迴圈走廊三次繞行",
+    "text": "第一次時鐘為 01:16；第二次為 01:17；第三次仍為 01:17。站名牌方向反轉，水漬最後出現鞋印。",
+    "accessibleText": "以文字列出每次繞行的時鐘、站牌方向及地面變化。",
+    "reveals": "部分環境資訊會改變，但可比較每次快照。"
+  },
+  {
+    "id": "maintenance-sticker",
+    "title": "飲水機維修貼紙",
+    "source": "飲水機內側",
+    "text": "「記錄不一致時，以留下實體痕跡的那次為準。」貼紙邊緣沾有與地面相同的水痕。",
+    "accessibleText": "文字記錄貼紙原文及其位置。",
+    "reveals": "玩家應比較可驗證的物理痕跡，而非只相信時鐘或站牌。"
+  },
+  {
+    "id": "boot-prints",
+    "title": "水漬中的維修靴鞋印",
+    "source": "第三次迴圈後的走廊地面",
+    "text": "一列鞋印穿過水漬並延伸到安全梯間。",
+    "accessibleText": "鞋印方向以文字及地圖箭頭呈現。",
+    "reveals": "安全梯間是可追蹤的通路。"
+  },
+  {
+    "id": "signal-mark",
+    "title": "音序維修刻痕",
+    "source": "站務室檢修盒內側",
+    "text": "三個符號依序表示：長音、短音、雙短音。",
+    "accessibleText": "長音 → 短音 → 雙短音。",
+    "accessibleAlternative": true,
+    "reveals": "提示音應按長短而非音量排序。"
+  },
+  {
+    "id": "sound-console",
+    "title": "控制台波形",
+    "source": "站務室桌面",
+    "text": "控制台顯示三個可重播的波形，分別對應長音、短音與雙短音。",
+    "accessibleText": "每段音訊都有長短圖形和文字標記。",
+    "accessibleAlternative": true,
+    "reveals": "玩家可在靜音狀態完成音序謎題。"
+  },
+  {
+    "id": "broadcast-loop",
+    "title": "被剪接的求救訊息",
+    "source": "站務室廣播控制台",
+    "text": "訊息中的三聲波形與控制台的重播標記相同。控制台註記三聲代表記憶片段重播，不是列車到站。",
+    "accessibleText": "繁體中文字幕及可重播文字稿。",
+    "accessibleAlternative": true,
+    "reveals": "聲音片段遭系統重播；聲音相似不足以確認身分。"
+  },
+  {
+    "id": "incident-report",
+    "title": "事故報告",
+    "source": "檔案室文件櫃",
+    "text": "事故時間記為 01:17；列車紀錄稱無車進站；官方名冊稱林沐未進站。路線欄僅剩「M＿」壓痕。",
+    "accessibleText": "可重看完整文字文件。",
+    "reveals": "官方紀錄不完整，事故時間為比對線索。"
+  },
+  {
+    "id": "maintenance-log",
+    "title": "維修簿",
+    "source": "檔案室桌面",
+    "text": "「凌晨一點十七分，M0 維修支線緊急斷電。導引系統會把乘客留下的聲音重新拼接。透明片缺口朝上；固定並接上電池後，只沿供電節點走向維修出口。離站前可關閉記憶迴路。」",
+    "accessibleText": "可重看完整文字文件。",
+    "reveals": "支線為 M0；導引系統會重播片段；透明片及供電節點提供月台解法。"
+  },
+  {
+    "id": "roster-imprint",
+    "title": "失聯者名冊壓痕",
+    "source": "檔案室名冊",
+    "text": "林沐的簽名被刮除，紙背仍留有筆跡壓痕；同頁可辨認維修支線編號 M0。",
+    "accessibleText": "可重看文件轉錄及刮除區域的文字說明。",
+    "reveals": "紀錄可支持林沐可能曾進站，但不能確認廣播中聲音的身分。"
+  },
+  {
+    "id": "route-overlay",
+    "title": "透明路線片",
+    "source": "完成檔案室比對後取得",
+    "text": "透明片角落有三角缺口，缺口朝上時與月台圖上的維修標記對齊。",
+    "accessibleText": "以旋轉按鈕調整方向，並以文字提示缺口是否朝上。",
+    "reveals": "透明片方向及可用路線節點。"
+  },
+  {
+    "id": "powered-lights",
+    "title": "月台供電燈號",
+    "source": "月台維修路線圖",
+    "text": "只有相鄰且亮起的節點構成可通行路線；廣播報出的站名不是可靠指引。",
+    "accessibleText": "供電節點同時以文字標籤與連線狀態表示。",
+    "reveals": "玩家應沿相鄰供電節點前往維修出口。"
+  }
+]
