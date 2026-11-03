@@ -1,0 +1,97 @@
+{
+  "language": "zh-Hant",
+  "designTokens": {
+    "background": "#0c0e11",
+    "surface": "#15171b",
+    "surfaceRaised": "#1c1e23",
+    "ink": "#f1eee8",
+    "muted": "#b1b0b3",
+    "accent": "#cbb18b"
+  },
+  "graphics": [
+    {
+      "id": "corridor-base",
+      "path": "graphics/corridor-base.svg",
+      "scene": "迴圈走廊",
+      "altText": "碳黑與深灰色的地下走廊，飲水機、時鐘、站名牌和地面水漬均清楚可辨。",
+      "language": "zh-Hant",
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "status": "planned",
+      "noFlashing": true
+    },
+    {
+      "id": "stairs",
+      "path": "graphics/stairs.svg",
+      "scene": "安全梯間",
+      "altText": "通往安全梯間的門與維修工具位置；方向線索亦以文字提供。",
+      "language": "zh-Hant",
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "status": "planned",
+      "noFlashing": true
+    },
+    {
+      "id": "station-office",
+      "path": "graphics/station-office.svg",
+      "scene": "站務室",
+      "altText": "站務室中的檢修盒、控制台與三段長短波形。",
+      "language": "zh-Hant",
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "status": "planned",
+      "noFlashing": true
+    },
+    {
+      "id": "records-room",
+      "path": "graphics/records-room.svg",
+      "scene": "檔案室",
+      "altText": "事故報告、維修簿和失聯者名冊的位置及可檢查區域。",
+      "language": "zh-Hant",
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "status": "planned",
+      "noFlashing": true
+    },
+    {
+      "id": "platform",
+      "path": "graphics/platform.svg",
+      "scene": "月台走廊",
+      "altText": "有供電節點的月台路線圖與維修出口；節點狀態亦以文字標示。",
+      "language": "zh-Hant",
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "status": "planned",
+      "noFlashing": true
+    }
+  ],
+  "audio": [
+    {
+      "id": "station-ambience",
+      "path": "audio/station-ambience.ogg",
+      "purpose": "低音量通風與室內電流環境聲。",
+      "visualAlternative": "畫面以靜態通風口和穩定燈號表現環境；環境音不傳達解謎資訊。",
+      "captions": "無語音；若加入可辨識聲音，須提供字幕或文字說明。",
+      "defaultEnabled": false,
+      "jumpScare": false,
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "licenseStatus": "待確認",
+      "status": "planned"
+    },
+    {
+      "id": "soft-mechanism-cues",
+      "path": "audio/soft-mechanism-cues.ogg",
+      "purpose": "短促的紙張、金屬卡榫、按鈕和電力啟動回饋。",
+      "visualAlternative": "每項互動均以文字及畫面狀態改變回饋；靜音不影響操作。",
+      "captions": "無語音；如加入廣播，另提供繁體中文字幕及可重播文字稿。",
+      "defaultEnabled": false,
+      "jumpScare": false,
+      "source": "SC 原創製作；尚待產出。",
+      "license": "原創素材；完成後確認作者及使用權。",
+      "licenseStatus": "待確認",
+      "status": "planned"
+    }
+  ],
+  "completionNotice": "本清單是製作規格；標示 planned 的檔案尚未產出或核准，不代表可直接使用的最終素材。"
+}
