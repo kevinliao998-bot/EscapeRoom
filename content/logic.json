@@ -19,7 +19,6 @@
       "then": ["maintenance-door-unlocked", "ending-choice-enabled"]
     }
   ],
-  "roomOrder": ["corridor", "stairs", "office", "archive", "platform"],
   "endings": [
     {
       "id": "leave",
