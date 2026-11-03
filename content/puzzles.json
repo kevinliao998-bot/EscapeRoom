@@ -1,0 +1,46 @@
+[
+  {
+    "id": "corridor-trace",
+    "room": "corridor",
+    "title": "迴圈走廊：實體痕跡",
+    "objective": "比較三次繞行的快照，依鞋印判斷安全梯間方向。",
+    "prerequisites": [],
+    "clueIds": ["loop-snapshots", "maintenance-sticker", "boot-prints"],
+    "answerId": "physical-trace",
+    "successOutputs": ["stairs-unlocked", "pry-available", "badge-available"],
+    "failureHintIds": ["corridor-1", "corridor-2", "corridor-3"]
+  },
+  {
+    "id": "office-signal",
+    "room": "office",
+    "title": "站務室：提示音序",
+    "objective": "打開檢修盒並恢復備用電力後，依長短刻痕排列三段波形。",
+    "prerequisites": ["pry-collected", "panel-open", "backup-power"],
+    "clueIds": ["signal-mark", "sound-console", "broadcast-loop"],
+    "answerId": "signal-order",
+    "successOutputs": ["broadcast-unlocked", "archive-unlocked"],
+    "failureHintIds": ["signal-1", "signal-2", "signal-3"]
+  },
+  {
+    "id": "archive-records",
+    "room": "archive",
+    "title": "檔案室：事故紀錄比對",
+    "objective": "交叉比對事故時間與維修支線編號。",
+    "prerequisites": ["broadcast-unlocked", "archive-unlocked"],
+    "clueIds": ["incident-report", "maintenance-log", "roster-imprint"],
+    "answerId": "archive-crosscheck",
+    "successOutputs": ["film-available", "battery-available", "platform-unlocked"],
+    "failureHintIds": ["archive-1", "archive-2", "archive-3"]
+  },
+  {
+    "id": "platform-route",
+    "room": "platform",
+    "title": "月台走廊：校正路線",
+    "objective": "將透明片缺口朝上、以名牌固定並接上電池，再沿相鄰供電節點前往出口。",
+    "prerequisites": ["film-collected", "badge-collected", "battery-collected"],
+    "clueIds": ["route-overlay", "powered-lights", "maintenance-log"],
+    "answerId": "platform-route",
+    "successOutputs": ["maintenance-door-unlocked", "ending-choice-enabled"],
+    "failureHintIds": ["route-1", "route-2", "route-3"]
+  }
+]
