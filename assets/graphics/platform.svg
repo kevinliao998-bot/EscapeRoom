@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="platform-title platform-desc">
+  <title id="platform-title">月台維修走廊</title>
+  <desc id="platform-desc">深色月台走廊延伸至遠處的維修出口。牆上路線圖顯示入口、分岔、維修節點和出口，供電節點以穩定香檳金光點呈現。</desc>
+  <defs>
+    <linearGradient id="p-bg" x2="0" y2="1"><stop stop-color="#24272d"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="p-wall" x2="1"><stop stop-color="#1a1d22"/><stop offset=".5" stop-color="#30333a"/><stop offset="1" stop-color="#181a1f"/></linearGradient>
+    <linearGradient id="p-floor" x2="0" y2="1"><stop stop-color="#34373d"/><stop offset="1" stop-color="#111317"/></linearGradient>
+    <radialGradient id="p-lamp"><stop stop-color="#cbb18b" stop-opacity=".65"/><stop offset="1" stop-color="#cbb18b" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#p-bg)"/>
+  <path d="M0 0h1280v170L720 342H560L0 170Z" fill="#1c1f24"/>
+  <path d="M0 0h560v342L0 530Z" fill="url(#p-wall)"/>
+  <path d="M1280 0H720v342l560 188Z" fill="url(#p-wall)"/>
+  <path d="M0 530 560 342h160l560 188v190H0Z" fill="url(#p-floor)"/>
+  <path d="M0 530 560 342M1280 530 720 342" stroke="#b1b0b3" stroke-opacity=".2"/>
+  <path d="M640 342 145 720M640 342 400 720M640 342 880 720M640 342 1135 720" stroke="#b1b0b3" stroke-opacity=".14"/>
+  <path d="M580 28h120v14H580z" fill="#cbb18b" opacity=".8"/>
+  <path d="M438 192h404v188H438z" fill="#111317" stroke="#77797e" stroke-width="2"/>
+  <text x="640" y="222" fill="#b1b0b3" font-size="14" text-anchor="middle" font-family="sans-serif" letter-spacing="2">M0 SERVICE ROUTE</text>
+  <path d="M506 284h88l56 42h88l54-44h18" fill="none" stroke="#b1b0b3" stroke-opacity=".55" stroke-width="3"/>
+  <path d="M506 284h88l56 42h88l54-44h18" fill="none" stroke="#cbb18b" stroke-width="2"/>
+  <circle cx="506" cy="284" r="10" fill="url(#p-lamp)"/><circle cx="506" cy="284" r="4" fill="#cbb18b"/>
+  <circle cx="594" cy="284" r="4" fill="#cbb18b"/><circle cx="650" cy="326" r="4" fill="#cbb18b"/>
+  <circle cx="738" cy="326" r="4" fill="#cbb18b"/><circle cx="792" cy="282" r="4" fill="#cbb18b"/>
+  <text x="506" y="310" fill="#f1eee8" font-size="11" text-anchor="middle" font-family="sans-serif">入口</text>
+  <text x="650" y="350" fill="#f1eee8" font-size="11" text-anchor="middle" font-family="sans-serif">分岔</text>
+  <text x="738" y="350" fill="#f1eee8" font-size="11" text-anchor="middle" font-family="sans-serif">維修</text>
+  <text x="792" y="308" fill="#f1eee8" font-size="11" text-anchor="middle" font-family="sans-serif">出口</text>
+  <g transform="translate(1020 296)">
+    <rect width="144" height="218" rx="7" fill="#111317" stroke="#77797e" stroke-width="2"/>
+    <rect x="12" y="12" width="120" height="194" fill="#1c1f24" stroke="#cbb18b" stroke-opacity=".4"/>
+    <path d="M32 34v132m80-132v132" stroke="#53565d" stroke-width="2"/>
+    <path d="M32 166h80" stroke="#cbb18b" stroke-width="3"/>
+    <rect x="65" y="88" width="14" height="4" rx="2" fill="#cbb18b"/>
+  </g>
+  <text x="1092" y="545" fill="#b1b0b3" font-size="13" text-anchor="middle" font-family="sans-serif">維修出口</text>
+</svg>
