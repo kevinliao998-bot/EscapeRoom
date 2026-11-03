@@ -1,0 +1,39 @@
+[
+  {
+    "id": "physical-trace",
+    "puzzleId": "corridor-trace",
+    "accepted": ["physical"],
+    "evidenceIds": ["loop-snapshots", "maintenance-sticker", "boot-prints"],
+    "result": "開啟安全梯間；撬片與維修員名牌可供拾取。",
+    "doNotInfer": ["不要把正確時間或站牌方向當成通行證。"]
+  },
+  {
+    "id": "signal-order",
+    "puzzleId": "office-signal",
+    "accepted": [["long", "short", "double-short"]],
+    "evidenceIds": ["signal-mark", "sound-console"],
+    "result": "恢復控制台、解鎖廣播與檔案室。",
+    "accessibility": "視覺波形及文字順序必須與音訊提供相同答案。"
+  },
+  {
+    "id": "archive-crosscheck",
+    "puzzleId": "archive-records",
+    "accepted": [{ "time": "01:17", "route": "M0" }],
+    "evidenceIds": ["incident-report", "maintenance-log", "roster-imprint"],
+    "result": "取得透明路線片與電池並開放月台。",
+    "doNotInfer": ["證據支持林沐可能曾進站，不證明廣播聲音就是她。"]
+  },
+  {
+    "id": "platform-route",
+    "puzzleId": "platform-route",
+    "accepted": [{
+      "overlayOrientation": "notch-up",
+      "fixedBy": "badge",
+      "poweredBy": "battery",
+      "nodes": ["entrance", "junction", "maintenance", "exit"]
+    }],
+    "evidenceIds": ["route-overlay", "powered-lights", "maintenance-log"],
+    "result": "解鎖維修門及兩個明確結局選項。",
+    "doNotInfer": ["不可跳過未連接的供電節點。"]
+  }
+]
