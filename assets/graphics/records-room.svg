@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="archive-title archive-desc">
+  <title id="archive-title">檔案室紀錄桌</title>
+  <desc id="archive-desc">昏暗的檔案室，兩側是文件櫃。桌上分開放置事故報告、維修簿與失聯者名冊，紙張邊緣以香檳金細線標示。</desc>
+  <defs>
+    <linearGradient id="a-bg" x2="0" y2="1"><stop stop-color="#21242a"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="a-cabinet" x2="1"><stop stop-color="#30333a"/><stop offset=".5" stop-color="#1a1d22"/><stop offset="1" stop-color="#3a3d43"/></linearGradient>
+    <linearGradient id="a-paper" x2="0" y2="1"><stop stop-color="#ddd8cd"/><stop offset="1" stop-color="#a9a49b"/></linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#a-bg)"/>
+  <path d="M0 0h1280v470H0z" fill="#1b1e23"/>
+  <path d="M0 470h1280v250H0z" fill="#121418"/>
+  <g transform="translate(84 82)">
+    <rect width="252" height="376" rx="8" fill="url(#a-cabinet)" stroke="#6e7075"/>
+    <path d="M16 28h220v96H16zM16 140h220v96H16zM16 252h220v96H16z" fill="#15171b" stroke="#77797e"/>
+    <path d="M38 54h176M38 83h132M38 166h174M38 195h142M38 278h160M38 307h132" stroke="#b1b0b3" stroke-opacity=".26" stroke-width="3"/>
+    <circle cx="214" cy="76" r="5" fill="#cbb18b"/><circle cx="214" cy="188" r="5" fill="#cbb18b"/><circle cx="214" cy="300" r="5" fill="#cbb18b"/>
+  </g>
+  <g transform="translate(944 82)">
+    <rect width="252" height="376" rx="8" fill="url(#a-cabinet)" stroke="#6e7075"/>
+    <path d="M16 28h220v96H16zM16 140h220v96H16zM16 252h220v96H16z" fill="#15171b" stroke="#77797e"/>
+    <path d="M38 54h176M38 83h132M38 166h174M38 195h142M38 278h160M38 307h132" stroke="#b1b0b3" stroke-opacity=".26" stroke-width="3"/>
+    <circle cx="214" cy="76" r="5" fill="#cbb18b"/><circle cx="214" cy="188" r="5" fill="#cbb18b"/><circle cx="214" cy="300" r="5" fill="#cbb18b"/>
+  </g>
+  <path d="M314 447h650l-64 66H378z" fill="#393c42" stroke="#7d7d7c" stroke-opacity=".55"/>
+  <path d="M378 513h522v139H378z" fill="#1b1e23"/>
+  <g transform="translate(422 340) rotate(-4)">
+    <rect width="164" height="112" rx="3" fill="url(#a-paper)" stroke="#cbb18b" stroke-width="2"/>
+    <text x="14" y="26" fill="#24262b" font-size="12" font-family="sans-serif">事故報告 / 01</text>
+    <path d="M14 42h130M14 57h108M14 72h120M14 88h76" stroke="#62636a" stroke-opacity=".55"/>
+  </g>
+  <g transform="translate(586 326) rotate(2)">
+    <rect width="174" height="124" rx="3" fill="#c7c2b7" stroke="#cbb18b" stroke-width="2"/>
+    <text x="14" y="26" fill="#24262b" font-size="12" font-family="sans-serif">維修簿 / M0</text>
+    <path d="M14 42h140M14 58h116M14 74h132M14 90h112M14 106h90" stroke="#62636a" stroke-opacity=".55"/>
+  </g>
+  <g transform="translate(758 344) rotate(-2)">
+    <rect width="152" height="108" rx="3" fill="#bdb8ad" stroke="#cbb18b" stroke-width="2"/>
+    <text x="13" y="25" fill="#24262b" font-size="12" font-family="sans-serif">失聯者名冊</text>
+    <path d="M14 42h120M14 58h110M14 74h114" stroke="#62636a" stroke-opacity=".55"/>
+    <path d="m34 87 75-3" stroke="#383a40" stroke-width="3" opacity=".6"/>
+  </g>
+  <path d="M0 470h1280" stroke="#cbb18b" stroke-opacity=".22"/>
+</svg>
