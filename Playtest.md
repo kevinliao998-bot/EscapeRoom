@@ -29,3 +29,16 @@
 - 面板顯示兩種檔案用途及下載請求回饋；關閉面板後可回到月台。
 
 全程沒有注入旗標、改寫 localStorage 或重置既有進度。沒有模擬瀏覽器真實配額耗盡；這部分使用 Storage 替身測試。手機觸控、螢幕閱讀器、音效舒適度與新玩家盲測仍需團隊驗收。
+
+
+## MW 面板焦點返回修復 · 2026-11-05
+
+產品起點 `996a07d`，TI 資料參考 HUAM `c0cbe68`。先以正式版實際 Enter 開主選單設定、Escape 關閉，讀取 DOM 焦點為 BODY，重現 Issue #10 的同類問題。修復後透過正常讀檔恢復既有月台進度，以真實控制項和鍵盤走近、開關面板，沒有改寫存檔或注入通關旗標。
+
+- 主選單設定 Escape 返回 settings，下一次 Tab 到 credits。
+- 紀錄櫃 Escape 及關閉按鈕 Enter 返回 spot:cabinet，下一次 Tab 到 spot:powerBox；面板內 Shift+Tab／Tab 循環仍有效。
+- 焦點先停在貼紙，再按 E 調查鄰近紀錄櫃；關閉後返回實際調查的紀錄櫃。面板可及名稱為「紀錄櫃 · 交叉比對」。
+- 卡槽 Escape 返回 spot:cardSlot，下一次 Tab 到 spot:cart；推車以關閉按鈕返回 spot:cart，下一次 Tab 到 spot:endDoor。
+- 月台回站務室後聚焦 spot:back（返回走廊）；回走廊後原返回控制項不在，聚焦 settings（設定）。
+
+來源控制項用語意 locator 定位後送 Enter，後續 Escape、E、Tab、Shift+Tab 由當下焦點送出。這是 MW 的焦點回歸操作，不宣稱本輪從新局重新純鍵盤通關，也沒有啟動或實聽螢幕閱讀器。隊員提供的手機、新玩家、音量與 Narrator 觀察仍屬其原始紀錄；完整讀屏定位與朗讀須由 TI 複驗，Issue 保持開啟。
