@@ -1,12 +1,13 @@
 import Phaser from "phaser";
 import { story, fresh, act, copy, type State, type Action } from "./core.ts";
 import { maps, type Spot } from "./maps.ts";
-import { load, save, exportSave } from "./storage.ts";
+import { load, save, exportSave, exportRecovery } from "./storage.ts";
 import { Sound, defaults, type Settings } from "./audio.ts";
 import { Station } from "./world.ts";
 import "./style.css";
 const initial = load();
-let leaving = false;
+let leaving = false,
+  storageWarning = initial.warning;
 let state = initial.state || fresh(),
   hasSave = !!initial.state,
   mode: "menu" | "opening" | "play" | "end" = "menu",
@@ -53,8 +54,21 @@ function applySettings() {
 applySettings();
 function persist() {
   const warning = save(state);
+  storageWarning = warning;
   hasSave = true;
   if (warning) feedback = warning;
+}
+function download(raw: string, filename: string) {
+  const url = URL.createObjectURL(
+      new Blob([raw], { type: "application/json" }),
+    ),
+    link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 function send(a: Action) {
   const result = act(state, a);
@@ -126,7 +140,7 @@ function content() {
         )
         .join(
           "",
-        )}</div><p>無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。</p>${btn("試聽柔和提示音", "testSound")}${btn("匯出存檔", "export")}${btn("回主選單", "menu")}`;
+        )}</div><p>無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。</p>${btn("試聽柔和提示音", "testSound")}<p class="warning" role="status">${storageWarning}</p><p>「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。</p>${btn("匯出存檔", "export")}${btn("匯出本機原檔（排查用）", "exportRecovery")}${btn("回主選單", "menu")}`;
     case "credits":
       return `<h2>原創與來源</h2><p>原創站內像素場景、角色、四件物品與合成音效：專案團隊／Codex 輔助製作。只參考俯視像素技法，未取用參考遊戲素材。</p><p>Fusion Pixel Font 12px 繁體：TakWolf 與上游貢獻者，版本 2026.10.25，SIL OFL 1.1；完整上游授權隨專案提供。Phaser 3.90.0，MIT。</p><p>劇情依團隊確認版《黃燈之後》。15–20 分鐘為設計目標，仍待新玩家盲測。詳見專案 Credits.md、Verify.md。</p>`;
     case "newConfirm":
@@ -388,15 +402,19 @@ ui.addEventListener("click", (e) => {
     return;
   }
   if (a === "export") {
-    const raw = exportSave(state);
-    const u = URL.createObjectURL(
-        new Blob([raw], { type: "application/json" }),
-      ),
-      l = document.createElement("a");
-    l.href = u;
-    l.download = "黃燈之後-v2-存檔.json";
-    l.click();
-    setTimeout(() => URL.revokeObjectURL(u), 1000);
+    download(exportSave(state), "黃燈之後-v2-存檔.json");
+    feedback = "已送出目前進度的下載請求；請確認檔案已保存。";
+    render();
+    return;
+  }
+  if (a === "exportRecovery") {
+    const result = exportRecovery();
+    if (result.raw !== null)
+      download(result.raw, "黃燈之後-v2-本機原檔-排查用.json");
+    feedback =
+      result.warning ||
+      "已送出本機原檔的下載請求；這是排查資料，請另行匯出目前進度。";
+    render();
     return;
   }
   if (a === "item") {
