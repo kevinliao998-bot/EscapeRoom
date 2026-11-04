@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-05",
+  "baseline": "996a07d68aa996ca93f879e6cba28ad7b322e025",
+  "before": {
+    "action": null,
+    "label": null,
+    "tag": "BODY"
+  },
+  "cases": [
+    {
+      "case": "menu-settings-escape",
+      "expected": "settings",
+      "actual": {
+        "action": "settings",
+        "label": null,
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "設定與輔助"
+      },
+      "passed": true
+    },
+    {
+      "case": "menu-next-tab",
+      "expected": "credits",
+      "actual": {
+        "action": "credits",
+        "label": null,
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "素材與製作說明"
+      },
+      "passed": true
+    },
+    {
+      "case": "scene-change-platform-to-office",
+      "expected": "spot:back",
+      "actual": {
+        "action": "spot:back",
+        "label": "靠近並調查返回走廊",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "cabinet-dialog-name",
+      "expected": "紀錄櫃 · 交叉比對",
+      "actual": "紀錄櫃 · 交叉比對",
+      "passed": true
+    },
+    {
+      "case": "cabinet-escape",
+      "expected": "spot:cabinet",
+      "actual": {
+        "action": "spot:cabinet",
+        "label": "靠近並調查紀錄櫃／維修簿夾層",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "cabinet-next-tab",
+      "expected": "spot:powerBox",
+      "actual": {
+        "action": "spot:powerBox",
+        "label": "靠近並調查檢修盒",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "dialog-shift-tab-wrap",
+      "expected": "conclude:2",
+      "actual": {
+        "action": "conclude:2",
+        "label": null,
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "名冊有林沐，所以此刻的聲音一定是她"
+      },
+      "passed": true
+    },
+    {
+      "case": "dialog-tab-wrap",
+      "expected": "close",
+      "actual": {
+        "action": "close",
+        "label": "關閉面板",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "關閉 ×"
+      },
+      "passed": true
+    },
+    {
+      "case": "cabinet-close-button-enter",
+      "expected": "spot:cabinet",
+      "actual": {
+        "action": "spot:cabinet",
+        "label": "靠近並調查紀錄櫃／維修簿夾層",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "before-e-investigation",
+      "expected": "spot:sticker",
+      "actual": {
+        "action": "spot:sticker",
+        "label": "靠近並調查牆上校準貼紙",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "e-opens-nearest-object-return",
+      "expected": "spot:cabinet",
+      "actual": {
+        "action": "spot:cabinet",
+        "label": "靠近並調查紀錄櫃／維修簿夾層",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "scene-change-office-to-corridor",
+      "expected": "settings",
+      "actual": {
+        "action": "settings",
+        "label": null,
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "設定"
+      },
+      "passed": true
+    },
+    {
+      "case": "card-slot-escape",
+      "expected": "spot:cardSlot",
+      "actual": {
+        "action": "spot:cardSlot",
+        "label": "靠近並調查牆腳檢修槽",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "card-slot-next-tab",
+      "expected": "spot:cart",
+      "actual": {
+        "action": "spot:cart",
+        "label": "靠近並調查清潔推車",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "cart-dialog-tab",
+      "expected": "close",
+      "actual": {
+        "action": "close",
+        "label": "關閉面板",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "關閉 ×"
+      },
+      "passed": true
+    },
+    {
+      "case": "cart-close-button",
+      "expected": "spot:cart",
+      "actual": {
+        "action": "spot:cart",
+        "label": "靠近並調查清潔推車",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "cart-next-tab",
+      "expected": "spot:endDoor",
+      "actual": {
+        "action": "spot:endDoor",
+        "label": "靠近並調查盡頭門",
+        "setting": null,
+        "tag": "BUTTON",
+        "text": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "settings-pointer-close",
+      "expected": "settings",
+      "actual": {
+        "action": "settings",
+        "label": null,
+        "setting": null,
+        "tag": "BUTTON",
+        "text": "設定"
+      },
+      "passed": true
+    }
+  ]
+}
