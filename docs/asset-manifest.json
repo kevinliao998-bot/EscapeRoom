@@ -1,0 +1,232 @@
+{
+  "paletteColors": 14,
+  "fontHanChecked": 570,
+  "contrast": [
+    {
+      "text": "#E4E1D6",
+      "background": "#14191F",
+      "ratio": 13.494972640285685
+    },
+    {
+      "text": "#E4E1D6",
+      "background": "#2B3640",
+      "ratio": 9.410771883961946
+    },
+    {
+      "text": "#9BB6AA",
+      "background": "#2B3640",
+      "ratio": 5.670761236580382
+    },
+    {
+      "text": "#14191F",
+      "background": "#D8C9A0",
+      "ratio": 10.754033314504053
+    },
+    {
+      "text": "#E4E1D6",
+      "background": "#3F5B57",
+      "ratio": 5.637109135123872
+    },
+    {
+      "text": "#F2A33A",
+      "background": "#14191F",
+      "ratio": 8.476839583790793
+    },
+    {
+      "text": "#14191F",
+      "background": "#6E8F86",
+      "ratio": 4.994377142126734
+    },
+    {
+      "text": "#263F3E",
+      "background": "#D8C9A0",
+      "ratio": 6.8610934171475515
+    }
+  ],
+  "files": [
+    {
+      "path": "Game/public/THIRD-PARTY-NOTICES.md",
+      "bytes": 5590,
+      "sha256": "501ebc2ac7ee26de844fc60960b3af01bf31b90d086656504ea9cf1b2cacfa21",
+      "source": "Phaser 3.90.0 / Fusion Pixel 2026.10.25",
+      "author": "Phaser Studio Inc.；TakWolf 與上游貢獻者",
+      "license": "MIT + SIL-OFL-1.1"
+    },
+    {
+      "path": "Game/public/art/battery.png",
+      "bytes": 148,
+      "sha256": "310e7c8dcd2d03027126f4f0d89b944bc680b0e71a259f72bb08f92fedb4cc97",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/cabinet.png",
+      "bytes": 275,
+      "sha256": "7a0a6c4f11baec2937d9d419e80b59c958dd87f954a6df54c6916f5c9349ebf3",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/card.png",
+      "bytes": 151,
+      "sha256": "4412343dbb565e1c59c8e2da0cc68f8040e391c8831c47a78f5b7e4e6412d413",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/cart.png",
+      "bytes": 262,
+      "sha256": "dd82d6dfb757f6b70004a365ba9d1dbd7336d7e7142cf9c0db58497e1a4360a2",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/console.png",
+      "bytes": 406,
+      "sha256": "f5bccb47cede43edab90be8e75af7a0bb926bb824ea5e3fe32222c37befb5645",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/corridor-ground.png",
+      "bytes": 2693,
+      "sha256": "3a5e68e8f9c426fc98def6ba080708a7dd6081dba1d860cf1fcc6ed00b7b6e1f",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/dispenser.png",
+      "bytes": 299,
+      "sha256": "67f1e592c92d09e37ce3e7e9f1c45a511e28ce70be9356dbd0af56025f12d203",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/film.png",
+      "bytes": 157,
+      "sha256": "b21c99aa712e67bbc46c47f087f9681be3ca9380aff4601e296c26be0006ae96",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/lightbox.png",
+      "bytes": 291,
+      "sha256": "993dd2f637bd013d99029393b97568aa45e3bad034f371584664106fddb4de55",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/lin-cheng.png",
+      "bytes": 726,
+      "sha256": "3d7716d243a4e1bfe73d151cf58bdf555f1eb151229fb86dc80a8907a67e9029",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/map.png",
+      "bytes": 417,
+      "sha256": "23cd6c89fe475ce76eeeeea341f7cea845ac3bb7c87cdb1476e68c58ec4a69d9",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/office-ground.png",
+      "bytes": 2471,
+      "sha256": "35645b9e141e1e18e5cba94f021b581c30a9385297a53c59b7bee8fbf17bdae1",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/palette.json",
+      "bytes": 237,
+      "sha256": "a5abc83d17e83052561e35c52af2503df003431c3b91884aee29f35507eabeab",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/panel.png",
+      "bytes": 233,
+      "sha256": "6722ce0ebfae96e2c3fe1eac76f8397074a5d55517762cde8bb78790d59b0d6e",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/platform-ground.png",
+      "bytes": 2627,
+      "sha256": "25c25a8448a63e64e32df258da2f566a8a6bc11f321336e790dd85768ed12689",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/art/pry.png",
+      "bytes": 161,
+      "sha256": "ae79cde5dbe7d6bbcb433f6023958e26a898ce5c72cbd07878255faddc83f9c1",
+      "source": "自製像素繪製器 tools/draw_art.py",
+      "author": "專案團隊／Codex 輔助繪製",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "Game/public/fonts/LICENSE-MIT",
+      "bytes": 1064,
+      "sha256": "6806b674346bb5b88735bff0eadea43f8013d3fee7c888b12126dec37f1dc7e2",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "MIT"
+    },
+    {
+      "path": "Game/public/fonts/LICENSE-OFL",
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "SIL-OFL-1.1（詳附完整上游授權）"
+    },
+    {
+      "path": "Game/public/fonts/LICENSES/ark-pixel-OFL.txt",
+      "bytes": 4412,
+      "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "SIL-OFL-1.1（詳附完整上游授權）"
+    },
+    {
+      "path": "Game/public/fonts/LICENSES/cubic-11-OFL.txt",
+      "bytes": 5364,
+      "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "SIL-OFL-1.1（詳附完整上游授權）"
+    },
+    {
+      "path": "Game/public/fonts/LICENSES/galmuri-LICENSE.txt",
+      "bytes": 4360,
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "SIL-OFL-1.1（詳附完整上游授權）"
+    },
+    {
+      "path": "Game/public/fonts/fusion-pixel-12px-monospaced-zh_hant.otf.woff2",
+      "bytes": 693072,
+      "sha256": "730a4657fd70321ec4d1f726ac710d43207925f03244e9ea8670e63c0f3b6ad9",
+      "source": "TakWolf/fusion-pixel-font 2026.10.25",
+      "author": "TakWolf 與上游貢獻者",
+      "license": "SIL-OFL-1.1（詳附完整上游授權）"
+    }
+  ]
+}
