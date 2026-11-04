@@ -7,7 +7,9 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const baseline = "3e5203f9a4f72960e81164b7b42de4055e01ea3c";
+// Li 修復後的 main-v2；可傳入另一個完整提交 SHA，核對對應版本。
+const baseline = process.argv[2] || "996a07d68aa996ca93f879e6cba28ad7b322e025";
+assert.match(baseline, /^[a-f0-9]{40}$/, "基準必須是完整提交 SHA");
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const read = (name) => readFileSync(path.join(root, name));
 const original = (name) => execFileSync("git", ["show", `${baseline}:${name}`], {cwd: root, maxBuffer: 8 * 1024 * 1024});

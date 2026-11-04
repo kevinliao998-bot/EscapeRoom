@@ -4,7 +4,7 @@
 
 ## 本次工作基準
 
-- 使用者指定以 [PR #6](https://github.com/kevinliao998-bot/EscapeRoom/pull/6) 的 `main-v2` 為驗收基準；本輪起點為 `3e5203f9a4f72960e81164b7b42de4055e01ea3c`。
+- 使用者指定以 [PR #6](https://github.com/kevinliao998-bot/EscapeRoom/pull/6) 的 `main-v2` 為驗收基準；首次起點為 `3e5203f9a4f72960e81164b7b42de4055e01ea3c`。2026-11-05 複驗 Li 的修正時，基準更新為 `996a07d68aa996ca93f879e6cba28ad7b322e025`；同期 HUAM 遠端起點為 `4db93ec92921ab4a236ddcaf84b8149bc1e69d9b`。
 - 新版的故事、線索、答案、提示與結局以 `content/story.json` 為準，對照 `Brief.md`、`Verify.md` 與 `docs/Puzzle-Spec.md`。`_legacy_docs/` 僅作歷史資料，不混用舊版名牌、房間或答案。
 - 影片的 `TESTS.md` 在此專案沿用既有檔名 `Test.md`；整合程式在 `Tests/`。不另建兩份內容互相矛盾的測試清單。
 - `agent.md` 保留為本文件的連結入口；歷史原稿仍在 `_legacy_docs/agent.md`。
@@ -13,11 +13,11 @@
 
 | 角色 | 維護內容 | 檢查責任 |
 | --- | --- | --- |
-| SC／小安：劇情與內容 | `Brief.md`、`content/`、素材與 `Credits.md`、`Verify.md`／`Test.md` 的內容部分 | 先測自己負責的故事與素材；檢查 TI 自己的 PR |
-| MW／小星：機關與網頁 | `Game/`、`Plans.md`、`Plans.v1.md`、`Verify.md`／`Test.md` 的機關部分及既有遊玩紀錄 | 先測自己的機關、介面與存檔；修復自己負責的問題 |
+| SC／Liao：劇情與內容 | `Brief.md`、`content/`、素材與 `Credits.md`、`Verify.md`／`Test.md` 的內容部分 | 先測自己負責的故事與素材；檢查 TI 自己的 PR |
+| MW／Li：機關與網頁 | `Game/`、`Plans.md`、`Plans.v1.md`、`Verify.md`／`Test.md` 的機關部分及既有遊玩紀錄 | 先測自己的機關、介面與存檔；修復自己負責的問題 |
 | TI／小雪：測試與整合 | `AGENTS.md`、`README.md`、`Test.md` 的整合部分、`Tests/integration.test.ts` 與整合證據 | 獨立檢查 SC／MW 的 PR、跑整合測試、記錄問題與交接 |
 
-TI 的使用者 GitHub 帳號已由目前連線確認為 `HuamHuam-Lin`；SC／MW 的個人帳號與姓名由團隊自行確認，不從 PR 代辦帳號推定。AI 協助產生測試與文件，不能冒充另外兩人的審查、提交或真人盲測。
+TI 的使用者 GitHub 帳號已由目前連線確認為 `HuamHuam-Lin`。使用者指定 SC 代號為 `Liao`、MW 代號為 `Li`，後續交接使用代號；代號不等同已確認的 GitHub 帳號，不從 PR 代辦帳號推定。AI 協助產生測試與文件，不能冒充另外兩人的審查、提交或真人盲測。
 
 ## 分支與 PR 流程
 

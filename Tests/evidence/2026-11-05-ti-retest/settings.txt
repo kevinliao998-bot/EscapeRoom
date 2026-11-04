@@ -1,0 +1,55 @@
+Browser tab: 615890319, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4185/".
+1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
+	2 container stage
+		3 container Description: 車站俯視像素場景, ID: world
+			4 image
+		5 container ui
+			6 container 四格隨身物品
+				7 text 隨身
+				8 button Description: 門禁卡，在背包, Help: 門禁卡
+				9 button Description: 撬片，在背包, Help: 撬片
+				10 button Description: 透明路線片，已安裝, Help: 透明路線片
+				11 button Description: 電池，已安裝, Help: 電池
+			12 container
+				13 text 第零層
+				14 heading 月台, Value: 2
+					15 text 月台
+			16 container
+				17 button 筆記
+				18 button 提示
+			19 container
+				20 text 別看站名。跟著仍然供電的燈。
+				21 button 設定
+			22 container
+				23 button Description: 靠近並調查返回站務室, Help: 返回站務室
+				24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱
+				25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽
+				26 button Description: 靠近並調查維修門, Help: 維修門
+			27 text 已送出目前進度的下載請求；請確認檔案已保存。
+			28 container 調查面板
+				29 text 站務維修 · 近景閱讀
+				30 button 關閉面板
+				31 container
+					32 heading 設定與輔助, Value: 2
+						33 text 設定與輔助
+					34 checkbox (settable, integer) Description: 大字閱讀（24 px）, Value: 1
+					35 checkbox (settable, integer) Description: 減少動態效果, Value: 1
+					36 checkbox (settable, integer) Description: 顯示音訊回放字幕, Value: 1
+					37 checkbox (settable, integer) Description: 全部靜音, Value: 1
+					38 text 總音量
+					39 slider (settable, float) Description: 總音量, Value: 0.5
+					40 text 環境
+					41 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2
+					42 text 音效
+					43 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35
+					44 text 訊號標記
+					45 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4
+					46 text 無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。
+					47 button 試聽柔和提示音
+					48 text 「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。
+					49 button 匯出存檔
+					50 button 匯出本機原檔（排查用）
+					51 button 回主選單
+				52 text 已送出目前進度的下載請求；請確認檔案已保存。
+
+The focused UI element is 49 button 匯出存檔

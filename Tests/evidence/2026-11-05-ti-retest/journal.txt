@@ -1,0 +1,71 @@
+Browser tab: 615890319, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4185/".
+1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
+	2 container stage
+		3 container Description: 車站俯視像素場景, ID: world
+			4 image
+		5 container ui
+			6 container 四格隨身物品
+				7 text 隨身
+				8 button Description: 門禁卡，在背包, Help: 門禁卡
+				9 button Description: 撬片，在背包, Help: 撬片
+				10 button Description: 透明路線片，已安裝, Help: 透明路線片
+				11 button Description: 電池，已安裝, Help: 電池
+			12 container
+				13 text 第零層
+				14 heading 月台, Value: 2
+					15 text 月台
+			16 container
+				17 button 筆記
+				18 button 提示
+			19 container
+				20 text 別看站名。跟著仍然供電的燈。
+				21 button 設定
+			22 container
+				23 button Description: 靠近並調查返回站務室, Help: 返回站務室
+				24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱
+				25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽
+				26 button Description: 靠近並調查維修門, Help: 維修門
+			27 container 調查面板
+				28 text 站務維修 · 筆記
+				29 button 關閉面板
+				30 container
+					31 heading 調查筆記, Value: 2
+						32 text 調查筆記
+					33 text 林澄 · 僅記錄已取得的證據 站務檔案 · 已讀可在筆記重看
+					34 heading 控制台回放, Value: 2
+						35 text 控制台回放
+					36 container
+						37 text 〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕
+						38 text 相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。
+					39 text 站務檔案 · 已讀可在筆記重看
+					40 heading 事故報告, Value: 2
+						41 text 事故報告
+					42 container
+						43 text 第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。
+						44 text 頁邊有重寫痕跡；報告沒有提供原始修訂者。
+					45 text 站務檔案 · 已讀可在筆記重看
+					46 heading 維修簿, Value: 2
+						47 text 維修簿
+					48 container
+						49 text 事故當夜，凌晨一點十七分：緊急斷電。
+						50 text 林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。
+						51 text 斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。
+						52 text 此處沒有記下她後來去了哪裡。
+					53 text 站務檔案 · 已讀可在筆記重看
+					54 heading 失聯者名冊, Value: 2
+						55 text 失聯者名冊
+					56 text 事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。
+					57 text 站務檔案 · 已讀可在筆記重看
+					58 heading 刮除處的壓痕, Value: 2
+						59 text 刮除處的壓痕
+					60 text 側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。
+					61 text 站務檔案 · 已讀可在筆記重看
+					62 heading 路線片與供電圖, Value: 2
+						63 text 路線片與供電圖
+					64 text 透明片只有一個定位槽。圖例：實心琥珀節點＝有供電；空心節點＝未供電。從入口連續沿相鄰供電燈前進，地面黃線才是一條完整的路。
+					65 text 站務檔案 · 已讀可在筆記重看
+					66 heading 黃線之後, Value: 2
+						67 text 黃線之後
+					68 text 入口 → 分岔 → 檢修 → 出口。琥珀燈指示仍有供電的節點；沿它追蹤，黃線是唯一連續的路。維修門門閂已開啟。
+
+The focused UI element is 27 container 調查面板

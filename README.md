@@ -4,6 +4,10 @@
 
 ## 目前整合結果
 
+2026-11-05，TI 在 `HUAM` 獨立複驗 Li 的修正，對應 `main-v2` 基準 `996a07d`：**24 項測試全部通過，TypeScript 與正式建置通過**。正式版由新遊戲實際到達甲、重載重看，再返回選擇前完成乙；兩種 JSON 實際下載後核對成功，原 INT-07 通過。另確認方向鍵移動、Escape、大字、鍵盤音量調整、三級提示／筆記及 1／3／4 倍舞台尺寸與不足最小視口提示。詳見 [TI 獨立複驗報告](Tests/evidence/2026-11-05-ti-retest/review.md)。這是 Codex 協助的 TI 操作驗收，仍需 Liao 檢查 TI 的 PR；實體手機、完整純鍵盤、螢幕閱讀器、音量實聽及新玩家盲測尚未完成。
+
+以下保留 Li 修復及串接時的來源紀錄：
+
 2026-11-04，MW 依使用者要求修復 [Issue #7](https://github.com/kevinliao998-bot/EscapeRoom/issues/7)，並在 HUAM 串接原有 TI 測試：**24 通過、0 失敗**（原有 14 項＋TI 7 項＋MW 新回歸 3 項），TypeScript 與正式建置通過。修復已提交 `main-v2`；HUAM 同步相同檔案，保留 TI 的測試與原有歷史。這是 MW 修復及串接驗證，仍需 TI／SC 的獨立審查，PR 保持草稿。
 
 修復前的 TI 檢查基準為 `3e5203f`：20 通過、1 失敗。該原始反例與輸出仍完整保留於 [TI 檢查報告](Tests/evidence/2026-11-04-pr6/review.md)。修復改為匯出目前記憶體進度，另提供本機原檔排查包，避免舊檔或損壞原文取代最新進度。最新證據見 [MW 修復與串接報告](Tests/evidence/2026-11-04-save-recovery/review.md)。
@@ -46,8 +50,8 @@ MW 負責本次機制與網頁；SC 核對文案及素材權利；TI 需獨立�
 
 | 角色 | 交付與檢查 |
 | --- | --- |
-| SC／小安 | 劇情、線索、提示、答案與素材來源；檢查 TI 的 PR |
-| MW／小星 | `Game/`、畫面、機關、存檔、自己的機關測試與修復 |
+| SC／Liao | 劇情、線索、提示、答案與素材來源；檢查 TI 的 PR |
+| MW／Li | `Game/`、畫面、機關、存檔、自己的機關測試與修復 |
 | TI／小雪 | `AGENTS.md`、本 README、`Test.md` 整合段、`Tests/integration.test.ts`、測試證據及問題交接 |
 
 完整規則見 [AGENTS.md](AGENTS.md)。本輪沒有把 `yy` 或 `story-and-content` 的舊版道具／答案再混入 v2。
@@ -67,12 +71,11 @@ node --experimental-strip-types --test --test-name-pattern=INT-07 Tests/integrat
 # 檢查型別與正式建置
 npm run build
 
-# 歷史核對器：只用於重現修復前 TI 未更動組員檔案
-# 修復後 Game/ 有預期差異，請勿當作現行零差異檢查
-# node Tests/check-source-integrity.mjs
+# 唯讀核對目前 Li 修復後的基準、素材及封存檔案（需 Git checkout）
+node Tests/check-source-integrity.mjs
 ```
 
-`Test.md` 是此專案對應課程 `TESTS.md` 的既有檔名。驗收對照與結果見其中「TI 整合測試」段。瀏覽器本輪只確認開場、三場景中第一個場景的繪製與設定選項，未完成獨立通關；兩結局的本輪通過證據來自邏輯／存讀檔整合測試。實體觸控、完整純鍵盤、螢幕閱讀器、音量實聽及新玩家盲測仍待團隊驗收。
+`Test.md` 是此專案對應課程 `TESTS.md` 的既有檔名。驗收對照與結果見「TI 獨立複驗 · 2026-11-05」段；2026-11-04 的失敗輸出保留作歷史對照。本輪已完成上述桌面實際雙結局與下載核對，其他未完成項目照實保留。
 
 ## 素材檢查
 

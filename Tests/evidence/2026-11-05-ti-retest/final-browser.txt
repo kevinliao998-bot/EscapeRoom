@@ -1,0 +1,29 @@
+Browser tab: 615890319, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4185/".
+1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
+	2 container stage
+		3 container Description: 車站俯視像素場景, ID: world
+			4 image
+		5 container ui
+			6 container 四格隨身物品
+				7 text 隨身
+				8 button Description: 門禁卡，在背包, Help: 門禁卡
+				9 button Description: 撬片，在背包, Help: 撬片
+				10 button Description: 透明路線片，已安裝, Help: 透明路線片
+				11 button Description: 電池，已安裝, Help: 電池
+			12 container
+				13 text 第零層
+				14 heading 月台, Value: 2
+					15 text 月台
+			16 container
+				17 button 筆記
+				18 button 提示
+			19 container
+				20 text 別看站名。跟著仍然供電的燈。
+				21 button 設定
+			22 container
+				23 button Description: 靠近並調查返回站務室, Help: 返回站務室
+				24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱
+				25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽
+				26 button Description: 靠近並調查維修門, Help: 維修門
+
+The focused UI element is 1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
