@@ -1,0 +1,20 @@
+- main:
+  - generic "車站俯視像素場景"
+  - generic: 第零層 · 維修紀錄 017
+  - heading "黃燈 之後" [level=1]:
+    - text: 黃燈
+    - text: 之後
+  - paragraph:
+    - text: 聲音會帶錯路。
+    - text: 燈，不會。
+  - button "繼續 · 重看結局"
+  - button "重新開始"
+  - button "回到最後選擇前"
+  - button "設定與輔助"
+  - button "素材與製作說明"
+  - paragraph:
+    - text: 三場景解謎 · 無倒數 · 可隨時保存
+    - text: 方向鍵／WASD 移動 E 調查 點地面亦可行走
+  - text: 站內維修頻道
+  - strong: 01:17
+  - text: 連線待確認

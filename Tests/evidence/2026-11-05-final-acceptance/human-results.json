@@ -1,0 +1,35 @@
+{
+  "status": "進行中，未完成的項目不可算通過",
+  "baseline": "7056631024fc7f710aaf0a40873a851a3d285377",
+  "participant": "P01（匿名）",
+  "device": {
+    "model": "Redmi K80",
+    "os": "Android，版本未提供",
+    "browser": "Google Chrome，版本未提供",
+    "sameWifi": true,
+    "pageOpened": true,
+    "source": "使用者實體手機回報"
+  },
+  "blindTest": {
+    "eligibleAccordingToUser": true,
+    "answersHiddenAccordingToUser": true,
+    "startConfirmedAt": "2026-11-05T01:32:33+08:00",
+    "startConfirmedAtNote": "收到已開始回覆後讀取的時間，不等於受試者實際按開始的時間",
+    "reportedStartTime": null,
+    "reportedEndTime": null,
+    "result": "仍待真人完成與回報",
+    "hints": null,
+    "assistance": null,
+    "blockingPoints": null
+  },
+  "audio": {
+    "headphones": true,
+    "connectedDevice": "Redmi K80 手機（使用者已確認）",
+    "latestUserReport": "其他聲音聽得見，遊戲音效（例如三聲重播）聽不到",
+    "result": "未通過實聽確認，原因待排查；未直接判為程式故障"
+  },
+  "screenReader": {
+    "available": "本機有 Windows 內建 Narrator.exe",
+    "result": "尚未執行實際朗讀"
+  }
+}

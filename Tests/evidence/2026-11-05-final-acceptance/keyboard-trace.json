@@ -1,0 +1,3906 @@
+[
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        站內維修終端01:17顯示名稱：林沐頻道：站內維修頻道「末班車到了。聽見三聲就走黃線，別看站名。」一年前，妹妹在第零層事故後失蹤。官方說，她從未走進這座車站。你是維修員林澄；今晚，手機再次亮起。收起手機，開始調查所有聲音線索均有文字版本。你可以靜音遊玩。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "start"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "begin",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "收起手機，開始調查"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身····第零層迴圈走廊筆記提示有些細節變了。也有東西一直沒變。設定靠近物件按 E；也可點擊物件，自動走近調查。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "begin"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:cardSlot"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "card",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "拿取門禁卡"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×牆腳檢修槽卡片已在你的背包。取得門禁卡。圖示的位置沒有改變。"
+    }
+  },
+  {
+    "activated": "card"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡···第零層迴圈走廊筆記提示E · 牆腳檢修槽設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:cart"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:endDoor",
+      "label": "靠近並調查盡頭門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡···第零層迴圈走廊筆記提示有些細節變了。也有東西一直沒變。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:endDoor",
+      "label": "靠近並調查盡頭門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡···第零層迴圈走廊筆記提示有些細節變了。也有東西一直沒變。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:endDoor",
+      "label": "靠近並調查盡頭門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡···第零層迴圈走廊筆記提示有些細節變了。也有東西一直沒變。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "pry",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "拿取撬片"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×清潔推車你已取走撬片。取得撬片。邊緣薄而結實。"
+    }
+  },
+  {
+    "activated": "pry"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層迴圈走廊筆記提示E · 清潔推車設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "label": "靠近並調查時鐘",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "label": "靠近並調查站名牌",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "label": "靠近並調查地面水漬",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "label": "靠近並調查飲水機內側標籤",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "label": "靠近並調查牆腳檢修槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "label": "靠近並調查清潔推車",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:endDoor",
+      "label": "靠近並調查盡頭門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:endDoor",
+      "label": "靠近並調查盡頭門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:endDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "enter",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "使用門禁卡，進入站務室"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示記錄能互相印證，也能互相否定。設定門禁燈亮起。這一次，門後不再是同一條走廊。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "enter"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "label": "靠近並調查牆上校準貼紙",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "label": "靠近並調查檢修盒",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:powerBox",
+      "label": "靠近並調查檢修盒",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:powerBox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "openBox",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "以撬片打開盒蓋"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×檢修盒盒蓋已開啟○ 備用電源尚未接通啟動備用電源"
+    }
+  },
+  {
+    "activated": "openBox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "power",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "啟動備用電源"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×檢修盒盒蓋已開啟● 備用電源供電中備用電源已接通。控制台顯示三段波形。"
+    }
+  },
+  {
+    "activated": "power"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示記錄能互相印證，也能互相否定。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "e",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示記錄能互相印證，也能互相否定。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×設定與輔助 大字閱讀（24 px） 減少動態效果 顯示音訊回放字幕 全部靜音總音量環境音效訊號標記無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。試聽柔和提示音「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。匯出存檔匯出本機原檔（排查用）回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "環境",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "音效",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "訊號標記",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "環境",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "音效",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "訊號標記",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "環境",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "音效",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "訊號標記",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示記錄能互相印證，也能互相否定。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "e",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示記錄能互相印證，也能互相否定。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "label": "靠近並調查牆上校準貼紙",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "label": "靠近並調查檢修盒",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:powerBox",
+      "label": "靠近並調查檢修盒",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:powerBox"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示E · 檢修盒設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "e",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×檢修盒盒蓋已開啟● 備用電源供電中"
+    }
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示E · 檢修盒設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:console"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "短 ▪"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "長 ━"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:long",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "長 ━"
+    }
+  },
+  {
+    "activated": "wave:long"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "確認校準"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "短 ▪"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:short",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "短 ▪"
+    }
+  },
+  {
+    "activated": "wave:short"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:double",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪"
+    }
+  },
+  {
+    "activated": "wave:double"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "長 ━"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "確認校準"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "waveCheck",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "確認校準"
+    }
+  },
+  {
+    "activated": "waveCheck"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "broadcast",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "重播三聲標記"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "broadcast",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "重播三聲標記"
+    }
+  },
+  {
+    "activated": "broadcast"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示E · 廣播控制台／電池倉設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "label": "靠近並調查牆上校準貼紙",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:cabinet"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片··第零層站務室筆記提示E · 紀錄櫃／維修簿夾層設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "label": "靠近並調查牆上校準貼紙",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×紀錄櫃 · 交叉比對站務檔案 · 已讀可在筆記重看事故報告第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。頁邊有重寫痕跡；報告沒有提供原始修訂者。站務檔案 · 已讀可在筆記重看維修簿事故當夜，凌晨一點十七分：緊急斷電。林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。此處沒有記下她後來去了哪裡。站務檔案 · 已讀可在筆記重看失聯者名冊事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。以側光檢視刮除處選起點，再選對應證據報告 · 01:17維修簿 · 凌晨一點十七分官方 · 林沐從未進站名冊 · 簽名遭刮除同一分鐘：尚未連線　人員紀錄矛盾：尚未連線證據能支持什麼？時間吻合，所以我知道是誰改動紀錄紀錄有人為改動，仍不能確認當下聲音身分名冊有林沐，所以此刻的聲音一定是她"
+    }
+  },
+  {
+    "activated": "spot:cabinet"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "impression",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "以側光檢視刮除處"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "impression",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "再次查看簽名壓痕"
+    }
+  },
+  {
+    "activated": "impression"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:report-time",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "報告 · 01:17"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:report-time",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "報告 · 01:17"
+    }
+  },
+  {
+    "activated": "endpoint:report-time"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:log-time",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "維修簿 · 凌晨一點十七分"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:log-time",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "維修簿 · 凌晨一點十七分"
+    }
+  },
+  {
+    "activated": "endpoint:log-time"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:report-person",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "官方 · 林沐從未進站"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:report-person",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "官方 · 林沐從未進站"
+    }
+  },
+  {
+    "activated": "endpoint:report-person"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:roster-person",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "名冊壓痕 · 林沐"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:roster-person",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "名冊壓痕 · 林沐"
+    }
+  },
+  {
+    "activated": "endpoint:roster-person"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:0",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "時間吻合，所以我知道是誰改動紀錄"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:1",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "紀錄有人為改動，仍不能確認當下聲音身分"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "conclude:1",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "紀錄有人為改動，仍不能確認當下聲音身分"
+    }
+  },
+  {
+    "activated": "conclude:1"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:2",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "名冊有林沐，所以此刻的聲音一定是她"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "film",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "取走透明路線片"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×紀錄櫃 · 交叉比對站務檔案 · 已讀可在筆記重看事故報告第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。頁邊有重寫痕跡；報告沒有提供原始修訂者。站務檔案 · 已讀可在筆記重看維修簿事故當夜，凌晨一點十七分：緊急斷電。林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。此處沒有記下她後來去了哪裡。站務檔案 · 已讀可在筆記重看失聯者名冊事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。再次查看簽名壓痕站務檔案 · 已讀可在筆記重看刮除處的壓痕側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。選起點，再選對應證據報告 · 01:17維修簿 · 凌晨一點十七分官方 · 林沐從未進站名冊壓痕 · 林沐同一分鐘：已驗證　人員紀錄矛盾：已驗證證據能支持什麼？時間吻合，所以我知道是誰改動紀錄紀錄有人為改動，仍不能確認當下聲音身分名冊有林沐，所以此刻的聲音一定是她維修簿夾層已開啟透明路線片已領取。取得透明路線片。"
+    }
+  },
+  {
+    "activated": "film"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片透明路線片·第零層站務室筆記提示E · 紀錄櫃／維修簿夾層設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，在背包",
+      "tag": "BUTTON",
+      "text": "透明路線片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，尚未取得",
+      "tag": "BUTTON",
+      "text": "·"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:console"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "短 ▪"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "長 ━"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "確認校準"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "broadcast",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "重播三聲標記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "battery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "取走電池"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×廣播控制台依牆貼校準三組波形；先觀察長度與段數。短 ▪雙短 ▪▪長 ━長 ━ ／ 短 ▪ ／ 雙短 ▪▪移除最後一組清空本次草稿確認校準站務檔案 · 已讀可在筆記重看控制台回放〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。重播三聲標記彈出的電池倉電池已領取。取得電池。"
+    }
+  },
+  {
+    "activated": "battery"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片透明路線片電池第零層站務室筆記提示E · 廣播控制台／電池倉設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，在背包",
+      "tag": "BUTTON",
+      "text": "透明路線片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，在背包",
+      "tag": "BUTTON",
+      "text": "電池"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回走廊",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "label": "靠近並調查廣播控制台／電池倉",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "label": "靠近並調查牆上校準貼紙",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "label": "靠近並調查檢修盒",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "label": "靠近並調查往月台",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:platformDoor",
+      "label": "靠近並調查往月台",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:platformDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，在背包",
+      "tag": "BUTTON",
+      "text": "透明路線片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，在背包",
+      "tag": "BUTTON",
+      "text": "電池"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回站務室",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "label": "靠近並調查指示燈箱",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:lightbox",
+      "label": "靠近並調查指示燈箱",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:lightbox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "mountBattery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "裝入電池"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×月台指示燈箱● 供電穩定。琥珀燈指出連續路線。取回電池"
+    }
+  },
+  {
+    "activated": "mountBattery"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片透明路線片↗第零層月台筆記提示別看站名。跟著仍然供電的燈。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，在背包",
+      "tag": "BUTTON",
+      "text": "透明路線片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，已安裝",
+      "tag": "BUTTON",
+      "text": "↗"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回站務室",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "label": "靠近並調查指示燈箱",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:routeMap",
+      "label": "靠近並調查路線圖定位槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:routeMap",
+      "label": "靠近並調查路線圖定位槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:routeMap"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "mountFilm",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "覆上透明路線片"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×路線圖 · 供電校正路線片已對齊定位槽。取回路線片廣播：「北站，回聲站。」〔站名與燈號不符〕●入口●分岔●檢修●出口○北站○回聲目前：尚未連線● 供電　○ 未供電　清除本次路線"
+    }
+  },
+  {
+    "activated": "mountFilm"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "takeFilm",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "取回路線片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:entry",
+      "label": "入口，供電",
+      "tag": "BUTTON",
+      "text": "●入口"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:entry",
+      "label": "入口，供電",
+      "tag": "BUTTON",
+      "text": "●入口"
+    }
+  },
+  {
+    "activated": "node:entry"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:junction",
+      "label": "分岔，供電",
+      "tag": "BUTTON",
+      "text": "●分岔"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:junction",
+      "label": "分岔，供電",
+      "tag": "BUTTON",
+      "text": "●分岔"
+    }
+  },
+  {
+    "activated": "node:junction"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:service",
+      "label": "檢修，供電",
+      "tag": "BUTTON",
+      "text": "●檢修"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:service",
+      "label": "檢修，供電",
+      "tag": "BUTTON",
+      "text": "●檢修"
+    }
+  },
+  {
+    "activated": "node:service"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:exit",
+      "label": "出口，供電",
+      "tag": "BUTTON",
+      "text": "●出口"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:exit",
+      "label": "出口，供電",
+      "tag": "BUTTON",
+      "text": "●出口"
+    }
+  },
+  {
+    "activated": "node:exit"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片↗↗第零層月台筆記提示別看站名。跟著仍然供電的燈。設定\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，已安裝",
+      "tag": "BUTTON",
+      "text": "↗"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，已安裝",
+      "tag": "BUTTON",
+      "text": "↗"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回站務室",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "label": "靠近並調查指示燈箱",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:routeMap",
+      "label": "靠近並調查路線圖定位槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "label": "靠近並調查維修門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "label": "靠近並調查維修門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:maintenanceDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:A",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "執行斷路程序，帶著紀錄離站"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 已離站結局甲 · 留下未解的問題你按維修簿隔離導引支路、停止重播，保留應急照明。三聲終於安靜。你帶著斷電紀錄、林沐壓痕與供電路線離站。停止這段聲音，是你付出的代價。紀錄有人改過，卻仍不知道是誰；妹妹的下落，也沒有答案。繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "ending:A"
+  },
+  {
+    "key": "Control_L+r",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 已離站結局甲 · 留下未解的問題你按維修簿隔離導引支路、停止重播，保留應急照明。三聲終於安靜。你帶著斷電紀錄、林沐壓痕與供電路線離站。停止這段聲音，是你付出的代價。紀錄有人改過，卻仍不知道是誰；妹妹的下落，也沒有答案。繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "key": "F5",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 已離站結局甲 · 留下未解的問題你按維修簿隔離導引支路、停止重播，保留應急照明。三聲終於安靜。你帶著斷電紀錄、林沐壓痕與供電路線離站。停止這段聲音，是你付出的代價。紀錄有人改過，卻仍不知道是誰；妹妹的下落，也沒有答案。繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "humanKeyboardAction": "使用者回報按 F5 完成重載",
+    "observedMenu": true
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "continue",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 重看結局"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 已離站結局甲 · 留下未解的問題你按維修簿隔離導引支路、停止重播，保留應急照明。三聲終於安靜。你帶著斷電紀錄、林沐壓痕與供電路線離站。停止這段聲音，是你付出的代價。紀錄有人改過，卻仍不知道是誰；妹妹的下落，也沒有答案。繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "continue"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "reselect",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回到最後選擇前"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        隨身門禁卡撬片↗↗第零層月台筆記提示別看站名。跟著仍然供電的燈。設定回到維修門前。你可以重新選擇。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "reselect"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "label": "門禁卡，在背包",
+      "tag": "BUTTON",
+      "text": "門禁卡"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "label": "撬片，在背包",
+      "tag": "BUTTON",
+      "text": "撬片"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "label": "透明路線片，已安裝",
+      "tag": "BUTTON",
+      "text": "↗"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "label": "電池，已安裝",
+      "tag": "BUTTON",
+      "text": "↗"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "筆記"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "提示"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "label": "靠近並調查返回站務室",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "label": "靠近並調查指示燈箱",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:routeMap",
+      "label": "靠近並調查路線圖定位槽",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "label": "靠近並調查維修門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "label": "靠近並調查維修門",
+      "tag": "BUTTON",
+      "text": ""
+    }
+  },
+  {
+    "activated": "spot:maintenanceDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:A",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "執行斷路程序，帶著紀錄離站"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:B",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回應廣播中的聲音"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 回放未停止結局乙 · 仍在回放出口已經打開，你仍回應了那個聲音。〔●　●　●〕「末班……」〔接縫〕「別看……」〔接縫〕「到了。」你知道聲音能被拼接，名冊也不能證明此刻的身分。你暫時放棄離站，選擇聽下去；系統沒有給出新的答案。01:17繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "ending:B"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        維修紀錄 · 回放未停止結局乙 · 仍在回放出口已經打開，你仍回應了那個聲音。〔●　●　●〕「末班……」〔接縫〕「別看……」〔接縫〕「到了。」你知道聲音能被拼接，名冊也不能證明此刻的身分。你暫時放棄離站，選擇聽下去；系統沒有給出新的答案。01:17繼續 · 返回主選單回到最後選擇前通關紀錄已保留。可重新選擇另一個結局。01:17\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "menu"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "continue",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 重看結局"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "new",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "重新開始"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "reselect",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回到最後選擇前"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "設定與輔助"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": "調查面板",
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀關閉 ×設定與輔助 大字閱讀（24 px） 減少動態效果 顯示音訊回放字幕 全部靜音總音量環境音效訊號標記無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。試聽柔和提示音「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。匯出存檔匯出本機原檔（排查用）回主選單"
+    }
+  },
+  {
+    "activated": "settings"
+  },
+  {
+    "key": "Shift_L+Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "環境",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "音效",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "訊號標記",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "activated": "export"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "activated": "exportRecovery"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "label": "關閉面板",
+      "tag": "BUTTON",
+      "text": "關閉 ×"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Left",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Right",
+    "focus": {
+      "action": null,
+      "label": "總音量",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "環境",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "音效",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "label": "訊號標記",
+      "tag": "INPUT",
+      "text": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "回主選單"
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "label": null,
+      "tag": "BODY",
+      "text": "\n    \n      \n        \n        第零層 · 維修紀錄 017黃燈之後聲音會帶錯路。燈，不會。繼續 · 重看結局重新開始回到最後選擇前設定與輔助素材與製作說明三場景解謎 · 無倒數 · 可隨時保存方向鍵／WASD 移動　E 調查　點地面亦可行走站內維修頻道01:17連線待確認\n      \n    \n    請橫放裝置或放大視窗至至少 480 × 270，以完整顯示像素場景。\n\n  \n\n"
+    }
+  },
+  {
+    "activated": "menu"
+  }
+]
