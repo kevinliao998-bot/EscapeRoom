@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-04",
+  "progressValid": true,
+  "scene": "platform",
+  "card": true,
+  "checkpoint": true,
+  "seenEndings": [
+    "A",
+    "B"
+  ],
+  "recoveryKeys": [
+    "after-amber-v2-save",
+    "after-amber-v2-save-previous",
+    "after-amber-v2-save-corrupt"
+  ],
+  "storedAndExportedProgressEqual": true
+}
