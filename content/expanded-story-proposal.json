@@ -48,9 +48,9 @@
       "reveal": "事故附錄顯示林沐留守手動卸壓、未能撤離；停機程序因隔離門閉鎖而中斷。",
       "objective": "由工作井旁路鑰匙進入總控室，查清重新封鎖的理由與停機中斷原因，依安全程序完成告別。",
       "verify": [
-        "EV08",
-        "EV09",
-        "EV10"
+        "EV10",
+        "EV11",
+        "EV12"
       ]
     }
   ],
@@ -316,5 +316,5 @@
       "layer": "B2"
     }
   ],
-  "versionBoundary": "本檔及 docs/Expanded-Story-Plan.md、docs/Expanded-Story-Verify.md 是未來擴充版提案；current content/story.json remains the short playable version until team adopts the expansion."
+  "versionBoundary": "本檔及 docs/Expanded-Story-Plan.md、docs/Expanded-Story-Verify.md 是未來擴充版提案；目前可遊玩短版仍以 content/story.json 為準，擴充版獲團隊採納並完成製作前不替換短版內容。"
 }
