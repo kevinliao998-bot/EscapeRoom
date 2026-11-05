@@ -29,6 +29,12 @@ const english: Record<string, string> = {
   "關閉面板": "Close panel",
   "訊號重播中；完整字幕保留於調查筆記。": "Signal replaying. Full captions are available in the journal.",
   "這個節點未供電或不與前一點相鄰。正確前綴保留。": "This node is unpowered or not adjacent to the previous one. The correct route prefix is preserved.",
+  "主要存檔損壞，已讀取上一份有效快照。": "The main save is damaged. The previous valid snapshot was loaded.",
+  "存檔未通過驗證；原檔保留，請先在設定匯出本機原檔，再決定是否開始新遊戲。": "The save did not pass validation. The original data is preserved. Export the local recovery data in Settings before deciding whether to start a new game.",
+  "瀏覽器未允許儲存；本次進度僅保留在記憶體。": "The browser did not allow storage. This session’s progress exists only in memory.",
+  "本機儲存失敗，請使用「匯出存檔」保留進度。": "Local saving failed. Use “Export save” to keep your progress.",
+  "目前沒有可匯出的本機原檔。請用「匯出存檔」保留本次進度。": "There is no local recovery data to export. Use “Export save” to keep this session’s progress.",
+
 
   "站內維修終端": "Station maintenance terminal",
   "」": "”",
