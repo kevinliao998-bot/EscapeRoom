@@ -4,6 +4,7 @@ import { maps, type Spot } from "./maps.ts";
 import { load, save, exportSave, exportRecovery } from "./storage.ts";
 import { Sound, defaults, type Settings } from "./audio.ts";
 import { Station } from "./world.ts";
+import { UiFocus } from "./focus.ts";
 import "./style.css";
 const initial = load();
 let leaving = false,
@@ -18,7 +19,8 @@ let state = initial.state || fresh(),
   feedback = initial.warning,
   nearby: Spot | null = null;
 const ui = document.querySelector<HTMLDivElement>("#ui")!,
-  sound = new Sound();
+  sound = new Sound(),
+  uiFocus = new UiFocus();
 let settings: Settings = { ...defaults };
 try {
   settings = {
@@ -215,10 +217,10 @@ function content() {
   }
 }
 function render() {
-  const oldBody = ui.querySelector(".panel-body"),
+  const focusBefore = uiFocus.capture(ui),
+    oldBody = ui.querySelector(".panel-body"),
     scroll = oldBody?.scrollTop || 0,
-    oldPanel = ui.querySelector(".panel")?.getAttribute("data-panel"),
-    oldAction = (document.activeElement as HTMLElement)?.dataset?.action;
+    oldPanel = focusBefore.panel;
   const playing = mode === "play";
   ui.innerHTML = `${playing ? `<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small>${inventory()}</aside><header class="location"><small>第零層</small><h2>${maps[state.scene].name}</h2></header><nav class="top-actions">${btn("筆記", "journal")}${btn("提示", "hint")}</nav><footer class="status"><span id="near-label">${nearby ? `E · ${nearby.label}` : maps[state.scene].subtitle}</span>${btn("設定", "settings")}</footer><div class="spots">${maps[state.scene].spots.map((s) => `<button class="spot" style="left:${s.x}px;top:${s.y}px" data-action="spot:${s.id}" aria-label="靠近並調查${s.label}" title="${s.label}"><i></i></button>`).join("")}</div>` : ""}${mode === "menu" ? menu() : mode === "opening" ? opening() : mode === "end" ? ending() : ""}${feedback && playing ? `<div class="toast" role="status">${feedback}</div>` : ""}${leaving ? '<div class="end-fade" aria-label="回放時間 01:17">01:17</div>' : ""}${panel ? `<div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="${panel}" tabindex="-1"><div class="panel-top"><small>站務維修 · ${panel === "journal" ? "筆記" : "近景閱讀"}</small>${btn("關閉 ×", "close", 'aria-label="關閉面板"')}</div><div class="panel-body">${content()}</div><p class="panel-feedback" role="status">${feedback}</p></section></div>` : ""}`;
   document.body.classList.toggle("panel-open", !!panel || !playing);
@@ -226,16 +228,21 @@ function render() {
   if (panel) {
     const body = ui.querySelector(".panel-body")!;
     if (oldPanel === panel) body.scrollTop = scroll;
-    const target =
-      oldPanel === panel && oldAction
-        ? Array.from(ui.querySelectorAll<HTMLElement>("[data-action]")).find(
-            (e) => e.dataset.action === oldAction,
-          )
-        : null;
-    (target || ui.querySelector<HTMLElement>(".panel"))?.focus({
-      preventScroll: true,
-    });
+    const heading = body.querySelector("h2");
+    if (heading) {
+      heading.id = "panel-title";
+      ui.querySelector(".panel")!.setAttribute("aria-labelledby", heading.id);
+    }
   }
+  uiFocus.restore(
+    ui,
+    focusBefore,
+    `${mode}:${state.scene}`,
+    panel,
+    playing
+      ? ["spot:back", "settings"]
+      : ["begin", "continue", "start", "menu"],
+  );
 }
 function inspect(s: Spot) {
   if (s.id === "back") {
@@ -250,6 +257,7 @@ function inspect(s: Spot) {
     render();
     return;
   }
+  uiFocus.openFrom(`spot:${s.id}`);
   panel = s.id;
   feedback = "";
   selected = "";
