@@ -19,8 +19,6 @@ const english: Record<string, string> = {
   "緊急斷電。": "Emergency power shutdown.",
   "「": "“",
   "」": "”",
-  "側光下清楚浮出「林沐」。": "Under side light, “Lin Mu” becomes visible.",
-  "這與官方「從未進站」互相矛盾；": "This contradicts the official claim that she “never entered”;",
   "記錄能互相印證，也能互相否定。": "Records can corroborate or contradict one another.",
   "別看站名。跟著仍然供電的燈。": "Ignore station names. Follow the lights that still have power.",
   "返回走廊": "Back to corridor",
