@@ -27,6 +27,7 @@ export interface PrologueHost {
   resume?: boolean;
   readIntake: () => void;
   hasIntake: () => boolean;
+  maintenanceDoorText: () => string;
 }
 export function runPrologue(host: PrologueHost) {
   const lifecycle = new AbortController();
@@ -245,7 +246,7 @@ export function runPrologue(host: PrologueHost) {
             "",
           )}</svg>${story.route.nodes.map((n) => `<button data-action="node:${n.id}" class="node ${state.battery === "device" && n.powered ? "powered" : ""} ${state.path.includes(n.id) ? "connected" : ""}" style="left:${(n.x / 370) * 100}%;top:${(n.y / 160) * 100}%" aria-label="${n.label}，${state.battery === "device" && n.powered ? "供電" : "未供電"}">${state.battery === "device" && n.powered ? "●" : "○"}<span>${n.label}</span></button>`).join("")}</div><p>目前：${state.path.length ? state.path.map((id) => story.route.nodes.find((n) => n.id === id)!.label).join(" → ") : "尚未連線"}<br>● 供電　○ 未供電　${state.door ? "維修門已開啟" : ""}</p>${btn("清除本次路線", "clearPath")}`;
       case "maintenanceDoor":
-        return `<h2>維修門 · 往地下一層</h2><p>${state.door ? "供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。" : "讀卡與門燈尚未連通。先核對月台燈箱及路線圖。"}</p>${state.door ? btn("下樓，進入 B1 維修層", "descend", 'class="primary"') : ""}`;
+        return `<h2>維修門 · 往地下一層</h2><p>${state.door ? host.maintenanceDoorText() : "讀卡與門燈尚未連通。先核對月台燈箱及路線圖。"}</p>${state.door ? btn("下樓，進入 B1 維修層", "descend", 'class="primary"') : ""}`;
       default:
         return "";
     }

@@ -17,7 +17,7 @@ import {
 import { load, save, exportCurrent, KEY } from "./storage.ts";
 import { runPrologue } from "./prologue.ts";
 import { Dungeon, spots } from "./world.ts";
-import { panelContent, btn, esc } from "./panels.ts";
+import { panelContent, maintenanceDoorText, btn, esc } from "./panels.ts";
 import { UiFocus } from "../Game/src/focus.ts";
 import { Sound, defaults, type Settings } from "../Game/src/audio.ts";
 import {
@@ -56,6 +56,7 @@ let panel = "",
   nearby = "",
   menu = false,
   pendingImport: State | null = null,
+  importAttempt = 0,
   world: Dungeon | null = null,
   game: Phaser.Game | null = null,
   cleanup: (() => void) | null = null;
@@ -163,6 +164,7 @@ function render() {
   const list = state.floor === "end" ? [] : rooms[state.floor];
   const index = list.indexOf(state.room as never);
   const backdrop = panel ? "inert" : "";
+  const menuMessages = [...new Set([warning, feedback].filter(Boolean))];
   const gameUI = `<div class="play-ui" ${backdrop}><aside class="inventory" aria-label="四格隨身物品"><small>隨身</small>${[
     ["卡", state.base.card, "門禁卡"],
     ["撬", state.base.pry, "撬片"],
@@ -189,7 +191,7 @@ function render() {
     state.floor === "end" && !menu
       ? endCard()
       : menu
-        ? `<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p>${btn("繼續調查", "continue", 'class="primary"')}${btn("開始新調查", "panel:restart")}${btn("匯出目前進度", "export")}${btn("匯入整合 JSON", "import")}${warning ? `<p class="warning">${esc(warning)}</p>` : ""}</section>`
+        ? `<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p>${btn("繼續調查", "continue", 'class="primary"')}${btn("開始新調查", "panel:restart")}${btn("匯出目前進度", "export")}${btn("匯入整合 JSON", "import")}<p class="warning" role="status" aria-live="polite" aria-atomic="true">${menuMessages.map(esc).join("<br>")}</p></section>`
         : gameUI;
   if (feedback && !panel && !menu)
     ui.insertAdjacentHTML(
@@ -219,6 +221,8 @@ function render() {
   applySettings();
 }
 async function mount(resume = false) {
+  feedback = "";
+  clearPendingImport();
   panel = "";
   stack = [];
   selected = "";
@@ -268,6 +272,7 @@ async function mount(resume = false) {
         persist();
       },
       hasIntake: () => state.read.includes("D01"),
+      maintenanceDoorText: () => maintenanceDoorText(state),
     });
     return;
   }
@@ -311,20 +316,36 @@ file.type = "file";
 file.accept = "application/json,.json";
 file.hidden = true;
 document.body.append(file);
+function clearPendingImport() {
+  pendingImport = null;
+  importAttempt++;
+}
 file.addEventListener("change", async () => {
   const f = file.files?.[0];
   if (!f) return;
-  const raw = await f.text();
-  pendingImport = restore(raw);
-  if (!pendingImport) {
-    feedback = "此 JSON 不是有效整合存檔，目前進度未改動。";
-    render();
-  } else {
-    panel = "importConfirm";
-    stack = [];
-    render();
+  const attempt = ++importAttempt;
+  pendingImport = null;
+  feedback = "";
+  try {
+    const candidate = restore(await f.text());
+    if (attempt !== importAttempt) return;
+    if (!candidate) {
+      feedback = "此 JSON 不是有效整合存檔，目前進度未改動。";
+    } else {
+      pendingImport = candidate;
+      panel = "importConfirm";
+      stack = [];
+    }
+  } catch {
+    if (attempt === importAttempt)
+      feedback =
+        "無法讀取這份檔案，目前進度未改動。請重新選擇可讀取的整合 JSON。";
+  } finally {
+    if (attempt === importAttempt) {
+      file.value = "";
+      render();
+    }
   }
-  file.value = "";
 });
 ui.addEventListener("click", (e) => {
   if (state.floor === "L0") return;
@@ -339,6 +360,7 @@ ui.addEventListener("click", (e) => {
         : "paper",
   );
   if (a === "close") {
+    if (panel === "importConfirm") clearPendingImport();
     panel = stack.pop() || "";
     feedback = "";
     render();
@@ -396,6 +418,7 @@ ui.addEventListener("click", (e) => {
     return;
   }
   if (a === "menu") {
+    clearPendingImport();
     menu = true;
     panel = "";
     render();
@@ -439,13 +462,18 @@ ui.addEventListener("click", (e) => {
     return;
   }
   if (a === "import") {
+    clearPendingImport();
+    feedback = "";
+    file.value = "";
+    render();
     file.click();
     return;
   }
   if (a === "importApply") {
     if (pendingImport) {
       state = pendingImport;
-      pendingImport = null;
+      clearPendingImport();
+      feedback = "";
       persist();
       void mount(true);
     }
@@ -561,6 +589,7 @@ addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     e.preventDefault();
     if (panel) {
+      if (panel === "importConfirm") clearPendingImport();
       panel = stack.pop() || "";
       feedback = "";
     } else panel = "settings";

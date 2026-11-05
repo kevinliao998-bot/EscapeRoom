@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Taipei",
+  "productHead": "829b865f4d2094ea304cb18c52b0d8703c0501a9",
+  "source": "本輪使用者回報，與 TI 的瀏覽器及原始碼觀察分開",
+  "narrator": {
+    "platform": "Windows Narrator／電腦 Chrome",
+    "readyReported": true,
+    "questionScope": "朗讀程式執行時，再選 invalid-import.json，開啟後不按鍵，是否自動唸出拒絕訊息",
+    "rawReport": "有",
+    "automaticRejectionAnnouncementReported": true,
+    "verbatimWordsReported": null,
+    "stoppedReported": true,
+    "scope": "對這次拒絕訊息自動宣告的肯定回報；沒有逐字轉錄，不代表僅靠讀屏完整通關"
+  },
+  "headphoneComfort": {
+    "questionScope": "補前次 Redmi K80 手機耳機、遊戲預設音量的實聽感受",
+    "rawReport": "舒適，沒有刺耳或突然過大",
+    "comfortableReported": true,
+    "harshOrSuddenlyLoudReported": false,
+    "scope": "對前次實聽的補充回憶，不冒充本輪再次用手機完整通關"
+  },
+  "blindTest": {
+    "repeatedThisRetest": false,
+    "previousResult": "沿用前輪 P02 約 45 分鐘到 B3、未通關；未改寫為成功"
+  }
+}

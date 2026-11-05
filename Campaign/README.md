@@ -43,13 +43,14 @@ node node_modules/vite/bin/vite.js preview --config Campaign/vite.config.ts
 | `panels.ts`、`style.css` | 共用像素面板、機關、文件、提示與小屏捲動 |
 | `main.ts`、`storage.ts` | 單一入口、場景生命週期、焦點、設定、整合存讀檔及 JSON 副本 |
 | `campaign.test.ts`、`audit.py` | 跨層規則與復原、來源色板／對比／字形檢查 |
+| `ui.test.ts`、`test-progress.ts` | 真實入口／序章呈現與匯入事件回歸；透過合法動作建立測試進度，不新增遊戲依賴 |
 
 序章核心與 B1 核心直接 import，沒有複製兩份規則。序章視圖適配器保留來源註記，後續修改原版視圖時要同步檢查此適配器，避免維護分歧。
 
 ## 重跑驗證
 
 ```sh
-node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/campaign.test.ts
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/*.test.ts
 node node_modules/typescript/lib/tsc.js --noEmit
 node node_modules/typescript/lib/tsc.js -p Campaign/tsconfig.json
 node node_modules/vite/bin/vite.js build
@@ -63,5 +64,7 @@ python3 Campaign/audit.py
 流程與驗收對照：[Verify.md](Verify.md)；敘事接續：[Continuity.md](Continuity.md)；更新：[CHANGELOG.md](CHANGELOG.md)；來源：[Credits.md](Credits.md)；實測結果與限制：[REVIEW.md](REVIEW.md)。
 
 ## TI／小雪下一步
+
+2026-11-05 已補 Issue #16／#17：維修門文案依排水／放行／身分／離站狀態呈現；主選單拒絕無效匯入時顯示狀態提示，合法重選與套用清除舊錯誤及上一局暫時訊息。**本分支 66 項測試通過**（原 55＋新增呈現 11），正式頁亦實際匯回 TI 的兩份下載檔並重載、匯出核對。詳細版本、限制與重跑：[修正複驗報告](issues-16-17-review.md)。原始失敗及原先 55 項紀錄仍保留；這不是替 TI 結案。
 
 請以 PR 的最終 head 獨立複檢：新局通關、每層退出重載、錯誤順序復原、匯出與實際匯入、全鍵盤、真人讀屏、實體手機、耳機音量，以及第一次不知道答案的盲測。特別記錄玩家能否找到門、能否從線索支持答案，以及身分／排程／共用帳號是否被混淆。未驗證的項目保持待驗，不能沿用原版的 TI 結案直接通過新樓層。

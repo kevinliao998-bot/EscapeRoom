@@ -4,7 +4,9 @@
 
 ## 目前整合結果
 
-**四層候選版待修正與複驗（2026-11-05）**：HUAM 已接入 [PR #15](https://github.com/kevinliao998-bot/EscapeRoom/pull/15) 的 `8fb2223`。本輪 74 項測試及型別／建置檢查通過，TI 從新局以鍵盤完成原五題與 EP01–EP09，到告別結局，另測重載、返程、錯誤復原及實際下載。回訪維修門舊文字 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16)，以及主選單無匯入錯誤說明／合法確認頁殘留舊錯誤 [Issue #17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17)，均待 Li 修正。B2 及通關真實下載檔已套用；最後一次通關檔匯回後的重載仍待補驗。Redmi K80 的旋轉、續接、面板、下載與自行匯回回報正常，基礎朗讀抽查可讀；耳機回報能聽見，舒適度未明確回覆。新玩家約 45 分鐘到 B3，當次未通關。**未合併 main、未更新公開網站**；詳見 [本輪驗收與限制](Tests/evidence/2026-11-05-campaign/review.md)。以下短版歷史紀錄不作四層版的真人驗收結果。
+**四層修正版定向複驗通過（2026-11-06），待 Liao 檢查 TI 的工作**：HUAM 接入 [PR #15](https://github.com/kevinliao998-bot/EscapeRoom/pull/15) 的 `829b865`。完整 85 項測試、三份型別檢查、原版／整合建置及素材核對通過；對修正前入口重放新增測試，保留 2 通過／9 失敗的真實反例。TI 在 Windows Chrome 實際核對首次／排水後／通關後門文字、主選單無效檔拒絕、無效後改選合法檔、B2 與通關檔套用及重載，[Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16)／[#17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17) 的定向複驗均通過。使用者肯定新錯誤訊息會自動朗讀，並補充前次手機耳機音量舒適、無刺耳或突然過大。完整範圍及證據見 [修正版複驗報告](Tests/evidence/2026-11-06-campaign-retest/review.md)。**尚未合併 main、尚未更新公開網站，Liao 尚未核准本輪 TI PR。**
+
+四層初驗（2026-11-05）：從新局以鍵盤完成原五題與 EP01–EP09，到告別結局；Redmi K80 的旋轉、續接、面板、兩份下載及自行匯回回報正常，基礎朗讀抽查可讀。新玩家 P02 約 45 分鐘到 B3，當次未通關；沒有把這次盲測改寫為成功。本次修正只重驗相關流程，未再做新玩家盲測、手機結局或僅靠讀屏全程通關。舊失敗與原始真人紀錄保留於 [初驗報告](Tests/evidence/2026-11-05-campaign/review.md)。以下短版歷史不作四層版的真人驗收結果。
 
 2026-11-05 最後複驗：產品基準 `main-v2@202f66c`，**29 項測試全部通過，TypeScript／正式建置通過，Issue #10 的面板關閉返回修正已驗證**。正式版從新局以鍵盤操作到甲，重載重看並重選乙；設定重繪保留欄位，兩種實際下載均核對成功。Windows Narrator 的卡槽、紀錄櫃、路線及雙結局分段實聽由使用者肯定回報。完整證據與限制見 [最後複驗與交件紀錄](Tests/evidence/2026-11-05-final-retest/review.md)。這是工具輔助操作與真人實聽，未宣稱視障受試者獨立通關或所有讀屏模式均通過。
 

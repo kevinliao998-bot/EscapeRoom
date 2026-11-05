@@ -146,3 +146,19 @@ node Tests/check-source-integrity.mjs 20261ffc44a76f0975647ffb2f3f0f769351081a
 本輪真人資料見 [human-results.json](Tests/evidence/2026-11-05-campaign/human-results.json)：Redmi K80 的旋轉、續接、大字／面板、兩份下載與自行匯回回報正常；耳機回報能聽見，音量舒適度未明確回覆。Windows Narrator 核取名稱／狀態、滑桿數字、Q-017 內文及結局已做基礎實聽抽查，不代表僅靠讀屏完整通關。首次盲測 P02 約 45 分鐘進 B3 後卡住，未通關，提示使用及旁人協助未提供，不記為零。
 
 新增素材唯讀檢查使用 `Tests/check-campaign-assets.py`，工具依賴版本列於 `Tests/requirements-ti-assets.txt`；不改 MW 的素材清單。實際下載檢查器為 `Tests/check-campaign-export.ts`，需傳入真正下載的 JSON 路徑，不將人工建立的狀態冒充下載結果。
+
+## TI 四層修正版定向複驗 · 2026-11-06
+
+本節更新前節 11 月 5 日的未修狀態。產品來源為 PR #15 `829b865`，接入 HUAM `fc000b4`，保留原始歷史與舊失敗。
+
+```sh
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/*.test.ts
+```
+
+**85 通過、0 失敗、0 跳過**（原 HUAM 74＋Li 新增呈現 11）。三份 TypeScript、原版與整合正式建置、69 個基準檔案與素材唯讀檢查通過。以舊入口／序章重放新增呈現測試為 2 通過、9 失敗，保留反例。完整指令結果、版本與限制見 [本輪報告](Tests/evidence/2026-11-06-campaign-retest/review.md)。
+
+Windows Chrome 定向操作已核對首次／排水後／通關後維修門文字、無效→合法存檔提示清除、較早 B2 介紹與進度、B2／通關檔匯回後重載；系統選檔由使用者協助。首次狀態另使用合法模型動作產生的測試檔，不冒充本輪再次從新局解完。Issue #16／#17 的對應項目通過。
+
+使用者對 Windows Narrator 自動唸出新拒絕訊息回覆「有」，未逐字轉錄；補充前次手機耳機「舒適，沒有刺耳或突然過大」，見 [真人補查](Tests/evidence/2026-11-06-campaign-retest/human-retest.json)。這不是全程讀屏驗收或新一輪盲測；前次 P02 到 B3 未通關的紀錄不變。
+
+下一步由 Liao 檢查 TI 測試與文件；尚未合併 main 或更新公開網站。

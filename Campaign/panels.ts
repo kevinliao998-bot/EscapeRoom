@@ -38,6 +38,23 @@ const bdoc = (id: keyof typeof b1docs) =>
   documentCard(b1docs[id].title, b1docs[id].text);
 const mark = (yes: boolean) => (yes ? "已完成" : "待處理");
 const docButton = (id: string) => btn(sourceDoc(id).title, "doc:" + id);
+export function maintenanceDoorText(s: State) {
+  const water =
+    s.b1.water === "safe" ? "維修層積水已排除。" : "門後通往仍有積水的維修層。";
+  const passage = s.b1.door
+    ? "隔離門已放行，修復的保持扣讓通路保持開啟。"
+    : "今夜派工允許你繼續保全資料。";
+  const investigation = s.b3.exited
+    ? "原始證據已保全。外部單位已受理更正申請，尚未完成官方認定。你可以返回各層重看原件。"
+    : s.b3.verified
+      ? "你已核對林沐與匿名個案的身分關聯。" +
+        (s.b3.backup
+          ? "證據已備份，仍須核對安全停機與離站條件。"
+          : "接下來應保全原始證據，完成安全停機與離站。") +
+        "正式身分更正尚待外部核對。"
+      : "原紀錄尚不足以回答妹妹的去向。";
+  return "供電黃線已校正。" + water + passage + investigation;
+}
 export function panelContent(
   id: string,
   s: State,

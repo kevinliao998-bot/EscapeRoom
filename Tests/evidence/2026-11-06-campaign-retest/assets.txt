@@ -1,0 +1,1 @@
+{"sourceColors": 16, "contrastPairs": 8, "hanGlyphs": 818, "hashedAssets": 23, "textNewlineConversions": 7, "scope": "來源宣告、字形覆蓋及素材雜湊；非所有瀏覽器像素或真人可讀性驗收。"}
