@@ -118,3 +118,29 @@ Issue #7 的原始問題已通過 TI 複驗，可結案；不因此宣告整款�
 Windows Narrator 實際啟動並由使用者實聽：回報面板／設定名稱，肯定回覆勾選狀態及自行操作滑桿可朗讀，筆記線索回報「能聽到全部」。工具移動滑桿焦點時曾只唸面板，後由使用者實際按鍵重查；沒有逐字滑桿數值，不據此斷定程式錯誤。已回報關閉 Narrator。這是部分朗讀核對，**尚未完成僅靠螢幕閱讀器的全流程通關**；焦點返回 [Issue #10](https://github.com/kevinliao998-bot/EscapeRoom/issues/10) 仍交 Li 修正後複驗。這些項目依真人回報補記，沒有用自動測試或桌面模擬替代。
 
 流程、證據及各項待辦見 [最終版驗收報告](Tests/evidence/2026-11-05-final-acceptance/review.md)。
+
+## TI 四層候選版獨立驗收 · 2026-11-05（進行中）
+
+產品為 PR #15 `8fb2223`，接至 HUAM 的劇情原稿 `46f8951`，不是把上面的短版真人結案搬來使用。完整來源、真實失敗及待辦見 [本輪報告](Tests/evidence/2026-11-05-campaign/review.md)。
+
+```sh
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/campaign.test.ts
+node node_modules/typescript/lib/tsc.js --noEmit
+node node_modules/typescript/lib/tsc.js -p Campaign/tsconfig.json
+node node_modules/vite/bin/vite.js build --config Campaign/vite.config.ts
+node Tests/check-source-integrity.mjs 20261ffc44a76f0975647ffb2f3f0f769351081a
+```
+
+第一輪 69 項有 1 個 Windows CRLF 雜湊反例；TI 保留原來源值，僅正規化 Git checkout 的文字換行，再加下列 5 項獨立檢查，合計 74 項通過、無跳過。這不代表真人項目全部通過。
+
+| 項目 | 前置與可核對預期 |
+| --- | --- |
+| TI-MF-01 | 同一來源 LF／CRLF 應得到原釘選 blob；改字句或空格仍必須得到不同值。 |
+| TI-MF-02 | 候選版實際使用的 JSON、14 份文件、9 題與 HUAM 原稿完全一致。 |
+| TI-MF-03 | 新局偽造後段文件、身分、備份或結局時，實際 restore 拒絕；合法新局可還原。 |
+| TI-MF-04 | 前置未完成時跳層、讀未解封原件被拒，初始道具與資料不被清除。 |
+| TI-MF-05 | 主檔損壞時讀前一份有效整合進度；壞原文另存，不寫短版或 B1 存檔 key。 |
+
+本輪已由新局以鍵盤完成全部十四個主要解謎節點，查原件、停機復原並到告別結局；實際下載 B2 及通關 JSON，均以真實 restore 核對。**回訪劇情文字 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16) 尚未修正，匯回、手機、實聽及盲測仍在本輪驗收中；不合併 main 或宣稱可交件。**
+
+新增素材唯讀檢查使用 `Tests/check-campaign-assets.py`，工具依賴版本列於 `Tests/requirements-ti-assets.txt`；不改 MW 的素材清單。實際下載檢查器為 `Tests/check-campaign-export.ts`，需傳入真正下載的 JSON 路徑，不將人工建立的狀態冒充下載結果。

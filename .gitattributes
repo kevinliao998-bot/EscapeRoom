@@ -1,0 +1,3 @@
+# 保留實際下載檔案的位元組，避免 Windows 換行轉換破壞證據雜湊。
+/Tests/evidence/2026-11-05-campaign/b2-download.json -text
+/Tests/evidence/2026-11-05-campaign/end-download.json -text

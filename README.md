@@ -4,6 +4,8 @@
 
 ## 目前整合結果
 
+**四層候選版驗收進行中（2026-11-05）**：HUAM 已接入 [PR #15](https://github.com/kevinliao998-bot/EscapeRoom/pull/15) 的 `8fb2223`。本輪 74 項測試及型別／建置檢查通過，TI 從新局以鍵盤完成原五題與 EP01–EP09，到告別結局，另測重載、返程、錯誤復原及實際下載。回訪維修門仍顯示舊積水／去向文字，已記 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16)，待 Li 修正。匯回及新版真人驗收尚未全部完成，**未合併 main、未更新公開網站**；詳見 [本輪驗收與限制](Tests/evidence/2026-11-05-campaign/review.md)。以下短版歷史紀錄不作四層版的真人驗收結果。
+
 2026-11-05 最後複驗：產品基準 `main-v2@202f66c`，**29 項測試全部通過，TypeScript／正式建置通過，Issue #10 的面板關閉返回修正已驗證**。正式版從新局以鍵盤操作到甲，重載重看並重選乙；設定重繪保留欄位，兩種實際下載均核對成功。Windows Narrator 的卡槽、紀錄櫃、路線及雙結局分段實聽由使用者肯定回報。完整證據與限制見 [最後複驗與交件紀錄](Tests/evidence/2026-11-05-final-retest/review.md)。這是工具輔助操作與真人實聽，未宣稱視障受試者獨立通關或所有讀屏模式均通過。
 
 同日真人紀錄：Redmi K80／Android／Chrome 的旋轉、重整與重選、大字與面板、兩種下載回報正常；手機耳機試聽及三聲重播清楚、音量舒適。匿名 P01 約 20 分鐘自行達結局乙，4 張提示卡用於電池與路線。這些為使用者先前實測，沒有在焦點修改後重做手機或第二次新玩家盲測，結果限本次設備與一位玩家，見 [原始真人紀錄](Tests/evidence/2026-11-05-final-acceptance/human-results.json)。
@@ -22,7 +24,22 @@
 
 ## 開發與展示
 
-未來四層擴充版仍是**提案，尚未加入目前遊戲**。故事走向、九題機關與告別結局見 [擴充故事計畫](docs/Expanded-Story-Plan.md)；本次補寫的因果、玩家可讀原文與推論界線見 [證據文件](docs/Expanded-Story-Evidence.md)，檢查方式見 [擴充驗收](docs/Expanded-Story-Verify.md)。擴充資料另存於 `content/expanded-story-proposal.json`，不替換短版 `content/story.json`。
+四層劇情原稿見 [擴充故事計畫](docs/Expanded-Story-Plan.md)、[證據文件](docs/Expanded-Story-Evidence.md) 與 [擴充驗收](docs/Expanded-Story-Verify.md)。本 HUAM 的 `Campaign/` 已有對應可玩候選版，直接使用 `Expansion/proposal.json` 的釘選快照，與 `content/expanded-story-proposal.json` 核對一致；**它尚未成為正式 main 或公開試玩版**。原稿的「提案、未實作」是寫作當時的版本邊界，製作進度以本 README 最新驗收段落為準。
+
+### 四層候選版
+
+在倉庫根目錄使用現有 Node 依賴，執行：
+
+```sh
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/campaign.test.ts
+node node_modules/typescript/lib/tsc.js -p Campaign/tsconfig.json
+node node_modules/vite/bin/vite.js build --config Campaign/vite.config.ts
+node node_modules/vite/bin/vite.js preview --config Campaign/vite.config.ts
+```
+
+開啟終端顯示的網址，預設 `http://127.0.0.1:4176/`。獨立建置在 `dist-campaign.local/`；四層版使用自己的整合存檔，沒有自動繼承短版通關。上述完整測試命令會涵蓋兩個新增目錄；根目錄既有 `npm test` 仍只列 `Tests/*.test.ts`。架構、操作與存檔細節見 [Campaign/README.md](Campaign/README.md)。
+
+### 原三場景短版
 
 原始碼開發需要 Node.js 22.18+ 或 24（測試使用原生 TypeScript 去型別功能）。
 

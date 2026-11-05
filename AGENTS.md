@@ -4,6 +4,9 @@
 
 ## 本次工作基準
 
+- 2026-11-05 四層候選版新增驗收：使用者要求「把所有流程跑完」。產品來源為 PR #15 的 `mw/multifloor-campaign@8fb2223d56e1ef714921c2b9af3051ed4532116b`，接至既有 HUAM `46f8951`，保留 Li 原始提交；本輪 TI 的 PR 以正式 main 為目標。以下 PR #6／main-v2 規則與核准是短版歷史，不延伸為四層新版已獲驗收或合併同意。
+- 四層故事原稿為 HUAM 的 `content/expanded-story-proposal.json`，候選版實際使用 `Expansion/proposal.json` 釘選快照，兩者須核對一致；不替換短版 `content/story.json`。TI 可修正自動測試的 Windows 換行相容問題，但保留原釘選值及初次失敗，並以反例驗證實質內容差異仍會失敗。遊戲實作問題仍記錄後交 Li。
+
 - 使用者指定以 [PR #6](https://github.com/kevinliao998-bot/EscapeRoom/pull/6) 的 `main-v2` 為驗收基準；首次起點為 `3e5203f9a4f72960e81164b7b42de4055e01ea3c`。2026-11-05 複驗 Li 的修正時，基準更新為 `996a07d68aa996ca93f879e6cba28ad7b322e025`；同期 HUAM 遠端起點為 `4db93ec92921ab4a236ddcaf84b8149bc1e69d9b`。
 - 新版的故事、線索、答案、提示與結局以 `content/story.json` 為準，對照 `Brief.md`、`Verify.md` 與 `docs/Puzzle-Spec.md`。`_legacy_docs/` 僅作歷史資料，不混用舊版名牌、房間或答案。
 - 影片的 `TESTS.md` 在此專案沿用既有檔名 `Test.md`；整合程式在 `Tests/`。不另建兩份內容互相矛盾的測試清單。

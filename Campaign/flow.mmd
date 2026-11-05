@@ -1,0 +1,16 @@
+flowchart TD
+  MF_ENTRY["入站／D01"] --> MF_L0["序章原五題／P01–P05"]
+  MF_L0 --> MF_B1_CIRCUIT["B1 回路／EP01"]
+  MF_B1_CIRCUIT --> MF_B1_WATER["B1 回流／EP02"]
+  MF_B1_WATER --> MF_B1_GATE["B1 轉供、工單／EP03、D02–D03"]
+  MF_B1_GATE --> MF_B2_TIME["B2 校時／EP04、D04、D07"]
+  MF_B2_TIME --> MF_B2_AUDIO["B2 錄音與剪接／EP05"]
+  MF_B2_AUDIO --> MF_B2_KEY["B2 憑證與同組鑰匙／EP06、D05"]
+  MF_B2_KEY --> MF_B3_POWER["B3 雙路隔離／EP07、D13"]
+  MF_B3_POWER --> MF_B3_BOLTS["B3 互鎖栓／EP08"]
+  MF_B3_BOLTS --> MF_B3_RECORDS["多份原件與身分關聯／D06–D12"]
+  MF_B3_RECORDS --> MF_B3_BACKUP["唯讀備份、停用完成／EP09、D14"]
+  MF_B3_BACKUP --> MF_B3_EXIT["K-CTRL 隔離、保留照明備援、鑰匙解鎖／EP09"]
+  MF_B3_EXIT --> MF_FAREWELL["升降梯離站／告別、外部受理"]
+  MF_B3_EXIT -. "過早斷電可復電" .-> MF_B3_BACKUP
+  MF_B2_KEY -. "已開通道可返回" .-> MF_B1_GATE

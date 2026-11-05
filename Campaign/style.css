@@ -1,0 +1,154 @@
+/* 延續原版 18 色、12px Fusion、480×270 整數縮放及直排四格。 */
+.campaign-status {
+  left: 56px;
+  right: 10px;
+  gap: 4px;
+}
+.campaign-status span {
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.campaign-status button {
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 1px 4px;
+}
+.play-ui {
+  position: absolute;
+  inset: 0;
+}
+.event-list {
+  display: grid;
+  gap: 7px;
+  margin: 12px 0;
+}
+.event-list button {
+  text-align: left;
+}
+.device-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 12px 0;
+}
+.device-grid button {
+  text-align: left;
+}
+.circuit-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.circuit-row button {
+  min-width: 65px;
+}
+.draft,
+.pipe-diagram {
+  background: #14191f;
+  border: 1px solid #5c6c7a;
+  padding: 10px;
+  margin: 12px 0;
+}
+.draft p {
+  margin: 0 0 4px;
+}
+.offset {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.offset span {
+  flex: 1;
+}
+.bolt-row {
+  display: flex;
+  gap: 6px;
+  margin: 14px 0;
+}
+.bolt {
+  padding: 12px 8px;
+  background: #263f3e;
+  border: 1px solid #9bb6aa;
+}
+.bolt.extended {
+  background: #45545f;
+  color: #f4f1e7;
+}
+.wave-compare {
+  background: #14191f;
+  padding: 12px;
+  margin: 12px 0;
+}
+.waveform {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  margin: 8px 0 18px;
+}
+.waveform span {
+  padding: 12px 4px;
+  border-left: 1px dashed #9bb6aa;
+  background: repeating-linear-gradient(
+    0deg,
+    #263f3e 0px,
+    #263f3e 2px,
+    #202b32 2px,
+    #202b32 4px
+  );
+}
+.waveform.edited span {
+  background: #2b3640;
+}
+.waveform.edited span:nth-child(2) {
+  border: 1px solid #9bb6aa;
+}
+.spot-label {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: #202b32;
+  border: 1px solid #5c6c7a;
+  padding: 2px 4px;
+  color: #e4e1d6;
+  font-size: 12px;
+}
+.spot:focus-visible .spot-label,
+.spot:hover .spot-label {
+  display: block;
+}
+.large .device-grid {
+  grid-template-columns: 1fr;
+}
+.large .waveform {
+  grid-template-columns: 1fr;
+}
+.ending blockquote {
+  margin: 10px 0;
+  color: #d8c9a0;
+  border-left: 2px solid #6e8f86;
+  padding-left: 12px;
+}
+.panel-feedback {
+  min-height: 25px;
+}
+.location {
+  max-width: 190px;
+}
+.location h2 {
+  line-height: 1.3;
+}
+.large .panel-feedback {
+  max-height: 65px;
+  font-size: 18px;
+}
+.large .event-list button,
+.large .bolt {
+  font-size: 24px;
+}
