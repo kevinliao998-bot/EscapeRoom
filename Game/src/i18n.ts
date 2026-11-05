@@ -33,7 +33,6 @@ const english: Record<string, string> = {
   "存檔未通過驗證；原檔保留，請先在設定匯出本機原檔，再決定是否開始新遊戲。": "The save did not pass validation. The original data is preserved. Export the local recovery data in Settings before deciding whether to start a new game.",
   "瀏覽器未允許儲存；本次進度僅保留在記憶體。": "The browser did not allow storage. This session’s progress exists only in memory.",
   "本機儲存失敗，請使用「匯出存檔」保留進度。": "Local saving failed. Use “Export save” to keep your progress.",
-  "目前沒有可匯出的本機原檔。請用「匯出存檔」保留本次進度。": "There is no local recovery data to export. Use “Export save” to keep this session’s progress.",
 
 
   "站內維修終端": "Station maintenance terminal",
