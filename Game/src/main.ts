@@ -6,6 +6,7 @@ import { Sound, defaults, type Settings } from "./audio.ts";
 import { Station } from "./world.ts";
 import { UiFocus } from "./focus.ts";
 import "./style.css";
+import { localizeMarkup, translateText } from "./i18n.ts";
 const initial = load();
 let leaving = false,
   storageWarning = initial.warning;
@@ -23,9 +24,11 @@ const ui = document.querySelector<HTMLDivElement>("#ui")!,
   uiFocus = new UiFocus();
 let settings: Settings = { ...defaults };
 try {
+  const saved = JSON.parse(localStorage.getItem("amber-v2-settings") || "{}");
   settings = {
     ...defaults,
-    ...JSON.parse(localStorage.getItem("amber-v2-settings") || "{}"),
+    ...saved,
+    language: saved.language === "en" ? "en" : "zh-Hant",
   };
 } catch {}
 sound.settings = settings;
@@ -48,6 +51,7 @@ resize();
 function applySettings() {
   document.body.classList.toggle("large", settings.large);
   document.body.classList.toggle("reduced", settings.reduced);
+  document.documentElement.lang = settings.language === "en" ? "en" : "zh-Hant";
   sound.settings = settings;
   try {
     localStorage.setItem("amber-v2-settings", JSON.stringify(settings));
@@ -120,7 +124,7 @@ function ending() {
 function content() {
   switch (panel) {
     case "settings":
-      return `<h2>設定與輔助</h2><div class="settings-grid">${[
+      return `<h2>設定與輔助</h2><div class="settings-grid"><label>遊戲語言<select data-setting="language" aria-label="遊戲語言"><option value="zh-Hant" ${settings.language === "zh-Hant" ? "selected" : ""}>繁體中文</option><option value="en" ${settings.language === "en" ? "selected" : ""}>英文</option></select></label>${[
         ["large", "大字閱讀（24 px）"],
         ["reduced", "減少動態效果"],
         ["subtitles", "顯示音訊回放字幕"],
@@ -222,7 +226,7 @@ function render() {
     scroll = oldBody?.scrollTop || 0,
     oldPanel = focusBefore.panel;
   const playing = mode === "play";
-  ui.innerHTML = `${playing ? `<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small>${inventory()}</aside><header class="location"><small>第零層</small><h2>${maps[state.scene].name}</h2></header><nav class="top-actions">${btn("筆記", "journal")}${btn("提示", "hint")}</nav><footer class="status"><span id="near-label">${nearby ? `E · ${nearby.label}` : maps[state.scene].subtitle}</span>${btn("設定", "settings")}</footer><div class="spots">${maps[state.scene].spots.map((s) => `<button class="spot" style="left:${s.x}px;top:${s.y}px" data-action="spot:${s.id}" aria-label="靠近並調查${s.label}" title="${s.label}"><i></i></button>`).join("")}</div>` : ""}${mode === "menu" ? menu() : mode === "opening" ? opening() : mode === "end" ? ending() : ""}${feedback && playing ? `<div class="toast" role="status">${feedback}</div>` : ""}${leaving ? '<div class="end-fade" aria-label="回放時間 01:17">01:17</div>' : ""}${panel ? `<div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="${panel}" tabindex="-1"><div class="panel-top"><small>站務維修 · ${panel === "journal" ? "筆記" : "近景閱讀"}</small>${btn("關閉 ×", "close", 'aria-label="關閉面板"')}</div><div class="panel-body">${content()}</div><p class="panel-feedback" role="status">${feedback}</p></section></div>` : ""}`;
+  ui.innerHTML = localizeMarkup(`${playing ? `<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small>${inventory()}</aside><header class="location"><small>第零層</small><h2>${maps[state.scene].name}</h2></header><nav class="top-actions">${btn("筆記", "journal")}${btn("提示", "hint")}</nav><footer class="status"><span id="near-label">${nearby ? `E · ${nearby.label}` : maps[state.scene].subtitle}</span>${btn("設定", "settings")}</footer><div class="spots">${maps[state.scene].spots.map((s) => `<button class="spot" style="left:${s.x}px;top:${s.y}px" data-action="spot:${s.id}" aria-label="靠近並調查${s.label}" title="${s.label}"><i></i></button>`).join("")}</div>` : ""}${mode === "menu" ? menu() : mode === "opening" ? opening() : mode === "end" ? ending() : ""}${feedback && playing ? `<div class="toast" role="status">${feedback}</div>` : ""}${leaving ? '<div class="end-fade" aria-label="回放時間 01:17">01:17</div>' : ""}${panel ? `<div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="${panel}" tabindex="-1"><div class="panel-top"><small>站務維修 · ${panel === "journal" ? "筆記" : "近景閱讀"}</small>${btn("關閉 ×", "close", 'aria-label="關閉面板"')}</div><div class="panel-body">${content()}</div><p class="panel-feedback" role="status">${feedback}</p></section></div>` : ""}`, settings.language);
   document.body.classList.toggle("panel-open", !!panel || !playing);
   applySettings();
   if (panel) {
@@ -297,7 +301,7 @@ const world = new Station({
   nearby: (s) => {
     nearby = s;
     const el = document.querySelector("#near-label");
-    if (el) el.textContent = s ? `E · ${s.label}` : maps[state.scene].subtitle;
+    if (el) el.textContent = translateText(s ? `E · ${s.label}` : maps[state.scene].subtitle, settings.language);
   },
 });
 const game = new Phaser.Game({
@@ -410,7 +414,12 @@ ui.addEventListener("click", (e) => {
     return;
   }
   if (a === "export") {
-    download(exportSave(state), "黃燈之後-v2-存檔.json");
+    download(
+      exportSave(state),
+      settings.language === "en"
+        ? "After-the-Yellow-Light-v2-save.json"
+        : "黃燈之後-v2-存檔.json",
+    );
     feedback = "已送出目前進度的下載請求；請確認檔案已保存。";
     render();
     return;
@@ -418,7 +427,12 @@ ui.addEventListener("click", (e) => {
   if (a === "exportRecovery") {
     const result = exportRecovery();
     if (result.raw !== null)
-      download(result.raw, "黃燈之後-v2-本機原檔-排查用.json");
+      download(
+        result.raw,
+        settings.language === "en"
+          ? "After-the-Yellow-Light-v2-recovery-data.json"
+          : "黃燈之後-v2-本機原檔-排查用.json",
+      );
     feedback =
       result.warning ||
       "已送出本機原檔的下載請求；這是排查資料，請另行匯出目前進度。";
@@ -501,6 +515,12 @@ ui.addEventListener("change", (e) => {
   const el = e.target as HTMLInputElement,
     key = el.dataset.setting as keyof Settings;
   if (!key) return;
+  if (key === "language") {
+    settings.language = el.value === "en" ? "en" : "zh-Hant";
+    applySettings();
+    render();
+    return;
+  }
   if (["large", "reduced", "subtitles", "mute"].includes(key))
     (settings[key] as boolean) = el.checked;
   else (settings[key] as number) = Number(el.value);
