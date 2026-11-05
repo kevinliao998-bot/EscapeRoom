@@ -1,0 +1,39 @@
+Browser tab: 615890319, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4185/".
+1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
+	2 container stage
+		3 container Description: 車站俯視像素場景, ID: world
+			4 image
+		5 container ui
+			6 container 四格隨身物品
+				7 text 隨身
+				8 button Description: 門禁卡，在背包, Help: 門禁卡
+				9 button Description: 撬片，在背包, Help: 撬片
+				10 button Description: 透明路線片，已安裝, Help: 透明路線片
+				11 button Description: 電池，已安裝, Help: 電池
+			12 container
+				13 text 第零層
+				14 heading 月台, Value: 2
+					15 text 月台
+			16 container
+				17 button 筆記
+				18 button 提示
+			19 container
+				20 text 別看站名。跟著仍然供電的燈。
+				21 button 設定
+			22 container
+				23 button Description: 靠近並調查返回站務室, Help: 返回站務室
+				24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱
+				25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽
+				26 button Description: 靠近並調查維修門, Help: 維修門
+			27 container 調查面板
+				28 text 站務維修 · 近景閱讀
+				29 button 關閉面板
+				30 container
+					31 heading 調查方向 · P05, Value: 2
+						32 text 調查方向 · P05
+					33 text 提示不扣資源，也不會替你解題。 第 1 級
+					34 text 先分清指路的聲音與仍供電的設備。 第 2 級
+					35 text 檢查指示燈箱、路線圖定位槽，以及亮起的琥珀燈。 第 3 級
+					36 text 放入設備後，由入口逐一連接相鄰的供電節點；忽略報站名稱。錯一步可改，不會失去道具。
+
+The focused UI element is 27 container 調查面板

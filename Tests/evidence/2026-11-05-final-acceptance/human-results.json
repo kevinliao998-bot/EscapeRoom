@@ -1,0 +1,83 @@
+{
+  "status": "本輪紀錄完成；焦點返回未通過，完整螢幕閱讀器通關尚未驗收，不宣稱五項全過",
+  "baseline": "7056631024fc7f710aaf0a40873a851a3d285377",
+  "participant": "P01（匿名）",
+  "device": {
+    "model": "Redmi K80",
+    "os": "Android，版本未提供",
+    "browser": "Google Chrome，版本未提供",
+    "sameWifi": true,
+    "pageOpened": true,
+    "postBlindChecks": {
+      "rotateAndKeepProgress": "使用者回報正常",
+      "reloadAndReselectBothEndings": "使用者回報正常",
+      "largeTextScrollAndClose": "使用者回報正常",
+      "bothDownloadsExistOnPhone": "使用者回報正常"
+    },
+    "source": "使用者實體手機回報"
+  },
+  "blindTest": {
+    "eligibleAccordingToUser": true,
+    "answersHiddenAccordingToUser": true,
+    "startConfirmedAt": "2026-11-05T01:32:33+08:00",
+    "startConfirmedAtNote": "收到已開始回覆後讀取的時間，不等於受試者實際按開始的時間",
+    "reportedStartTime": null,
+    "reportedEndTime": null,
+    "result": "使用者回報 P01 已完成首次通關，自行到達結局，約 20 分鐘",
+    "reportedDurationMinutes": 20,
+    "hints": "使用者原話：用了 4 張提示卡，用在電池、路線；各題次數及級數未提供",
+    "firstEnding": "B（結局乙，使用者回報）",
+    "assistance": "使用者回報自行到達結局，未另提供協助細節",
+    "blockingPoints": null
+  },
+  "audio": {
+    "headphones": true,
+    "connectedDevice": "Redmi K80 手機（使用者已確認）",
+    "latestUserReport": "試聽有聲；再次核對三聲重播與耳機舒適度時，使用者回覆「都 OK」",
+    "initialObservation": "首次回報聽不到遊戲／三聲，其後實際試聽與重播均正常；首次無聲原因未確認",
+    "result": "依使用者實聽回報，試聽、三聲重播與舒適度正常；不宣稱已找出首次無聲的原因"
+  },
+  "screenReader": {
+    "available": "本機有 Windows 內建 Narrator.exe",
+    "running": "已透過 CUA 啟動並觀察首次更新視窗；測試結束由使用者回報已關閉",
+    "observations": [
+      {
+        "step": "主選單焦點朗讀",
+        "userReport": "完全聽得見",
+        "interpretation": "確認有朗讀聲音，未提供實際按鈕詞句，不能據此確認主選單名稱正確"
+      },
+      {
+        "step": "設定核取方塊",
+        "userReport": "調查面板，減少動態效果",
+        "observedFocus": "data-setting=reduced，checked=true",
+        "interpretation": "唸出面板及選項名稱；使用者未回報勾選狀態，仍待核對"
+      },
+      {
+        "step": "核取方塊切換狀態及音量滑桿",
+        "userReport": "有。scan chat.",
+        "interpretation": "使用者回報狀態有唸出；後半詞句意義不明，不能據此判定音量名稱及數值正確",
+        "observationNote": "操作後曾觀察到焦點在字幕核取方塊，不能假定使用者每個按鍵都落在原指定控件；其後字幕已回復勾選"
+      },
+      {
+        "step": "工具將 DOM 焦點移到總音量後的實聽",
+        "observedFocus": "data-setting=master，aria-label=總音量，value=0.45",
+        "userReport": "調查面板",
+        "interpretation": "未取得滑桿名稱及數值的實際朗讀，這次核對未通過；不能只憑 DOM 屬性判定螢幕閱讀器可用",
+        "followUp": "改由使用者在前景遊戲分頁實際按 Tab 與右方向鍵，區分工具焦點與朗讀程式游標差異"
+      },
+      {
+        "step": "使用者自行按 Tab／右方向鍵重查滑桿",
+        "userReport": "有",
+        "interpretation": "使用者肯定回覆有唸出名稱及變動數值；未提供逐字內容或數值，保留此證據限制，不將前次只聽到面板的原因歸咎程式",
+        "environmentNote": "後續瀏覽器控制連線中斷，不能再核對本步操作後 DOM 值；線索文字改由使用者手動開啟筆記實聽"
+      },
+      {
+        "step": "回到最後選擇前並開筆記，以 Insert+R 朗讀線索",
+        "userReport": "能聽到全部",
+        "interpretation": "使用者確認筆記線索文字可朗讀；沒有逐句轉錄，不擴張為每一場景／回饋或僅靠朗讀全流程通關"
+      }
+    ],
+    "shutdownUserReport": "已關閉",
+    "result": "部分實聽已核對：設定名稱、使用者肯定回報勾選狀態及滑桿、筆記文字可朗讀。焦點返回 Issue #10 未修，完整僅靠朗讀的全流程未驗收，不能列整體通過"
+  }
+}

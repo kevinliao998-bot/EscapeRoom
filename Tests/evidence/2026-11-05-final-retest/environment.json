@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Taipei",
+  "productBaseline": "202f66c67bfaab5f4540252a20df4b5f3572c4d3",
+  "huamBeforeMerge": "c0cbe68118c0470f2da5977d02edb46ed59b39f8",
+  "node": "v24.22.1",
+  "testCommand": "node --experimental-strip-types --test Tests/*.test.ts",
+  "buildCommands": ["node node_modules/typescript/bin/tsc --noEmit", "node node_modules/vite/bin/vite.js build"],
+  "commandNote": "此終端無 npm.cmd；直接執行 package.json 對應的相同 Node 測試、TypeScript 與 Vite 指令，不將未執行的 npm 指令寫為成功。",
+  "testResult": {"tests": 29, "pass": 29, "fail": 0, "skipped": 0},
+  "buildResult": "通過",
+  "review": {"source": "使用者轉述", "report": "Liao 已檢查並同意合併", "githubReviewPresentAtStart": false},
+  "mergeAuthorization": "使用者明確要求：若尚未合併到 main，驗證後直接合併"
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-05",
+  "productBaseline": "202f66c67bfaab5f4540252a20df4b5f3572c4d3",
+  "review": {"source": "使用者轉述", "report": "Liao 已檢查並同意合併"},
+  "screenReader": {
+    "name": "Windows Narrator",
+    "source": "使用者實聽回報；Codex 不聲稱自己聽見",
+    "menu": "已切換，能聽到",
+    "cardPanelCheck": {
+      "question": "卡槽標題與文字、Escape 返回卡槽、下一次 Tab 到清潔推車三項是否符合",
+      "userReport": "有。是。是。",
+      "note": "工具後續曾讀到設定面板，沒有將當時位置直接當成使用者回報的佐證；其後由工具獨立重做單次關閉與 Tab，核對卡槽→推車→盡頭門順序"
+    },
+    "cabinet": {"question": "能否聽到紀錄櫃標題及事故報告／維修簿文字", "userReport": "能"},
+    "routeAndEndings": {
+      "route": {"question": "路線標題、供電／未供電節點及維修門已開啟文字是否可讀", "userReport": "能"},
+      "endingA": {"question": "結局甲標題、文字與返回選項是否可讀", "userReport": "能"},
+      "endingB": {"question": "結局乙標題、聲音拼接文字與返回選項是否可讀", "userReport": "能"}
+    },
+    "shutdownUserReport": "已停止",
+    "limits": "工具輔助鍵盤操作與真人實聽，不是視障受試者獨立盲玩；未取得語音錄音。"
+  },
+  "interruptions": [
+    "實體 Escape 觸發電腦操作工具停止；使用者回覆繼續後才恢復。",
+    "Chrome 控制連線中斷且應用已關閉，重新開啟後顯示 Chrome 未正確關閉提示；從正常存檔續玩，沒有注入進度。",
+    "角色自動走近較久時，面板等待曾超時；確認抵達後繼續，未列成機關失敗。"
+  ]
+}

@@ -1,0 +1,32 @@
+- main:
+  - generic "車站俯視像素場景"
+  - complementary "四格隨身物品":
+    - generic: 隨身
+    - button "門禁卡，在背包"
+    - button "撬片，尚未取得":
+      - generic: ·
+    - button "透明路線片，尚未取得":
+      - generic: ·
+    - button "電池，尚未取得":
+      - generic: ·
+  - text: 第零層
+  - heading "迴圈走廊" [level=2]
+  - navigation:
+    - button "筆記"
+    - button "提示"
+  - generic: E · 牆腳檢修槽
+  - button "設定"
+  - button "靠近並調查時鐘"
+  - button "靠近並調查站名牌"
+  - button "靠近並調查地面水漬"
+  - button "靠近並調查飲水機內側標籤"
+  - button "靠近並調查牆腳檢修槽"
+  - button "靠近並調查清潔推車"
+  - button "靠近並調查盡頭門"
+  - status: 取得門禁卡。圖示的位置沒有改變。
+  - dialog "牆腳檢修槽" [active]:
+    - generic: 站務維修 · 近景閱讀
+    - button "關閉面板": 關閉 ×
+    - heading "牆腳檢修槽" [level=2]
+    - paragraph: 卡片已在你的背包。
+    - status: 取得門禁卡。圖示的位置沒有改變。

@@ -1,0 +1,18 @@
+Browser tab: 615890319, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4185/".
+1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/
+	2 container stage
+		3 container Description: 車站俯視像素場景, ID: world
+			4 image
+		5 container
+			6 text 維修紀錄 · 回放未停止
+			7 heading 結局乙 · 仍在回放, Value: 2
+				8 text 結局乙 · 仍在回放
+			9 text 出口已經打開，你仍回應了那個聲音。
+			10 text 〔●　●　●〕「末班……」〔接縫〕「別看……」〔接縫〕「到了。」
+			11 text 你知道聲音能被拼接，名冊也不能證明此刻的身分。你暫時放棄離站，選擇聽下去；系統沒有給出新的答案。
+			12 text 01:17
+			13 button 繼續 · 返回主選單
+			14 button 回到最後選擇前
+			15 text 通關紀錄已保留。可重新選擇另一個結局。
+
+The focused UI element is 1 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4185/

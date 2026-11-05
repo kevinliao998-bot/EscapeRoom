@@ -1,0 +1,51 @@
+Browser tab: 615890326, Title: "黃燈之後 · 第零層", URL: "http://127.0.0.1:4196/".
+0 AXWebArea 黃燈之後 · 第零層, URL: 127.0.0.1:4196/
+	1 container stage
+		2 container Description: 車站俯視像素場景, ID: world
+			3 image
+		4 container ui
+			5 container
+				6 text 第零層 · 維修紀錄 017
+				7 heading 黃燈 之後, Value: 1
+					8 text 黃燈
+					9 text 之後
+				10 text 聲音會帶錯路。
+				11 text 燈，不會。
+				12 button 繼續 · 重看結局
+				13 button 重新開始
+				14 button 回到最後選擇前
+				15 button 設定與輔助
+				16 button 素材與製作說明
+				17 text 三場景解謎 · 無倒數 · 可隨時保存
+				18 text 方向鍵／WASD 移動　E 調查　點地面亦可行走 已送出本機原檔的下載請求；這是排查資料，請另行匯出目前進度。
+			19 container
+				20 text 站內維修頻道
+				21 text 01:17
+				22 text 連線待確認
+			23 container 調查面板
+				24 text 站務維修 · 近景閱讀
+				25 button 關閉面板
+				26 container
+					27 heading 設定與輔助, Value: 2
+						28 text 設定與輔助
+					29 checkbox (settable, integer) Description: 大字閱讀（24 px）, Value: 0
+					30 checkbox (settable, integer) Description: 減少動態效果, Value: 0
+					31 checkbox (settable, integer) Description: 顯示音訊回放字幕, Value: 1
+					32 checkbox (settable, integer) Description: 全部靜音, Value: 0
+					33 text 總音量
+					34 slider (settable, float) Description: 總音量, Value: 0.44999998807907104, Details: 0.45
+					35 text 環境
+					36 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2
+					37 text 音效
+					38 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35
+					39 text 訊號標記
+					40 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4
+					41 text 無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。
+					42 button 試聽柔和提示音
+					43 text 「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。
+					44 button 匯出存檔
+					45 button 匯出本機原檔（排查用）
+					46 button 回主選單
+				47 text 已送出本機原檔的下載請求；這是排查資料，請另行匯出目前進度。
+
+The focused UI element is 45 button 匯出本機原檔（排查用）

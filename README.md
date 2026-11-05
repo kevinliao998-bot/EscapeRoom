@@ -1,6 +1,24 @@
 # 黃燈之後 · v2
 
-原創俯視像素解謎密室逃脫，純前端；Phaser **3.90.0**、TypeScript、Vite。此分支為 `main-v2`，舊作封存於 `archive/v1-legacy`／`v1-legacy-final`，保護文件原稿完整保留於 `_legacy_docs/`。
+原創俯視像素解謎密室逃脫，純前端；Phaser **3.90.0**、TypeScript、Vite。遊戲基準為 PR #6 的 `main-v2`，TI／小雪的測試與文件集中在使用者指定的 `HUAM` 分支。舊作封存於 `archive/v1-legacy`／`v1-legacy-final`，保護文件原稿完整保留於 `_legacy_docs/`。
+
+## 目前整合結果
+
+2026-11-05 最後複驗：產品基準 `main-v2@202f66c`，**29 項測試全部通過，TypeScript／正式建置通過，Issue #10 的面板關閉返回修正已驗證**。正式版從新局以鍵盤操作到甲，重載重看並重選乙；設定重繪保留欄位，兩種實際下載均核對成功。Windows Narrator 的卡槽、紀錄櫃、路線及雙結局分段實聽由使用者肯定回報。完整證據與限制見 [最後複驗與交件紀錄](Tests/evidence/2026-11-05-final-retest/review.md)。這是工具輔助操作與真人實聽，未宣稱視障受試者獨立通關或所有讀屏模式均通過。
+
+同日真人紀錄：Redmi K80／Android／Chrome 的旋轉、重整與重選、大字與面板、兩種下載回報正常；手機耳機試聽及三聲重播清楚、音量舒適。匿名 P01 約 20 分鐘自行達結局乙，4 張提示卡用於電池與路線。這些為使用者先前實測，沒有在焦點修改後重做手機或第二次新玩家盲測，結果限本次設備與一位玩家，見 [原始真人紀錄](Tests/evidence/2026-11-05-final-acceptance/human-results.json)。
+
+使用者已回報 Liao 檢查並同意合併，並授權依序整合 [PR #9](https://github.com/kevinliao998-bot/EscapeRoom/pull/9) 與 [PR #6](https://github.com/kevinliao998-bot/EscapeRoom/pull/6)，保留各人原始提交；實際合併時間與提交以這兩個 PR 的 GitHub 記錄為準。以下為歷次驗收當時的狀態，最新結論以上方最後複驗為準。
+
+2026-11-05，TI 在 `HUAM` 獨立複驗 Li 的修正，對應 `main-v2` 基準 `996a07d`：**24 項測試全部通過，TypeScript 與正式建置通過**。正式版由新遊戲實際到達甲、重載重看，再返回選擇前完成乙；兩種 JSON 實際下載後核對成功，原 INT-07 通過。另確認方向鍵移動、Escape、大字、鍵盤音量調整、三級提示／筆記及 1／3／4 倍舞台尺寸與不足最小視口提示。詳見 [TI 獨立複驗報告](Tests/evidence/2026-11-05-ti-retest/review.md)。這是 Codex 協助的 TI 操作驗收，仍需 Liao 檢查 TI 的 PR；後續真人及完整鍵盤檢查結果以上方擴充驗收為準。
+
+以下保留 Li 修復及串接時的來源紀錄：
+
+2026-11-04，MW 依使用者要求修復 [Issue #7](https://github.com/kevinliao998-bot/EscapeRoom/issues/7)，並在 HUAM 串接原有 TI 測試：**24 通過、0 失敗**（原有 14 項＋TI 7 項＋MW 新回歸 3 項），TypeScript 與正式建置通過。修復已提交 `main-v2`；HUAM 同步相同檔案，保留 TI 的測試與原有歷史。這是 MW 修復及串接驗證，仍需 TI／SC 的獨立審查，PR 保持草稿。
+
+修復前的 TI 檢查基準為 `3e5203f`：20 通過、1 失敗。該原始反例與輸出仍完整保留於 [TI 檢查報告](Tests/evidence/2026-11-04-pr6/review.md)。修復改為匯出目前記憶體進度，另提供本機原檔排查包，避免舊檔或損壞原文取代最新進度。最新證據見 [MW 修復與串接報告](Tests/evidence/2026-11-04-save-recovery/review.md)。
+
+正式試玩網址：**待團隊提供並驗證**。以下本機預覽網址不是公開展示連結，GitHub 原始碼頁也不是遊戲網址；本輪未變更部署設定。
 
 ## 開發與展示
 
@@ -21,7 +39,7 @@ npm run dev
 
 ## 存檔與輔助
 
-自動存於瀏覽器本機 `after-amber-v2-save`；保留上一份有效快照。存檔損壞會明示、嘗試上一份。後續保存前會把損壞原文另存於 `after-amber-v2-save-corrupt`，供排查使用。設定中可匯出 JSON；不提供匯入陌生檔案的介面。兩結局均可在主選單回到最後選擇前。重新開始需確認，與舊版存檔隔離。
+自動存於瀏覽器本機 `after-amber-v2-save`；保留上一份有效快照。存檔損壞會明示、嘗試上一份。後續保存前會把損壞原文另存於 `after-amber-v2-save-corrupt`，供排查使用。設定中的「匯出存檔」始終保留當前記憶體進度，無須本機寫入成功；「匯出本機原檔（排查用）」另外保存主檔／備援／損壞快照的原始字串，無法讀取時明確提示。下載提示僅表示請求送出，請確認檔案確實已保存。不提供匯入陌生檔案的介面。 兩結局均可在主選單回到最後選擇前。重新開始需確認，與舊版存檔隔離。
 
 設定提供大字、減少動態、音訊字幕、四項音量與靜音。無頻閃、抖鏡、驚嚇；所有聲音線索均有可重看的文字。環境音量控制用於進場的柔和環境提示，不循環播放背景音樂；「訊號標記」為合成音，沒有配音。
 
@@ -36,6 +54,35 @@ npm run dev
 
 MW 負責本次機制與網頁；SC 核對文案及素材權利；TI 需獨立審查，未通過前不合併 main。成員各自使用帳號提交，不能由代理替組員偽造 commit。
 
+| 角色 | 交付與檢查 |
+| --- | --- |
+| SC／Liao | 劇情、線索、提示、答案與素材來源；檢查 TI 的 PR |
+| MW／Li | `Game/`、畫面、機關、存檔、自己的機關測試與修復 |
+| TI／小雪 | `AGENTS.md`、本 README、`Test.md` 整合段、`Tests/integration.test.ts`、測試證據及問題交接 |
+
+完整規則見 [AGENTS.md](AGENTS.md)。本輪沒有把 `yy` 或 `story-and-content` 的舊版道具／答案再混入 v2。
+
+## 重跑 TI 的測試
+
+```sh
+# 全部測試；本輪修復後為 24 通過、0 失敗
+npm test
+
+# 只跑 TI 整合測試
+node --experimental-strip-types --test Tests/integration.test.ts
+
+# 單獨重跑原 INT-07 回歸案例（修復後應通過）
+node --experimental-strip-types --test --test-name-pattern=INT-07 Tests/integration.test.ts
+
+# 檢查型別與正式建置
+npm run build
+
+# 唯讀核對目前 Li 修復後的基準、素材及封存檔案（需 Git checkout）
+node Tests/check-source-integrity.mjs
+```
+
+`Test.md` 是此專案對應課程 `TESTS.md` 的既有檔名。驗收對照與結果見「TI 獨立複驗 · 2026-11-05」段；2026-11-04 的失敗輸出保留作歷史對照。本輪已完成上述桌面實際雙結局與下載核對，其他未完成項目照實保留。
+
 ## 素材檢查
 
 ```sh
@@ -44,4 +91,4 @@ python3 tools/draw_art.py
 python3 tools/check_art.py
 ```
 
-檢查實際貼圖用色、8 組正文對比、繁體缺字與來源雜湊。字型與授權見 Credits.md。15–20 分鐘只是目標，尚待新玩家盲測，不以自動測試時間推估玩家時間。
+檢查實際貼圖用色、8 組正文對比、繁體缺字與來源雜湊。字型與授權見 Credits.md。15–20 分鐘是設計目標；本次一位新玩家回報約 20 分鐘，不以單一樣本或自動測試時間推估所有玩家。
