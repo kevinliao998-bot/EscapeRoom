@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Taipei",
+  "productHead": "829b865f4d2094ea304cb18c52b0d8703c0501a9",
+  "huamStart": "fc000b4fc2d30ac034a5188550938d0bee30ce8a",
+  "node": "v24.22.1",
+  "python": "Python 3.14.7",
+  "typescript": "Version 5.9.3",
+  "tests": {
+    "passed": 85,
+    "skipped": 0,
+    "failed": 0
+  },
+  "oldEntryReplay": {
+    "baseline": "8fb2223d56e1ef714921c2b9af3051ed4532116b",
+    "passed": 2,
+    "skipped": 0,
+    "scope": "只對舊 main/prologue 重放新增呈現測試",
+    "failed": 9
+  },
+  "typechecks": {
+    "expansion": 0,
+    "original": 0,
+    "campaign": 0
+  },
+  "builds": {
+    "original": 0,
+    "campaign": 0
+  },
+  "productDiffFromLi": "只有 campaign.test.ts 保留既有 TI 換行相容修正；遊戲產品程式一致"
+}

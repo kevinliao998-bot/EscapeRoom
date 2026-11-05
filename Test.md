@@ -118,3 +118,55 @@ Issue #7 的原始問題已通過 TI 複驗，可結案；不因此宣告整款�
 Windows Narrator 實際啟動並由使用者實聽：回報面板／設定名稱，肯定回覆勾選狀態及自行操作滑桿可朗讀，筆記線索回報「能聽到全部」。工具移動滑桿焦點時曾只唸面板，後由使用者實際按鍵重查；沒有逐字滑桿數值，不據此斷定程式錯誤。已回報關閉 Narrator。這是部分朗讀核對，**尚未完成僅靠螢幕閱讀器的全流程通關**；焦點返回 [Issue #10](https://github.com/kevinliao998-bot/EscapeRoom/issues/10) 仍交 Li 修正後複驗。這些項目依真人回報補記，沒有用自動測試或桌面模擬替代。
 
 流程、證據及各項待辦見 [最終版驗收報告](Tests/evidence/2026-11-05-final-acceptance/review.md)。
+
+## TI 四層候選版獨立驗收 · 2026-11-05（進行中）
+
+產品為 PR #15 `8fb2223`，接至 HUAM 的劇情原稿 `46f8951`，不是把上面的短版真人結案搬來使用。完整來源、真實失敗及待辦見 [本輪報告](Tests/evidence/2026-11-05-campaign/review.md)。
+
+```sh
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/campaign.test.ts
+node node_modules/typescript/lib/tsc.js --noEmit
+node node_modules/typescript/lib/tsc.js -p Campaign/tsconfig.json
+node node_modules/vite/bin/vite.js build --config Campaign/vite.config.ts
+node Tests/check-source-integrity.mjs 20261ffc44a76f0975647ffb2f3f0f769351081a
+```
+
+第一輪 69 項有 1 個 Windows CRLF 雜湊反例；TI 保留原來源值，僅正規化 Git checkout 的文字換行，再加下列 5 項獨立檢查，合計 74 項通過、無跳過。這不代表真人項目全部通過。
+
+| 項目 | 前置與可核對預期 |
+| --- | --- |
+| TI-MF-01 | 同一來源 LF／CRLF 應得到原釘選 blob；改字句或空格仍必須得到不同值。 |
+| TI-MF-02 | 候選版實際使用的 JSON、14 份文件、9 題與 HUAM 原稿完全一致。 |
+| TI-MF-03 | 新局偽造後段文件、身分、備份或結局時，實際 restore 拒絕；合法新局可還原。 |
+| TI-MF-04 | 前置未完成時跳層、讀未解封原件被拒，初始道具與資料不被清除。 |
+| TI-MF-05 | 主檔損壞時讀前一份有效整合進度；壞原文另存，不寫短版或 B1 存檔 key。 |
+
+本輪已由新局以鍵盤完成全部十四個主要解謎節點，查原件、停機復原並到告別結局；實際下載 B2 及通關 JSON，均以真實 restore 核對，並由使用者協助選檔後在遊戲確認套用。B2 匯回後重載正常，最後一次通關檔匯回後重載尚待補驗。**回訪劇情文字 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16) 及匯入提示 [Issue #17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17) 待 Li 修正；不合併 main 或宣稱可交件。**
+
+本輪真人資料見 [human-results.json](Tests/evidence/2026-11-05-campaign/human-results.json)：Redmi K80 的旋轉、續接、大字／面板、兩份下載與自行匯回回報正常；耳機回報能聽見，音量舒適度未明確回覆。Windows Narrator 核取名稱／狀態、滑桿數字、Q-017 內文及結局已做基礎實聽抽查，不代表僅靠讀屏完整通關。首次盲測 P02 約 45 分鐘進 B3 後卡住，未通關，提示使用及旁人協助未提供，不記為零。
+
+新增素材唯讀檢查使用 `Tests/check-campaign-assets.py`，工具依賴版本列於 `Tests/requirements-ti-assets.txt`；不改 MW 的素材清單。實際下載檢查器為 `Tests/check-campaign-export.ts`，需傳入真正下載的 JSON 路徑，不將人工建立的狀態冒充下載結果。
+
+## TI 四層修正版定向複驗 · 2026-11-06
+
+本節更新前節 11 月 5 日的未修狀態。產品來源為 PR #15 `829b865`，接入 HUAM `fc000b4`，保留原始歷史與舊失敗。
+
+```sh
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/*.test.ts
+```
+
+**85 通過、0 失敗、0 跳過**（原 HUAM 74＋Li 新增呈現 11）。三份 TypeScript、原版與整合正式建置、69 個基準檔案與素材唯讀檢查通過。以舊入口／序章重放新增呈現測試為 2 通過、9 失敗，保留反例。完整指令結果、版本與限制見 [本輪報告](Tests/evidence/2026-11-06-campaign-retest/review.md)。
+
+Windows Chrome 定向操作已核對首次／排水後／通關後維修門文字、無效→合法存檔提示清除、較早 B2 介紹與進度、B2／通關檔匯回後重載；系統選檔由使用者協助。首次狀態另使用合法模型動作產生的測試檔，不冒充本輪再次從新局解完。Issue #16／#17 的對應項目通過。
+
+使用者對 Windows Narrator 自動唸出新拒絕訊息回覆「有」，未逐字轉錄；補充前次手機耳機「舒適，沒有刺耳或突然過大」，見 [真人補查](Tests/evidence/2026-11-06-campaign-retest/human-retest.json)。這不是全程讀屏驗收或新一輪盲測；前次 P02 到 B3 未通關的紀錄不變。
+
+下一步由 Liao 檢查 TI 測試與文件；尚未合併 main 或更新公開網站。
+
+## 四層最後交件補充 · 2026-11-06
+
+使用者現回報「Liao 已經檢查好了，B3 也通關了」，並明確要求完成收尾及合併 main。這更新前節待 Liao 檢查的狀態；審查來源是使用者轉述，沒有代替 Liao 在 GitHub Approve。B3 已通關作為後續回報，不推定為 P02 原玩家、不填造時間或提示，也不覆寫第一次 45 分鐘未完成的盲測紀錄。
+
+遊戲產品仍是已通過複驗的 Li `829b865`，TI 驗證提交為 HUAM `6b26cf3`；本次最後完善只整理交件文件及新增確認紀錄，未改遊戲程式、劇情、答案、素材或存檔規則。因此沿用本輪已核對的 85 項、型別及建置結果，不把文件整理宣稱為重新遊玩。
+
+交件版本、GitHub 檢查與合併方式見 [最後交件紀錄](Tests/evidence/2026-11-06-main-release/review.md)。本次合併對應 PR #13，保留各人的原始提交。公開網站更新另列，不將 main 合併冒稱為已部署。

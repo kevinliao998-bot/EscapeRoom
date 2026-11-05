@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-05",
+  "productHead": "8fb2223d56e1ef714921c2b9af3051ed4532116b",
+  "huamStart": "46f8951f1b1ba74160d28cdf717a07c6aef490e8",
+  "initial": [
+    {
+      "name": "tests",
+      "chunk_id": "171abb",
+      "wall_time_seconds": 2.3305791,
+      "exit_code": 1,
+      "original_token_count": 1933,
+      "output": "MF-08 reachable safety states: 193\n✔ MF-01｜新局經原五題及 B1–B3 九題，到告別結局，每步存檔可恢復 (18.9059ms)\n✔ MF-02｜未解開樓層不可跳關；所有已開門均可返回，跨層進度保留 (5.9789ms)\n✔ MF-03｜校時錯誤、事件反排、錯錄音不清草稿；成功後憑證仍需自行推理 (32.8224ms)\n✔ MF-04｜原音保留否定與警告，D04 不提前洩漏 D 或自動觸發 (2.8141ms)\n✔ MF-05｜16 組雙路供電僅 A/C 通、B/D 斷為解，切導引後終端仍有電 (5.4225ms)\n✔ MF-06｜互鎖 D→A→B 中間狀態及任意可達栓態均可解；重複不死鎖 (10.3683ms)\n✔ MF-07｜提早 K-CTRL 斷電可復原；接收不等於完成；備份與停用可交換 (9.1165ms)\n✔ MF-08｜可達供電與停機抽象狀態皆有恢復通關路徑 (495.135ms)\n✔ MF-09｜身分鏈需多份原件，不讓醫療未具名或 D 權限替代林沐身分 (7.5639ms)\n✔ MF-10｜損壞存檔、偽造前置與未知文件拒絕，備援讀回且保留原文 (10.9241ms)\n✔ MF-11｜配額滿匯出仍是最新進度；不寫原版或 B1 的存檔 key (8.6555ms)\n✔ MF-12｜九個擴充房間有具名互動點，可走近座標在無障礙通路內 (0.1598ms)\n✖ MF-13｜釘選劇情原文、唯一流程節點及驗收表同步 (2.8698ms)\nB1 可達設備狀態 784；每個非終局都有通關路徑。部分接線另枚舉 1546 種。\n✔ B1-01｜SC 資料的五條回路線索在 120 種排列中只有一個解 (1.6688ms)\n✔ B1-02｜所有 1546 種不重複的部分配線均能重新排列，沒有接頭永久遺失 (157.8937ms)\n✔ B1-03｜16 種閥門配置只有 A/B 開、C/D 關會排水 (1.2596ms)\n✔ B1-04｜檢修窗需停止排風；新增管線及其文字會保留在筆記 (0.4204ms)\n✔ B1-05｜超載、高水位、黑暗作業會被拒絕且不清除接線與證據 (0.7336ms)\n✔ B1-06｜停泵維持安全水位，轉供後可放行並取得林沐原文工單 (0.6524ms)\n✔ B1-07｜三房間任意往返與三級提示不替代解題、不遺失狀態 (6.7504ms)\n✔ B1-08｜存檔拒絕偽造超載、提早開門、重複接頭與未讀可得的工單 (0.6697ms)\n✔ B1-12｜負載、水路與三級提示均符合釘選 SC 提案資料 (0.5401ms)\n✔ B1-09｜B1 存檔 key 獨立；寫入失敗時匯出仍保留最新進度 (0.8416ms)\n✔ B1-10｜損壞原文及禁用儲存的錯誤會明確回報 (0.3306ms)\n✔ B1-11｜遍歷可達設備狀態，每個非終局均有合法操作路徑抵達工單 (212.5874ms)\n✔ B1-13｜最新 D01/D02 可在開門前閱讀，D03 僅完成後揭露且逐字取自來源 (0.4316ms)\n✔ 劇情三場景、四件物品、五題三級提示與唯一流程 ID (3.5282ms)\n✔ 琥珀供電節點只有一條無迴圈的入口到出口路線 (0.6231ms)\n抽象可達狀態 344；全部存在後續通關路徑\n✔ 前三次返回每次只改一項，之後不再增加 (1.1942ms)\n✔ 先拿卡漏拿撬片仍能返回；錯誤不消耗唯一物品 (0.9894ms)\n✔ 未看壓痕不能完成，正確連線保留；時間吻合不等於找出改動者 (0.2224ms)\n✔ 獎勵冪等、裝配任意順序、拒絕未供電與跳步，取回不鎖門 (0.8001ms)\n✔ 結局甲乙、選擇前檢查點及完成後讀檔均可恢復 (0.5546ms)\n✔ 拒絕損壞／偽造前置存檔 (0.1006ms)\n✔ 全部可達有限抽象狀態可達出口；雙結局可再選 (211.0629ms)\n✔ 擴充提案與短版分開：四層、九題、唯一編號、每題三級提示 (2.2003ms)\n✔ EP01：枚舉 120 種五回路排列，線索只有一解 (0.4167ms)\n✔ EP02／03：水路通向排水井，四格電力不能同時排水及開門 (0.1798ms)\n✔ EP04：原始顯示依來源校正，五件事件落在同一條七分鐘時間線 (0.1497ms)\n✔ EP05：錄音依校正時間排列，剪接字句確實出自原文 (0.1833ms)\n✔ EP06：依兩項權限及校正後停用時間排除卡片，唯一 D (0.1491ms)\n✔ EP07：枚舉 16 組開關，僅 A/C 開且 B/D 關能保光、保梯、停導引 (0.1665ms)\n✔ EP08：搜尋鎖栓狀態，最短為三步且接受 A/B/D 任意順序 (0.2144ms)\n✔ EP09：備份與停用可交換先後，接收指令不等於完成 (0.217ms)\n✔ EP09：提前實體斷電可復原，缺少任一離站條件均不能離站 (0.1977ms)\n✔ EP09：窮舉可達設計狀態，解鎖不能繞過備份、停用、主控隔離、照明及備援 (0.8492ms)\n✔ 每個因果結論均引用現存文件，文件原文與閱讀版同步 (2.7089ms)\n✔ 敘事界線：原音晚於工單建立、早於封存，今晚送達分開記錄 (0.4449ms)\n✔ EP06 的前置文件不直接洩漏憑證答案，正確檢索後才出現完整欄位 (0.1999ms)\n✔ 關閉調查回到重繪後的新觸發按鈕，不保留已移除的 DOM 節點 (1.7735ms)\n✔ 走近及 E 調查以實際物件為返回點，面板重繪不會覆寫來源 (0.6266ms)\n✔ 切場或來源已移除、隱藏、禁用時，退回有名稱的可操作位置 (0.4778ms)\n✔ 面板按鈕消失時焦點留在面板；一般按鈕及設定欄位重繪仍保留位置 (0.5971ms)\n✔ 主選單設定返回原按鈕；沒有觸發控制項時仍提供可操作的退回位置 (4.6658ms)\n✔ INT-01｜劇情答案串接機關、三場景與逐步存讀檔，可抵達結局甲 (13.1535ms)\n✔ INT-02｜漏拿撬片、路線片及電池後，跨場景存讀檔仍能補拿與通關 (3.8483ms)\n✔ INT-03｜錯誤波形、過度推論與錯路線不破壞前置成果，重載後可重試 (1.5467ms)\n✔ INT-04｜雙結局重載與重選保留筆記、提示及通關紀錄 (2.6403ms)\n✔ INT-05｜未取得的關鍵文件不進入筆記；三級提示存讀檔不代解謎 (1.2865ms)\n✔ INT-06｜主要存檔損壞時，備援可接回關卡且原文保留 (0.9648ms)\n✔ INT-07｜儲存配額滿後匯出，必須包含尚未成功寫入的最新進度 (0.3132ms)\n✔ 迴圈走廊：所有必要互動點、返回門與地面可達 (27.2433ms)\n✔ 站務室：所有必要互動點、返回門與地面可達 (12.1345ms)\n✔ 月台：所有必要互動點、返回門與地面可達 (12.0314ms)\n✔ 存檔往返、備援恢復及保留損壞原檔 (2.2197ms)\n✔ 寫入舊快照或主存檔失敗後，匯出仍保留最新道具、提示、檢查點與雙結局 (6.6224ms)\n✔ 最新進度與損壞原文分開匯出，保留主檔、備援及損壞快照的原始字串 (0.7767ms)\n✔ 沒有原檔或瀏覽器拒絕讀取時，原檔匯出明確回報且不產生假存檔 (0.4777ms)\n✔ 本機儲存被禁用時不崩潰且明確提示 (0.4109ms)\nℹ tests 69\nℹ suites 0\nℹ pass 68\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1025.7762\n\n✖ failing tests:\n\ntest at Campaign\\campaign.test.ts:347:1\n✖ MF-13｜釘選劇情原文、唯一流程節點及驗收表同步 (2.8698ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  + actual - expected\n  \n  + '0de3dbed47f5bc9beadb2644a8cf204c88af661f'\n  - '6fec278b1f1276ef9748f1be97d06980a9e3ccff'\n  \n      at TestContext.<anonymous> (file:///C:/Users/user/Desktop/EscapeRoom/integration/Campaign/campaign.test.ts:355:10)\n      at Test.runInAsyncScope (node:async_hooks:227:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)\n      at Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: '0de3dbed47f5bc9beadb2644a8cf204c88af661f',\n    expected: '6fec278b1f1276ef9748f1be97d06980a9e3ccff',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n"
+    },
+    {
+      "name": "original-types",
+      "chunk_id": "039b54",
+      "wall_time_seconds": 3.4036923,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "name": "campaign-types",
+      "chunk_id": "96769b",
+      "wall_time_seconds": 3.5934092,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "name": "b1-types",
+      "chunk_id": "27e8fc",
+      "wall_time_seconds": 3.3410985,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "name": "original-build",
+      "chunk_id": "e38861",
+      "wall_time_seconds": 6.6040109000000005,
+      "exit_code": 0,
+      "original_token_count": 137,
+      "output": "vite v7.3.7 building client environment for production...\ntransforming...\n✓ 15 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                                          0.73 kB │ gzip:   0.50 kB\ndist/assets/fusion-pixel-12px-monospaced-zh_hant.otf-CsbAspUT.woff2    693.07 kB\ndist/assets/index-WwuYNt5G.css                                           8.73 kB │ gzip:   2.74 kB\ndist/assets/index-2JyLbmWA.js                                        1,249.07 kB │ gzip: 350.01 kB\n✓ built in 3.78s\n"
+    },
+    {
+      "name": "campaign-build",
+      "chunk_id": "e2133a",
+      "wall_time_seconds": 6.6667068,
+      "exit_code": 0,
+      "original_token_count": 155,
+      "output": "vite v7.3.7 building client environment for production...\ntransforming...\n✓ 23 modules transformed.\nrendering chunks...\ncomputing gzip size...\n../dist-campaign.local/index.html                                                          0.77 kB │ gzip:   0.53 kB\n../dist-campaign.local/assets/fusion-pixel-12px-monospaced-zh_hant.otf-CsbAspUT.woff2    693.07 kB\n../dist-campaign.local/assets/index-BxKvLjFa.css                                          10.64 kB │ gzip:   3.17 kB\n../dist-campaign.local/assets/index-7lcXktT-.js                                        1,324.81 kB │ gzip: 378.67 kB\n✓ built in 3.86s\n"
+    },
+    {
+      "name": "source-integrity",
+      "chunk_id": "87cc96",
+      "wall_time_seconds": 7.5917074,
+      "exit_code": 0,
+      "original_token_count": 94,
+      "output": "基準 20261ffc44a76f0975647ffb2f3f0f769351081a\nGit 原始素材 23 項的大小與 SHA256 和清單一致。\nGit 封存清單列出的 12 份原稿，大小與 SHA256 一致。\n組員負責的 69 個基準檔案內容一致；其中 53 份僅有 Git 的 Windows 換行轉換。\n本核對不重新驗證色數、對比或繁體缺字；那些數值仍屬既有 MW 紀錄。\n"
+    }
+  ],
+  "afterTextHashFix": {
+    "chunk_id": "130f63",
+    "wall_time_seconds": 1.1898999,
+    "exit_code": 0,
+    "original_token_count": 1785,
+    "output": "MF-08 reachable safety states: 193\n✔ MF-01｜新局經原五題及 B1–B3 九題，到告別結局，每步存檔可恢復 (8.7093ms)\n✔ MF-02｜未解開樓層不可跳關；所有已開門均可返回，跨層進度保留 (26.5914ms)\n✔ MF-03｜校時錯誤、事件反排、錯錄音不清草稿；成功後憑證仍需自行推理 (32.1782ms)\n✔ MF-04｜原音保留否定與警告，D04 不提前洩漏 D 或自動觸發 (8.5492ms)\n✔ MF-05｜16 組雙路供電僅 A/C 通、B/D 斷為解，切導引後終端仍有電 (3.0292ms)\n✔ MF-06｜互鎖 D→A→B 中間狀態及任意可達栓態均可解；重複不死鎖 (21.4705ms)\n✔ MF-07｜提早 K-CTRL 斷電可復原；接收不等於完成；備份與停用可交換 (9.8716ms)\n✔ MF-08｜可達供電與停機抽象狀態皆有恢復通關路徑 (290.3814ms)\n✔ MF-09｜身分鏈需多份原件，不讓醫療未具名或 D 權限替代林沐身分 (5.4291ms)\n✔ MF-10｜損壞存檔、偽造前置與未知文件拒絕，備援讀回且保留原文 (6.2823ms)\n✔ MF-11｜配額滿匯出仍是最新進度；不寫原版或 B1 的存檔 key (3.6841ms)\n✔ MF-12｜九個擴充房間有具名互動點，可走近座標在無障礙通路內 (0.1858ms)\n✔ MF-13｜釘選劇情原文、唯一流程節點及驗收表同步 (7.3803ms)\nB1 可達設備狀態 784；每個非終局都有通關路徑。部分接線另枚舉 1546 種。\n✔ B1-01｜SC 資料的五條回路線索在 120 種排列中只有一個解 (1.6249ms)\n✔ B1-02｜所有 1546 種不重複的部分配線均能重新排列，沒有接頭永久遺失 (98.7279ms)\n✔ B1-03｜16 種閥門配置只有 A/B 開、C/D 關會排水 (8.3091ms)\n✔ B1-04｜檢修窗需停止排風；新增管線及其文字會保留在筆記 (0.7434ms)\n✔ B1-05｜超載、高水位、黑暗作業會被拒絕且不清除接線與證據 (1.8388ms)\n✔ B1-06｜停泵維持安全水位，轉供後可放行並取得林沐原文工單 (1.8839ms)\n✔ B1-07｜三房間任意往返與三級提示不替代解題、不遺失狀態 (1.2147ms)\n✔ B1-08｜存檔拒絕偽造超載、提早開門、重複接頭與未讀可得的工單 (0.3193ms)\n✔ B1-12｜負載、水路與三級提示均符合釘選 SC 提案資料 (0.1812ms)\n✔ B1-09｜B1 存檔 key 獨立；寫入失敗時匯出仍保留最新進度 (0.3713ms)\n✔ B1-10｜損壞原文及禁用儲存的錯誤會明確回報 (0.1293ms)\n✔ B1-11｜遍歷可達設備狀態，每個非終局均有合法操作路徑抵達工單 (165.2786ms)\n✔ B1-13｜最新 D01/D02 可在開門前閱讀，D03 僅完成後揭露且逐字取自來源 (2.4375ms)\n✔ TI-MF-01｜釘選文字快照接受 LF／CRLF，但拒絕劇情字句及空格變更 (4.5221ms)\n✔ TI-MF-02｜實際使用的十四份文件及九題與 HUAM 劇情原稿一致 (7.6014ms)\n✔ TI-MF-03｜新局不能將後段文件、身分或離站旗標當成合法存檔匯入 (1.5191ms)\n✔ TI-MF-04｜三層未開通前的誤操作不消耗道具，也不寫入後段原件 (2.6977ms)\n✔ TI-MF-05｜主檔損壞時讀回整合備援，原文另存且不寫舊版存檔 (1.0817ms)\n✔ 劇情三場景、四件物品、五題三級提示與唯一流程 ID (2.7281ms)\n✔ 琥珀供電節點只有一條無迴圈的入口到出口路線 (1.286ms)\n抽象可達狀態 344；全部存在後續通關路徑\n✔ 前三次返回每次只改一項，之後不再增加 (1.9513ms)\n✔ 先拿卡漏拿撬片仍能返回；錯誤不消耗唯一物品 (0.3862ms)\n✔ 未看壓痕不能完成，正確連線保留；時間吻合不等於找出改動者 (1.3912ms)\n✔ 獎勵冪等、裝配任意順序、拒絕未供電與跳步，取回不鎖門 (1.4126ms)\n✔ 結局甲乙、選擇前檢查點及完成後讀檔均可恢復 (1.5801ms)\n✔ 拒絕損壞／偽造前置存檔 (0.4019ms)\n✔ 全部可達有限抽象狀態可達出口；雙結局可再選 (108.0101ms)\n✔ 擴充提案與短版分開：四層、九題、唯一編號、每題三級提示 (2.6088ms)\n✔ EP01：枚舉 120 種五回路排列，線索只有一解 (0.8205ms)\n✔ EP02／03：水路通向排水井，四格電力不能同時排水及開門 (0.364ms)\n✔ EP04：原始顯示依來源校正，五件事件落在同一條七分鐘時間線 (0.3081ms)\n✔ EP05：錄音依校正時間排列，剪接字句確實出自原文 (0.2842ms)\n✔ EP06：依兩項權限及校正後停用時間排除卡片，唯一 D (0.2306ms)\n✔ EP07：枚舉 16 組開關，僅 A/C 開且 B/D 關能保光、保梯、停導引 (0.2758ms)\n✔ EP08：搜尋鎖栓狀態，最短為三步且接受 A/B/D 任意順序 (0.512ms)\n✔ EP09：備份與停用可交換先後，接收指令不等於完成 (0.4789ms)\n✔ EP09：提前實體斷電可復原，缺少任一離站條件均不能離站 (0.419ms)\n✔ EP09：窮舉可達設計狀態，解鎖不能繞過備份、停用、主控隔離、照明及備援 (1.1143ms)\n✔ 每個因果結論均引用現存文件，文件原文與閱讀版同步 (0.7544ms)\n✔ 敘事界線：原音晚於工單建立、早於封存，今晚送達分開記錄 (0.2067ms)\n✔ EP06 的前置文件不直接洩漏憑證答案，正確檢索後才出現完整欄位 (0.0968ms)\n✔ 關閉調查回到重繪後的新觸發按鈕，不保留已移除的 DOM 節點 (1.8962ms)\n✔ 走近及 E 調查以實際物件為返回點，面板重繪不會覆寫來源 (0.3919ms)\n✔ 切場或來源已移除、隱藏、禁用時，退回有名稱的可操作位置 (0.4764ms)\n✔ 面板按鈕消失時焦點留在面板；一般按鈕及設定欄位重繪仍保留位置 (0.3333ms)\n✔ 主選單設定返回原按鈕；沒有觸發控制項時仍提供可操作的退回位置 (0.374ms)\n✔ INT-01｜劇情答案串接機關、三場景與逐步存讀檔，可抵達結局甲 (3.1116ms)\n✔ INT-02｜漏拿撬片、路線片及電池後，跨場景存讀檔仍能補拿與通關 (2.8844ms)\n✔ INT-03｜錯誤波形、過度推論與錯路線不破壞前置成果，重載後可重試 (1.4249ms)\n✔ INT-04｜雙結局重載與重選保留筆記、提示及通關紀錄 (2.8587ms)\n✔ INT-05｜未取得的關鍵文件不進入筆記；三級提示存讀檔不代解謎 (0.6844ms)\n✔ INT-06｜主要存檔損壞時，備援可接回關卡且原文保留 (0.5904ms)\n✔ INT-07｜儲存配額滿後匯出，必須包含尚未成功寫入的最新進度 (0.1718ms)\n✔ 迴圈走廊：所有必要互動點、返回門與地面可達 (19.6877ms)\n✔ 站務室：所有必要互動點、返回門與地面可達 (22.0386ms)\n✔ 月台：所有必要互動點、返回門與地面可達 (12.8206ms)\n✔ 存檔往返、備援恢復及保留損壞原檔 (1.6708ms)\n✔ 寫入舊快照或主存檔失敗後，匯出仍保留最新道具、提示、檢查點與雙結局 (3.6285ms)\n✔ 最新進度與損壞原文分開匯出，保留主檔、備援及損壞快照的原始字串 (0.3101ms)\n✔ 沒有原檔或瀏覽器拒絕讀取時，原檔匯出明確回報且不產生假存檔 (0.21ms)\n✔ 本機儲存被禁用時不崩潰且明確提示 (0.2026ms)\nℹ tests 74\nℹ suites 0\nℹ pass 74\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 630.9599\n"
+  },
+  "typesAfterFix": {
+    "chunk_id": "bfb4d9",
+    "wall_time_seconds": 1.88245,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "assets": {
+    "chunk_id": "751672",
+    "wall_time_seconds": 0.6179998,
+    "exit_code": 0,
+    "original_token_count": 55,
+    "output": "{\"sourceColors\": 16, \"contrastPairs\": 8, \"hanGlyphs\": 807, \"hashedAssets\": 23, \"textNewlineConversions\": 7, \"scope\": \"來源宣告、字形覆蓋及素材雜湊；非所有瀏覽器像素或真人可讀性驗收。\"}\r\n"
+  },
+  "actualB2Download": {
+    "chunk_id": "dc39ac",
+    "wall_time_seconds": 0.5760637,
+    "exit_code": 0,
+    "original_token_count": 210,
+    "output": "{\n  \"file\": \"C:/Users/user/Downloads/黃燈之後-整合存檔.json\",\n  \"bytes\": 2890,\n  \"sha256\": \"cbf52ee0e49257141b96182ea2fddd0a67965e0e9e90e8924e7fb1fcb2d956eb\",\n  \"floor\": \"B2\",\n  \"room\": \"monitor\",\n  \"baseDoor\": true,\n  \"b1Door\": true,\n  \"b2\": {\n    \"terminal\": 0,\n    \"cctv\": 0,\n    \"events\": [],\n    \"timeline\": false,\n    \"clips\": [],\n    \"audio\": false,\n    \"splice\": false,\n    \"key\": false\n  },\n  \"b3\": {\n    \"power\": {\n      \"A\": true,\n      \"B\": true,\n      \"C\": true,\n      \"D\": true\n    },\n    \"controller\": true,\n    \"isolated\": false,\n    \"bolts\": 8,\n    \"hatch\": false,\n    \"identity\": [\n      \"\",\n      \"\",\n      \"\"\n    ],\n    \"verified\": false,\n    \"backup\": false,\n    \"requested\": false,\n    \"disabled\": false,\n    \"unlocked\": false,\n    \"exited\": false\n  },\n  \"documents\": [\n    \"D01\",\n    \"D02\",\n    \"D03\"\n  ]\n}\n"
+  }
+}

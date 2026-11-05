@@ -1,0 +1,168 @@
+✔ UI-16-01｜首次下樓維持未解狀態，不提前揭露後段身分或受理 (317.3354ms)
+✖ UI-16-02｜排水放行後回訪與讀檔，門文案反映安全水位及保持通路 (216.9565ms)
+✖ UI-16-03｜身分已核對但未離站，不提前宣稱外部受理 (189.4741ms)
+✖ UI-16-04｜通關讀檔後回訪維修門，保留證據與官方尚待認定的邊界 (190.6767ms)
+✖ UI-17-01｜主選單拒絕無效檔並提供狀態提示，不覆寫既有進度 (155.6125ms)
+✖ UI-17-02｜無效後重選合法檔，確認頁清除舊錯誤；取消不替換進度 (190.8988ms)
+✖ UI-17-03｜已保全證據後匯回較早 B2，介紹與存檔不殘留上一局完成訊息 (131.7668ms)
+✖ UI-17-04｜檔案讀取失敗可見且不覆寫進度，再選同檔可恢復 (139.7962ms)
+✔ UI-17-05｜匯入清除暫時錯誤，但保留真正的儲存失敗警告 (146.1547ms)
+✖ UI-17-06｜舊檔案晚完成讀取，不得覆寫較新的合法確認結果 (171.6821ms)
+✖ UI-17-07｜拒絕無效檔後匯入通關檔，套用與重載皆保留結局及證據 (160.9426ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 2
+ℹ fail 9
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2494.0676
+
+✖ failing tests:
+
+test at Campaign\ui.test.ts:268:1
+✖ UI-16-02｜排水放行後回訪與讀檔，門文案反映安全水位及保持通路 (216.9565ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /積水已排除/. Input:
+  
+  '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:270:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>',
+    expected: /積水已排除/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:275:1
+✖ UI-16-03｜身分已核對但未離站，不提前宣稱外部受理 (189.4741ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /已核對.*身分關聯/. Input:
+  
+  '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:277:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>',
+    expected: /已核對.*身分關聯/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:280:1
+✖ UI-16-04｜通關讀檔後回訪維修門，保留證據與官方尚待認定的邊界 (190.6767ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /原始證據已保全/. Input:
+  
+  '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:282:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button class="slot  owned" data-action="item:card" aria-label="門禁卡，在背包" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"><span class="slot-name">門禁卡</span></button><button class="slot  owned" data-action="item:pry" aria-label="撬片，在背包" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"><span class="slot-name">撬片</span></button><button class="slot  " data-action="item:film" aria-label="透明路線片，已安裝" title="透明路線片"><span class="empty">↗</span><span class="slot-name"></span></button><button class="slot  " data-action="item:battery" aria-label="電池，已安裝" title="電池"><span class="empty">↗</span><span class="slot-name"></span></button></aside><header class="location"><small>第零層</small><h2>月台</h2></header><nav class="top-actions"><button type="button" data-action="intake" >派工</button><button type="button" data-action="journal" >筆記</button><button type="button" data-action="hint" >提示</button></nav><footer class="status"><span id="near-label">別看站名。跟著仍然供電的燈。</span><button type="button" data-action="settings" >設定</button></footer><div class="spots"><button class="spot" style="left:88px;top:215px" data-action="spot:back" aria-label="靠近並調查返回站務室" title="返回站務室"><i></i></button><button class="spot" style="left:152px;top:127px" data-action="spot:lightbox" aria-label="靠近並調查指示燈箱" title="指示燈箱"><i></i></button><button class="spot" style="left:280px;top:127px" data-action="spot:routeMap" aria-label="靠近並調查路線圖定位槽" title="路線圖定位槽"><i></i></button><button class="spot" style="left:424px;top:143px" data-action="spot:maintenanceDoor" aria-label="靠近並調查維修門" title="維修門"><i></i></button></div><div class="panel-shade"><section class="panel" role="dialog" aria-modal="true" aria-label="調查面板" data-panel="maintenanceDoor" tabindex="-1"><div class="panel-top"><small>站務維修 · 近景閱讀</small><button type="button" data-action="close" aria-label="關閉面板">關閉 ×</button></div><div class="panel-body"><h2>維修門 · 往地下一層</h2><p>供電黃線已校正。門後通往仍有積水的維修層；今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。</p><button type="button" data-action="descend" class="primary">下樓，進入 B1 維修層</button></div><p class="panel-feedback" role="status"></p></section></div>',
+    expected: /原始證據已保全/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:287:1
+✖ UI-17-01｜主選單拒絕無效檔並提供狀態提示，不覆寫既有進度 (155.6125ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /此 JSON 不是有效整合存檔，目前進度未改動/. Input:
+  
+  '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:292:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section>',
+    expected: /此 JSON 不是有效整合存檔，目前進度未改動/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:297:1
+✖ UI-17-02｜無效後重選合法檔，確認頁清除舊錯誤；取消不替換進度 (190.8988ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /此 JSON 不是有效整合存檔，目前進度未改動/. Input:
+  
+  '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section><div class="panel-shade"><section class="panel" data-panel="importConfirm" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>匯入已驗證的整合進度？</h2><p>將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。</p><button type="button" data-action="export" >先匯出目前進度</button><button type="button" data-action="importApply" >確認匯入此副本</button></div><p class="panel-feedback" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:305:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section><div class="panel-shade"><section class="panel" data-panel="importConfirm" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>匯入已驗證的整合進度？</h2><p>將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。</p><button type="button" data-action="export" >先匯出目前進度</button><button type="button" data-action="importApply" >確認匯入此副本</button></div><p class="panel-feedback" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</p></section></div>',
+    expected: /此 JSON 不是有效整合存檔，目前進度未改動/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:310:1
+✖ UI-17-03｜已保全證據後匯回較早 B2，介紹與存檔不殘留上一局完成訊息 (131.7668ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /證據已保全|原始資料唯讀備份完成/. Input:
+  
+  '<div class="play-ui" inert><aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button type="button" data-action="item:卡" class="slot owned" aria-label="門禁卡，已取得" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"></button><button type="button" data-action="item:撬" class="slot owned" aria-label="撬片，已取得" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"></button><button type="button" data-action="item:匙" class="slot owned" aria-label="同組檢修旁路鑰匙，已取得" title="同組檢修旁路鑰匙"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M2 2h6v6H6v2h6v2h2v2h-4v-2H4V8H2zm2 2v2h2V4z"/></svg></button><button type="button" data-action="item:證" class="slot " aria-label="唯讀證據包，未取得" title="唯讀證據包">·</button></aside><header class="location"><small>B2</small><h2>監控室</h2></header><nav class="top-actions"><button type="button" data-action="panel:journal" >筆記</button><button type="button" data-action="panel:hint" >提示</button><button type="button" data-action="panel:settings" >設定</button></nav><div class="spots"><button class="spot" data-action="spot:calibration" aria-label="靠近並調查備援校時測試" title="備援校時測試" style="left:136px;top:111px"><i></i><span class="spot-label">備援校時測試</span></button><button class="spot" data-action="spot:timeline" aria-label="靠近並調查事故事件時間線" title="事故事件時間線" style="left:280px;top:111px"><i></i><span class="spot-label">事故事件時間線</span></button><button class="spot" data-action="spot:D07" aria-label="靠近並調查M-042 簽領原件" title="M-042 簽領原件" style="left:392px;top:111px"><i></i><span class="spot-label">M-042 簽領原件</span></button></div><footer class="status campaign-status"><button type="button" data-action="room:evidence" >◀ 上一室</button><span id="near-label">方向鍵行走 · E 調查</span><button type="button" data-action="room:recording" >下一室 ▶</button><button type="button" data-action="panel:stairs" >樓層通道</button></footer></div><div class="panel-shade"><section class="panel" data-panel="intro" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>被刪掉的七分鐘</h2><p>工單證明林沐主動留守；還不清楚門為何重鎖。兩台備援時鐘偏差不同，不能直接按顯示時間排事件。</p></div><p class="panel-feedback" role="status">證據已保全。</p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:331:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<div class="play-ui" inert><aside class="inventory" aria-label="四格隨身物品"><small>隨身</small><button type="button" data-action="item:卡" class="slot owned" aria-label="門禁卡，已取得" title="門禁卡"><img src="/art/card.png" alt="" width="16" height="16"></button><button type="button" data-action="item:撬" class="slot owned" aria-label="撬片，已取得" title="撬片"><img src="/art/pry.png" alt="" width="16" height="16"></button><button type="button" data-action="item:匙" class="slot owned" aria-label="同組檢修旁路鑰匙，已取得" title="同組檢修旁路鑰匙"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M2 2h6v6H6v2h6v2h2v2h-4v-2H4V8H2zm2 2v2h2V4z"/></svg></button><button type="button" data-action="item:證" class="slot " aria-label="唯讀證據包，未取得" title="唯讀證據包">·</button></aside><header class="location"><small>B2</small><h2>監控室</h2></header><nav class="top-actions"><button type="button" data-action="panel:journal" >筆記</button><button type="button" data-action="panel:hint" >提示</button><button type="button" data-action="panel:settings" >設定</button></nav><div class="spots"><button class="spot" data-action="spot:calibration" aria-label="靠近並調查備援校時測試" title="備援校時測試" style="left:136px;top:111px"><i></i><span class="spot-label">備援校時測試</span></button><button class="spot" data-action="spot:timeline" aria-label="靠近並調查事故事件時間線" title="事故事件時間線" style="left:280px;top:111px"><i></i><span class="spot-label">事故事件時間線</span></button><button class="spot" data-action="spot:D07" aria-label="靠近並調查M-042 簽領原件" title="M-042 簽領原件" style="left:392px;top:111px"><i></i><span class="spot-label">M-042 簽領原件</span></button></div><footer class="status campaign-status"><button type="button" data-action="room:evidence" >◀ 上一室</button><span id="near-label">方向鍵行走 · E 調查</span><button type="button" data-action="room:recording" >下一室 ▶</button><button type="button" data-action="panel:stairs" >樓層通道</button></footer></div><div class="panel-shade"><section class="panel" data-panel="intro" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>被刪掉的七分鐘</h2><p>工單證明林沐主動留守；還不清楚門為何重鎖。兩台備援時鐘偏差不同，不能直接按顯示時間排事件。</p></div><p class="panel-feedback" role="status">證據已保全。</p></section></div>',
+    expected: /證據已保全|原始資料唯讀備份完成/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:336:1
+✖ UI-17-04｜檔案讀取失敗可見且不覆寫進度，再選同檔可恢復 (139.7962ms)
+  Error: read failed
+      at Object.text (<repo>/Campaign/ui.test.ts:341:11)
+      at Object.fn (./main.ts:270:25)
+      at Surface.emit (<repo>/Campaign/ui.test.ts:50:55)
+      at Object.choose (<repo>/Campaign/ui.test.ts:247:19)
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:340:14)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at Campaign\ui.test.ts:360:1
+✖ UI-17-06｜舊檔案晚完成讀取，不得覆寫較新的合法確認結果 (171.6821ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /此 JSON 不是有效整合存檔，目前進度未改動/. Input:
+  
+  '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section><div class="panel-shade"><section class="panel" data-panel="importConfirm" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>匯入已驗證的整合進度？</h2><p>將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。</p><button type="button" data-action="export" >先匯出目前進度</button><button type="button" data-action="importApply" >確認匯入此副本</button></div><p class="panel-feedback" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</p></section></div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:375:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<section class="opening"><small>整合主線 · L0 → B1 → B2 → B3</small><h2>黃燈之後</h2><p>繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。</p><button type="button" data-action="continue" class="primary">繼續調查</button><button type="button" data-action="panel:restart" >開始新調查</button><button type="button" data-action="export" >匯出目前進度</button><button type="button" data-action="import" >匯入整合 JSON</button></section><div class="panel-shade"><section class="panel" data-panel="importConfirm" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="panel-title"><div class="panel-top"><small>站務檔案 · B2</small><button type="button" data-action="close" aria-label="關閉或返回面板">關閉 ×</button></div><div class="panel-body"><h2>匯入已驗證的整合進度？</h2><p>將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。</p><button type="button" data-action="export" >先匯出目前進度</button><button type="button" data-action="importApply" >確認匯入此副本</button></div><p class="panel-feedback" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</p></section></div>',
+    expected: /此 JSON 不是有效整合存檔，目前進度未改動/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }
+
+test at Campaign\ui.test.ts:377:1
+✖ UI-17-07｜拒絕無效檔後匯入通關檔，套用與重載皆保留結局及證據 (160.9426ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /此 JSON 不是有效整合存檔，目前進度未改動/. Input:
+  
+  '<section class="ending"><small>原始記錄已保全 · 外部受理</small><h2>結局：黃燈之後</h2><p>簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。</p><p>今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。</p><blockquote>她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。</blockquote><button type="button" data-action="travel:B3" class="primary">回到總控，重看證據</button><button type="button" data-action="export" >匯出通關進度</button><button type="button" data-action="menu" >主選單</button></section><div class="toast" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</div>'
+  
+      at TestContext.<anonymous> (<repo>/Campaign/ui.test.ts:385:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<section class="ending"><small>原始記錄已保全 · 外部受理</small><h2>結局：黃燈之後</h2><p>簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。</p><p>今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。</p><blockquote>她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。</blockquote><button type="button" data-action="travel:B3" class="primary">回到總控，重看證據</button><button type="button" data-action="export" >匯出通關進度</button><button type="button" data-action="menu" >主選單</button></section><div class="toast" role="status">此 JSON 不是有效整合存檔，目前進度未改動。</div>',
+    expected: /此 JSON 不是有效整合存檔，目前進度未改動/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }

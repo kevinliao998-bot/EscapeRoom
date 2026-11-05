@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "floor": "end",
+  "room": "control",
+  "base": {
+    "revision": "amber-v2-20261103",
+    "scene": "platform",
+    "loop": 0,
+    "card": true,
+    "pry": true,
+    "box": true,
+    "power": true,
+    "broadcast": true,
+    "impression": true,
+    "links": [
+      0,
+      1
+    ],
+    "records": true,
+    "film": "device",
+    "battery": "device",
+    "path": [
+      "entry",
+      "junction",
+      "service",
+      "exit"
+    ],
+    "door": true,
+    "read": [
+      "sticker",
+      "broadcast",
+      "report",
+      "log",
+      "roster",
+      "impression",
+      "route",
+      "routeSolved"
+    ],
+    "hints": {},
+    "position": {
+      "x": 400.7988800000004,
+      "y": 143
+    },
+    "lastEnding": null,
+    "seenEndings": [],
+    "checkpoint": {
+      "revision": "amber-v2-20261103",
+      "scene": "platform",
+      "loop": 0,
+      "card": true,
+      "pry": true,
+      "box": true,
+      "power": true,
+      "broadcast": true,
+      "impression": true,
+      "links": [
+        0,
+        1
+      ],
+      "records": true,
+      "film": "device",
+      "battery": "device",
+      "path": [
+        "entry",
+        "junction",
+        "service",
+        "exit"
+      ],
+      "door": true,
+      "read": [
+        "sticker",
+        "broadcast",
+        "report",
+        "log",
+        "roster",
+        "impression",
+        "route",
+        "routeSolved"
+      ],
+      "hints": {},
+      "position": {
+        "x": 265.5988799999999,
+        "y": 143
+      },
+      "lastEnding": null,
+      "seenEndings": [],
+      "checkpoint": null
+    }
+  },
+  "b1": {
+    "schema": 1,
+    "room": "vestibule",
+    "slots": [
+      "照明",
+      "通訊",
+      "排風",
+      "泵浦",
+      "門鎖"
+    ],
+    "wired": true,
+    "power": {
+      "light": true,
+      "comm": false,
+      "fan": false,
+      "pump": false,
+      "lock": true
+    },
+    "valves": {
+      "A": true,
+      "B": true,
+      "C": false,
+      "D": false
+    },
+    "water": "safe",
+    "checkClosed": true,
+    "traceSeen": true,
+    "door": true,
+    "read": [
+      "work",
+      "rack",
+      "plugs",
+      "capacity",
+      "oldPipe",
+      "trace",
+      "sensor",
+      "lin"
+    ],
+    "hints": {
+      "EP01": 0,
+      "EP02": 0,
+      "EP03": 0
+    }
+  },
+  "b2": {
+    "terminal": 2,
+    "cctv": -1,
+    "events": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "timeline": true,
+    "clips": [
+      "C",
+      "A",
+      "D",
+      "B"
+    ],
+    "audio": true,
+    "splice": true,
+    "key": true
+  },
+  "b3": {
+    "power": {
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    "controller": false,
+    "isolated": true,
+    "bolts": 0,
+    "hatch": true,
+    "identity": [
+      "M-042",
+      "U-017-03",
+      "H-017-03"
+    ],
+    "verified": true,
+    "backup": true,
+    "requested": true,
+    "disabled": true,
+    "unlocked": true,
+    "exited": true
+  },
+  "read": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D07",
+    "D05",
+    "D13",
+    "D08",
+    "D09",
+    "D10",
+    "D06",
+    "D11",
+    "D12",
+    "D14"
+  ],
+  "hints": {}
+}

@@ -1,0 +1,332 @@
+{
+  "scope": "MW 正式頁面定向回歸；序章新局實際完成，B2／通關使用 TI 原下載檔透過選檔介面匯入，不冒充本輪四層全程重玩或真人讀屏驗收",
+  "url": "http://127.0.0.1:4178/",
+  "bundle": "index-BbeGnrc8.js",
+  "endExport": {
+    "case": "endExport",
+    "bytes": 3122,
+    "sha256": "e196a7fe13a721adac902643fa805c524f7ba3d37e605675daec681660c4fe43",
+    "floor": "end",
+    "readDocuments": 14,
+    "backup": true,
+    "exited": true,
+    "equalsTIOriginalState": true
+  },
+  "earlierExport": {
+    "case": "earlierExport",
+    "bytes": 2890,
+    "sha256": "cbf52ee0e49257141b96182ea2fddd0a67965e0e9e90e8924e7fb1fcb2d956eb",
+    "floor": "B2",
+    "readDocuments": 3,
+    "backup": false,
+    "exited": false,
+    "equalsTIOriginalState": true
+  },
+  "observations": [
+    {
+      "label": "新局開場",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 text 站內維修終端\n\t\t\t6 heading 01:17, Value: 2\n\t\t\t\t7 text 01:17\n\t\t\t8 text 顯示名稱：林沐\n\t\t\t9 text 頻道：站內維修頻道 「末班車到了。聽見三聲就走黃線，別看站名。」 一年前，妹妹在第零層事故後失蹤。官方說，她從未走進這座車站。你是維修員林澄；今晚，手機再次亮起。 你已獲准停機與保全資料。今晚 01:16 維修網路恢復；通知的送達時間，不等於錄製時間。保持扣與檢修通路已修復，今夜無倒數封鎖。\n\t\t\t10 button 收起手機，開始調查\n\t\t\t11 text 所有聲音線索均有文字版本。你可以靜音遊玩。\n\nThe focused UI element is 10 button 收起手機，開始調查"
+    },
+    {
+      "label": "走廊新局",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，尚未取得, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，尚未取得, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 迴圈走廊, Value: 2\n\t\t\t\t\t14 text 迴圈走廊\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 有些細節變了。也有東西一直沒變。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查時鐘, Help: 時鐘\n\t\t\t\t24 button Description: 靠近並調查站名牌, Help: 站名牌\n\t\t\t\t25 button Description: 靠近並調查地面水漬, Help: 地面水漬\n\t\t\t\t26 button Description: 靠近並調查飲水機內側標籤, Help: 飲水機內側標籤\n\t\t\t\t27 button Description: 靠近並調查牆腳檢修槽, Help: 牆腳檢修槽\n\t\t\t\t28 button Description: 靠近並調查清潔推車, Help: 清潔推車\n\t\t\t\t29 button Description: 靠近並調查盡頭門, Help: 盡頭門\n\t\t\t30 text 靠近物件按 E；也可點擊物件，自動走近調查。\n\nThe focused UI element is 21 button 設定"
+    },
+    {
+      "label": "取得門卡前",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 牆腳檢修槽\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 牆腳檢修槽, Value: 2, ID: panel-title\n\t\t\t\t8 text 牆腳檢修槽\n\t\t\t9 text 槽口露出一角卡片，位置與標籤圖示一致。\n\t\t\t10 button 拿取門禁卡\n\nThe focused UI element is 4 container 牆腳檢修槽"
+    },
+    {
+      "label": "拿取門禁卡",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 text 取得門禁卡。圖示的位置沒有改變。\n\t\t\t6 container 牆腳檢修槽\n\t\t\t\t7 text 站務維修 · 近景閱讀\n\t\t\t\t8 button 關閉面板\n\t\t\t\t9 heading 牆腳檢修槽, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 牆腳檢修槽\n\t\t\t\t11 text 卡片已在你的背包。\n\t\t\t\t12 text 取得門禁卡。圖示的位置沒有改變。\n\nThe focused UI element is 6 container 牆腳檢修槽"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，尚未取得, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 迴圈走廊, Value: 2\n\t\t\t\t\t14 text 迴圈走廊\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 有些細節變了。也有東西一直沒變。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查時鐘, Help: 時鐘\n\t\t\t\t24 button Description: 靠近並調查站名牌, Help: 站名牌\n\t\t\t\t25 button Description: 靠近並調查地面水漬, Help: 地面水漬\n\t\t\t\t26 button Description: 靠近並調查飲水機內側標籤, Help: 飲水機內側標籤\n\t\t\t\t27 button Description: 靠近並調查牆腳檢修槽, Help: 牆腳檢修槽\n\t\t\t\t28 button Description: 靠近並調查清潔推車, Help: 清潔推車\n\t\t\t\t29 button Description: 靠近並調查盡頭門, Help: 盡頭門\n\nThe focused UI element is 27 button Description: 靠近並調查牆腳檢修槽, Help: 牆腳檢修槽"
+    },
+    {
+      "label": "推車自動走近等待後",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 清潔推車\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 清潔推車, Value: 2, ID: panel-title\n\t\t\t\t8 text 清潔推車\n\t\t\t9 text 推車上放著一片薄金屬撬片，沒有被藏起來。\n\t\t\t10 button 拿取撬片\n\nThe focused UI element is 4 container 清潔推車"
+    },
+    {
+      "label": "拿取撬片",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 text 取得撬片。邊緣薄而結實。\n\t\t\t6 container 清潔推車\n\t\t\t\t7 text 站務維修 · 近景閱讀\n\t\t\t\t8 button 關閉面板\n\t\t\t\t9 heading 清潔推車, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 清潔推車\n\t\t\t\t11 text 你已取走撬片。\n\t\t\t\t12 text 取得撬片。邊緣薄而結實。\n\nThe focused UI element is 6 container 清潔推車"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 迴圈走廊, Value: 2\n\t\t\t\t\t14 text 迴圈走廊\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 有些細節變了。也有東西一直沒變。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查時鐘, Help: 時鐘\n\t\t\t\t24 button Description: 靠近並調查站名牌, Help: 站名牌\n\t\t\t\t25 button Description: 靠近並調查地面水漬, Help: 地面水漬\n\t\t\t\t26 button Description: 靠近並調查飲水機內側標籤, Help: 飲水機內側標籤\n\t\t\t\t27 button Description: 靠近並調查牆腳檢修槽, Help: 牆腳檢修槽\n\t\t\t\t28 button Description: 靠近並調查清潔推車, Help: 清潔推車\n\t\t\t\t29 button Description: 靠近並調查盡頭門, Help: 盡頭門\n\nThe focused UI element is 28 button Description: 靠近並調查清潔推車, Help: 清潔推車"
+    },
+    {
+      "label": "靠近並調查盡頭門",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 29 button Description: 靠近並調查盡頭門, Help: 盡頭門"
+    },
+    {
+      "label": "盡頭門就緒",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 走廊盡頭的門\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 走廊盡頭的門, Value: 2, ID: panel-title\n\t\t\t\t8 text 走廊盡頭的門\n\t\t\t9 text 門禁卡的形狀與讀卡口吻合。\n\t\t\t10 button 使用門禁卡，進入站務室\n\nThe focused UI element is 4 container 走廊盡頭的門"
+    },
+    {
+      "label": "使用門禁卡，進入站務室",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 站務室, Value: 2\n\t\t\t\t\t14 text 站務室\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 記錄能互相印證，也能互相否定。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回走廊, Help: 返回走廊\n\t\t\t\t24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉\n\t\t\t\t25 button Description: 靠近並調查牆上校準貼紙, Help: 牆上校準貼紙\n\t\t\t\t26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層\n\t\t\t\t27 button Description: 靠近並調查檢修盒, Help: 檢修盒\n\t\t\t\t28 button Description: 靠近並調查往月台, Help: 往月台\n\t\t\t29 text 門禁燈亮起。這一次，門後不再是同一條走廊。\n\nThe focused UI element is 23 button Description: 靠近並調查返回走廊, Help: 返回走廊"
+    },
+    {
+      "label": "靠近並調查檢修盒",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 27 button Description: 靠近並調查檢修盒, Help: 檢修盒"
+    },
+    {
+      "label": "檢修盒走近完成",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 檢修盒\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 檢修盒, Value: 2, ID: panel-title\n\t\t\t\t8 text 檢修盒\n\t\t\t9 container\n\t\t\t\t10 text 盒蓋卡住，邊緣有一道窄縫\n\t\t\t\t11 text ○ 備用電源尚未接通\n\t\t\t12 button 以撬片打開盒蓋\n\nThe focused UI element is 4 container 檢修盒"
+    },
+    {
+      "label": "以撬片打開盒蓋",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 檢修盒\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 檢修盒, Value: 2, ID: panel-title\n\t\t\t\t8 text 檢修盒\n\t\t\t9 container\n\t\t\t\t10 text 盒蓋已開啟\n\t\t\t\t11 text ○ 備用電源尚未接通\n\t\t\t12 button 啟動備用電源\n\nThe focused UI element is 4 container 檢修盒"
+    },
+    {
+      "label": "啟動備用電源",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 text 備用電源已接通。控制台顯示三段波形。\n\t\t\t6 container 檢修盒\n\t\t\t\t7 text 站務維修 · 近景閱讀\n\t\t\t\t8 button 關閉面板\n\t\t\t\t9 heading 檢修盒, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 檢修盒\n\t\t\t\t11 container\n\t\t\t\t\t12 text 盒蓋已開啟\n\t\t\t\t\t13 text ● 備用電源供電中\n\t\t\t\t14 text 備用電源已接通。控制台顯示三段波形。\n\nThe focused UI element is 6 container 檢修盒"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 站務室, Value: 2\n\t\t\t\t\t14 text 站務室\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 記錄能互相印證，也能互相否定。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回走廊, Help: 返回走廊\n\t\t\t\t24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉\n\t\t\t\t25 button Description: 靠近並調查牆上校準貼紙, Help: 牆上校準貼紙\n\t\t\t\t26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層\n\t\t\t\t27 button Description: 靠近並調查檢修盒, Help: 檢修盒\n\t\t\t\t28 button Description: 靠近並調查往月台, Help: 往月台\n\nThe focused UI element is 27 button Description: 靠近並調查檢修盒, Help: 檢修盒"
+    },
+    {
+      "label": "靠近並調查廣播控制台／電池倉",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 廣播控制台\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 container\n\t\t\t\t8 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 廣播控制台\n\t\t\t\t10 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t\t11 button 短 ▪\n\t\t\t\t12 button 雙短 ▪▪\n\t\t\t\t13 button 長 ━\n\t\t\t\t14 text 尚未選擇\n\t\t\t\t15 button 移除最後一組\n\t\t\t\t16 button 清空本次草稿\n\t\t\t\t17 button 確認校準\n\nThe focused UI element is 4 container 廣播控制台"
+    },
+    {
+      "label": "長 ━",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 廣播控制台\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t6 text 廣播控制台\n\t\t\t7 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t8 button 短 ▪\n\t\t\t9 button 雙短 ▪▪\n\t\t\t10 button 長 ━\n\t\t\t11 text 長 ━\n\t\t\t12 button 移除最後一組\n\t\t\t13 button 清空本次草稿\n\t\t\t14 button 確認校準\n\nThe focused UI element is 10 button 長 ━"
+    },
+    {
+      "label": "短 ▪",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 廣播控制台\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t6 text 廣播控制台\n\t\t\t7 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t8 button 短 ▪\n\t\t\t9 button 雙短 ▪▪\n\t\t\t10 button 長 ━\n\t\t\t11 text 長 ━ ／ 短 ▪\n\t\t\t12 button 移除最後一組\n\t\t\t13 button 清空本次草稿\n\t\t\t14 button 確認校準\n\nThe focused UI element is 8 button 短 ▪"
+    },
+    {
+      "label": "雙短 ▪▪",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 廣播控制台\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t6 text 廣播控制台\n\t\t\t7 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t8 button 短 ▪\n\t\t\t9 button 雙短 ▪▪\n\t\t\t10 button 長 ━\n\t\t\t11 text 長 ━ ／ 短 ▪ ／ 雙短 ▪▪\n\t\t\t12 button 移除最後一組\n\t\t\t13 button 清空本次草稿\n\t\t\t14 button 確認校準\n\nThe focused UI element is 9 button 雙短 ▪▪"
+    },
+    {
+      "label": "確認校準",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 廣播控制台\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t6 text 廣播控制台\n\t\t\t7 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t8 button 短 ▪\n\t\t\t9 button 雙短 ▪▪\n\t\t\t10 button 長 ━\n\t\t\t11 text 長 ━ ／ 短 ▪ ／ 雙短 ▪▪\n\t\t\t12 button 移除最後一組\n\t\t\t13 button 清空本次草稿\n\t\t\t14 button 確認校準\n\t\t\t15 text 站務檔案 · 已讀可在筆記重看\n\t\t\t16 heading 控制台回放, Value: 2\n\t\t\t\t17 text 控制台回放\n\t\t\t18 container\n\t\t\t\t19 text 〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕\n\t\t\t\t20 text 相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。\n\t\t\t21 button 重播三聲標記\n\t\t22 text 校準完成。相同的三聲標記，出現了兩次。\n\nThe focused UI element is 14 button 確認校準"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，尚未取得, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 站務室, Value: 2\n\t\t\t\t\t14 text 站務室\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 記錄能互相印證，也能互相否定。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回走廊, Help: 返回走廊\n\t\t\t\t24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉\n\t\t\t\t25 button Description: 靠近並調查牆上校準貼紙, Help: 牆上校準貼紙\n\t\t\t\t26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層\n\t\t\t\t27 button Description: 靠近並調查檢修盒, Help: 檢修盒\n\t\t\t\t28 button Description: 靠近並調查往月台, Help: 往月台\n\nThe focused UI element is 24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉"
+    },
+    {
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 紀錄櫃 · 交叉比對\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 container\n\t\t\t\t8 heading 紀錄櫃 · 交叉比對, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 紀錄櫃 · 交叉比對\n\t\t\t\t10 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t11 heading 事故報告, Value: 2\n\t\t\t\t\t12 text 事故報告\n\t\t\t\t13 container\n\t\t\t\t\t14 text 第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。\n\t\t\t\t\t15 text 頁邊有重寫痕跡；報告沒有提供原始修訂者。\n\t\t\t\t16 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t17 heading 維修簿, Value: 2\n\t\t\t\t\t18 text 維修簿\n\t\t\t\t19 container\n\t\t\t\t\t20 text 事故當夜，凌晨一點十七分：緊急斷電。\n\t\t\t\t\t21 text 林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。\n\t\t\t\t\t22 text 斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。\n\t\t\t\t\t23 text 此處沒有記下她後來去了哪裡。\n\t\t\t\t24 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t25 heading 失聯者名冊, Value: 2\n\t\t\t\t\t26 text 失聯者名冊\n\t\t\t\t27 text 事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。\n\t\t\t\t28 button 以側光檢視刮除處\n\t\t\t\t29 heading 選起點，再選對應證據, Value: 3\n\t\t\t\t\t30 text 選起點，再選對應證據\n\t\t\t\t31 button 報告 · 01:17\n\t\t\t\t32 button 維修簿 · 凌晨一點十七分\n\t\t\t\t33 button 官方 · 林沐從未進站\n\t\t\t\t34 button 名冊 · 簽名遭刮除\n\t\t\t\t35 text 同一分鐘：尚未連線　人員紀錄矛盾：尚未連線\n\t\t\t\t36 heading 證據能支持什麼？, Value: 3\n\t\t\t\t\t37 text 證據能支持什麼？\n\t\t\t\t38 button 時間吻合，所以我知道是誰改動紀錄\n\t\t\t\t39 button 紀錄有人為改動，仍不能確認當下聲音身分\n\t\t\t\t40 button 名冊有林沐，所以此刻的聲音一定是她\n\nThe focused UI element is 4 container 紀錄櫃 · 交叉比對"
+    },
+    {
+      "label": "以側光檢視刮除處",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 紀錄櫃 · 交叉比對\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 紀錄櫃 · 交叉比對, Value: 2, ID: panel-title\n\t\t\t\t6 text 紀錄櫃 · 交叉比對\n\t\t\t7 text 站務檔案 · 已讀可在筆記重看\n\t\t\t8 heading 事故報告, Value: 2\n\t\t\t\t9 text 事故報告\n\t\t\t10 container\n\t\t\t\t11 text 第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。\n\t\t\t\t12 text 頁邊有重寫痕跡；報告沒有提供原始修訂者。\n\t\t\t13 text 站務檔案 · 已讀可在筆記重看\n\t\t\t14 heading 維修簿, Value: 2\n\t\t\t\t15 text 維修簿\n\t\t\t16 container\n\t\t\t\t17 text 事故當夜，凌晨一點十七分：緊急斷電。\n\t\t\t\t18 text 林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。\n\t\t\t\t19 text 斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。\n\t\t\t\t20 text 此處沒有記下她後來去了哪裡。\n\t\t\t21 text 站務檔案 · 已讀可在筆記重看\n\t\t\t22 heading 失聯者名冊, Value: 2\n\t\t\t\t23 text 失聯者名冊\n\t\t\t24 text 事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。\n\t\t\t25 button 再次查看簽名壓痕\n\t\t\t26 text 站務檔案 · 已讀可在筆記重看\n\t\t\t27 heading 刮除處的壓痕, Value: 2\n\t\t\t\t28 text 刮除處的壓痕\n\t\t\t29 text 側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。\n\t\t\t30 heading 選起點，再選對應證據, Value: 3\n\t\t\t\t31 text 選起點，再選對應證據\n\t\t\t32 button 報告 · 01:17\n\t\t\t33 button 維修簿 · 凌晨一點十七分\n\t\t\t34 button 官方 · 林沐從未進站\n\t\t\t35 button 名冊壓痕 · 林沐\n\t\t\t36 text 同一分鐘：尚未連線　人員紀錄矛盾：尚未連線\n\t\t\t37 heading 證據能支持什麼？, Value: 3\n\t\t\t\t38 text 證據能支持什麼？\n\t\t\t39 button 時間吻合，所以我知道是誰改動紀錄\n\t\t\t40 button 紀錄有人為改動，仍不能確認當下聲音身分\n\t\t\t41 button 名冊有林沐，所以此刻的聲音一定是她\n\nThe focused UI element is 25 button 再次查看簽名壓痕"
+    },
+    {
+      "label": "報告 · 01:17",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n+\t\t42 text 再選一項可印證的證據。\nThe focused UI element is 32 button 報告 · 01:17"
+    },
+    {
+      "label": "維修簿 · 凌晨一點十七分",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t36 text 同一分鐘：已驗證　人員紀錄矛盾：尚未連線\n~\t\t42 text 同一分鐘：兩種時間寫法相符。時間本身不證明造假。\nThe focused UI element is 33 button 維修簿 · 凌晨一點十七分"
+    },
+    {
+      "label": "官方 · 林沐從未進站",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t42 text 再選一項可印證的證據。\nThe focused UI element is 34 button 官方 · 林沐從未進站"
+    },
+    {
+      "label": "名冊壓痕 · 林沐",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t36 text 同一分鐘：已驗證　人員紀錄矛盾：已驗證\n~\t\t42 text 林沐簽名與官方否認互相矛盾；仍需側光確認。\nThe focused UI element is 35 button 名冊壓痕 · 林沐"
+    },
+    {
+      "label": "紀錄有人為改動，仍不能確認當下聲音身分",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 42\n+\t\t\t42 heading 維修簿夾層已開啟, Value: 3\n+\t\t\t\t43 text 維修簿夾層已開啟\n+\t\t\t44 text 薄薄的透明路線片滑出；電池倉也已彈開。\n+\t\t\t45 button 取走透明路線片\n+\t\t46 text 比對完成。維修簿夾層鬆開，控制台電池倉彈出。\nThe focused UI element is 40 button 紀錄有人為改動，仍不能確認當下聲音身分"
+    },
+    {
+      "label": "取走透明路線片",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 text 取得透明路線片。\n\t\t\t6 container 紀錄櫃 · 交叉比對\n\t\t\t\t7 text 站務維修 · 近景閱讀\n\t\t\t\t8 button 關閉面板\n\t\t\t\t9 container\n\t\t\t\t\t10 heading 紀錄櫃 · 交叉比對, Value: 2, ID: panel-title\n\t\t\t\t\t\t11 text 紀錄櫃 · 交叉比對\n\t\t\t\t\t12 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t\t13 heading 事故報告, Value: 2\n\t\t\t\t\t\t14 text 事故報告\n\t\t\t\t\t15 container\n\t\t\t\t\t\t16 text 第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。\n\t\t\t\t\t\t17 text 頁邊有重寫痕跡；報告沒有提供原始修訂者。\n\t\t\t\t\t18 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t\t19 heading 維修簿, Value: 2\n\t\t\t\t\t\t20 text 維修簿\n\t\t\t\t\t21 container\n\t\t\t\t\t\t22 text 事故當夜，凌晨一點十七分：緊急斷電。\n\t\t\t\t\t\t23 text 林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。\n\t\t\t\t\t\t24 text 斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。\n\t\t\t\t\t\t25 text 此處沒有記下她後來去了哪裡。\n\t\t\t\t\t26 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t\t27 heading 失聯者名冊, Value: 2\n\t\t\t\t\t\t28 text 失聯者名冊\n\t\t\t\t\t29 text 事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。\n\t\t\t\t\t30 button 再次查看簽名壓痕\n\t\t\t\t\t31 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t\t32 heading 刮除處的壓痕, Value: 2\n\t\t\t\t\t\t33 text 刮除處的壓痕\n\t\t\t\t\t34 text 側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。\n\t\t\t\t\t35 heading 選起點，再選對應證據, Value: 3\n\t\t\t\t\t\t36 text 選起點，再選對應證據\n\t\t\t\t\t37 button 報告 · 01:17\n\t\t\t\t\t38 button 維修簿 · 凌晨一點十七分\n\t\t\t\t\t39 button 官方 · 林沐從未進站\n\t\t\t\t\t40 button 名冊壓痕 · 林沐\n\t\t\t\t\t41 text 同一分鐘：已驗證　人員紀錄矛盾：已驗證\n\t\t\t\t\t42 heading 證據能支持什麼？, Value: 3\n\t\t\t\t\t\t43 text 證據能支持什麼？\n\t\t\t\t\t44 button 時間吻合，所以我知道是誰改動紀錄\n\t\t\t\t\t45 button 紀錄有人為改動，仍不能確認當下聲音身分\n\t\t\t\t\t46 button 名冊有林沐，所以此刻的聲音一定是她\n\t\t\t\t\t47 heading 維修簿夾層已開啟, Value: 3\n\t\t\t\t\t\t48 text 維修簿夾層已開啟\n\t\t\t\t\t49 text 透明路線片已領取。\n\t\t\t\t50 text 取得透明路線片。\n\nThe focused UI element is 6 container 紀錄櫃 · 交叉比對"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，在背包, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，尚未取得, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 站務室, Value: 2\n\t\t\t\t\t14 text 站務室\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text E · 紀錄櫃／維修簿夾層\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回走廊, Help: 返回走廊\n\t\t\t\t24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉\n\t\t\t\t25 button Description: 靠近並調查牆上校準貼紙, Help: 牆上校準貼紙\n\t\t\t\t26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層\n\t\t\t\t27 button Description: 靠近並調查檢修盒, Help: 檢修盒\n\t\t\t\t28 button Description: 靠近並調查往月台, Help: 往月台\n\nThe focused UI element is 26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層"
+    },
+    {
+      "label": "靠近並調查廣播控制台／電池倉",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 廣播控制台\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 container\n\t\t\t\t8 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 廣播控制台\n\t\t\t\t10 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t\t11 button 短 ▪\n\t\t\t\t12 button 雙短 ▪▪\n\t\t\t\t13 button 長 ━\n\t\t\t\t14 text 長 ━ ／ 短 ▪ ／ 雙短 ▪▪\n\t\t\t\t15 button 移除最後一組\n\t\t\t\t16 button 清空本次草稿\n\t\t\t\t17 button 確認校準\n\t\t\t\t18 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t19 heading 控制台回放, Value: 2\n\t\t\t\t\t20 text 控制台回放\n\t\t\t\t21 container\n\t\t\t\t\t22 text 〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕\n\t\t\t\t\t23 text 相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。\n\t\t\t\t24 button 重播三聲標記\n\t\t\t\t25 heading 彈出的電池倉, Value: 3\n\t\t\t\t\t26 text 彈出的電池倉\n\t\t\t\t27 text 電池可帶往月台。\n\t\t\t\t28 button 取走電池\n\nThe focused UI element is 4 container 廣播控制台"
+    },
+    {
+      "label": "取走電池",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 text 取得電池。\n\t\t\t6 container 廣播控制台\n\t\t\t\t7 text 站務維修 · 近景閱讀\n\t\t\t\t8 button 關閉面板\n\t\t\t\t9 container\n\t\t\t\t\t10 heading 廣播控制台, Value: 2, ID: panel-title\n\t\t\t\t\t\t11 text 廣播控制台\n\t\t\t\t\t12 text 依牆貼校準三組波形；先觀察長度與段數。\n\t\t\t\t\t13 button 短 ▪\n\t\t\t\t\t14 button 雙短 ▪▪\n\t\t\t\t\t15 button 長 ━\n\t\t\t\t\t16 text 長 ━ ／ 短 ▪ ／ 雙短 ▪▪\n\t\t\t\t\t17 button 移除最後一組\n\t\t\t\t\t18 button 清空本次草稿\n\t\t\t\t\t19 button 確認校準\n\t\t\t\t\t20 text 站務檔案 · 已讀可在筆記重看\n\t\t\t\t\t21 heading 控制台回放, Value: 2\n\t\t\t\t\t\t22 text 控制台回放\n\t\t\t\t\t23 container\n\t\t\t\t\t\t24 text 〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕\n\t\t\t\t\t\t25 text 相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。\n\t\t\t\t\t26 button 重播三聲標記\n\t\t\t\t\t27 heading 彈出的電池倉, Value: 3\n\t\t\t\t\t\t28 text 彈出的電池倉\n\t\t\t\t\t29 text 電池已領取。\n\t\t\t\t30 text 取得電池。\n\nThe focused UI element is 6 container 廣播控制台"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，在背包, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，在背包, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 站務室, Value: 2\n\t\t\t\t\t14 text 站務室\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text E · 廣播控制台／電池倉\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回走廊, Help: 返回走廊\n\t\t\t\t24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉\n\t\t\t\t25 button Description: 靠近並調查牆上校準貼紙, Help: 牆上校準貼紙\n\t\t\t\t26 button Description: 靠近並調查紀錄櫃／維修簿夾層, Help: 紀錄櫃／維修簿夾層\n\t\t\t\t27 button Description: 靠近並調查檢修盒, Help: 檢修盒\n\t\t\t\t28 button Description: 靠近並調查往月台, Help: 往月台\n\nThe focused UI element is 24 button Description: 靠近並調查廣播控制台／電池倉, Help: 廣播控制台／電池倉"
+    },
+    {
+      "label": "靠近並調查往月台",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，在背包, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，在背包, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 月台, Value: 2\n\t\t\t\t\t14 text 月台\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 別看站名。跟著仍然供電的燈。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回站務室, Help: 返回站務室\n\t\t\t\t24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱\n\t\t\t\t25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽\n\t\t\t\t26 button Description: 靠近並調查維修門, Help: 維修門\n\nThe focused UI element is 23 button Description: 靠近並調查返回站務室, Help: 返回站務室"
+    },
+    {
+      "label": "靠近並調查指示燈箱",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 月台指示燈箱\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 月台指示燈箱, Value: 2, ID: panel-title\n\t\t\t\t8 text 月台指示燈箱\n\t\t\t9 text ○ 電池槽空著。燈箱需要可攜電源。\n\t\t\t10 button 裝入電池\n\nThe focused UI element is 4 container 月台指示燈箱"
+    },
+    {
+      "label": "裝入電池",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 月台指示燈箱\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 月台指示燈箱, Value: 2, ID: panel-title\n\t\t\t\t8 text 月台指示燈箱\n\t\t\t9 text ● 供電穩定。琥珀燈指出連續路線。\n\t\t\t10 button 取回電池\n\nThe focused UI element is 4 container 月台指示燈箱"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，在背包, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，已安裝, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 月台, Value: 2\n\t\t\t\t\t14 text 月台\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text 別看站名。跟著仍然供電的燈。\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回站務室, Help: 返回站務室\n\t\t\t\t24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱\n\t\t\t\t25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽\n\t\t\t\t26 button Description: 靠近並調查維修門, Help: 維修門\n\nThe focused UI element is 24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱"
+    },
+    {
+      "label": "靠近並調查路線圖定位槽",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 路線圖 · 供電校正\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 container\n\t\t\t\t8 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 路線圖 · 供電校正\n\t\t\t\t10 text 透明片與唯一定位槽吻合。\n\t\t\t\t11 button 覆上透明路線片\n\t\t\t\t12 text 廣播：「北站，回聲站。」\n\t\t\t\t13 text 〔站名與燈號不符〕\n\t\t\t\t14 button 入口，供電\n\t\t\t\t\t15 text ●\n\t\t\t\t\t16 text 入口\n\t\t\t\t17 button 分岔，供電\n\t\t\t\t\t18 text ●\n\t\t\t\t\t19 text 分岔\n\t\t\t\t20 button 檢修，供電\n\t\t\t\t\t21 text ●\n\t\t\t\t\t22 text 檢修\n\t\t\t\t23 button 出口，供電\n\t\t\t\t\t24 text ●\n\t\t\t\t\t25 text 出口\n\t\t\t\t26 button 北站，未供電\n\t\t\t\t\t27 text ○\n\t\t\t\t\t28 text 北站\n\t\t\t\t29 button 回聲，未供電\n\t\t\t\t\t30 text ○\n\t\t\t\t\t31 text 回聲\n\t\t\t\t32 text 目前：尚未連線\n\t\t\t\t33 text ● 供電　○ 未供電　\n\t\t\t\t34 button 清除本次路線\n\nThe focused UI element is 4 container 路線圖 · 供電校正"
+    },
+    {
+      "label": "覆上透明路線片",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 路線圖 · 供電校正\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 container\n\t\t\t\t8 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 路線圖 · 供電校正\n\t\t\t\t10 text 路線片已對齊定位槽。\n\t\t\t\t11 button 取回路線片\n\t\t\t\t12 text 廣播：「北站，回聲站。」\n\t\t\t\t13 text 〔站名與燈號不符〕\n\t\t\t\t14 button 入口，供電\n\t\t\t\t\t15 text ●\n\t\t\t\t\t16 text 入口\n\t\t\t\t17 button 分岔，供電\n\t\t\t\t\t18 text ●\n\t\t\t\t\t19 text 分岔\n\t\t\t\t20 button 檢修，供電\n\t\t\t\t\t21 text ●\n\t\t\t\t\t22 text 檢修\n\t\t\t\t23 button 出口，供電\n\t\t\t\t\t24 text ●\n\t\t\t\t\t25 text 出口\n\t\t\t\t26 button 北站，未供電\n\t\t\t\t\t27 text ○\n\t\t\t\t\t28 text 北站\n\t\t\t\t29 button 回聲，未供電\n\t\t\t\t\t30 text ○\n\t\t\t\t\t31 text 回聲\n\t\t\t\t32 text 目前：尚未連線\n\t\t\t\t33 text ● 供電　○ 未供電　\n\t\t\t\t34 button 清除本次路線\n\nThe focused UI element is 4 container 路線圖 · 供電校正"
+    },
+    {
+      "label": "入口，供電",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 路線圖 · 供電校正\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t6 text 路線圖 · 供電校正\n\t\t\t7 text 路線片已對齊定位槽。\n\t\t\t8 button 取回路線片\n\t\t\t9 text 廣播：「北站，回聲站。」\n\t\t\t10 text 〔站名與燈號不符〕\n\t\t\t11 button 入口，供電\n\t\t\t\t12 text ●\n\t\t\t\t13 text 入口\n\t\t\t14 button 分岔，供電\n\t\t\t\t15 text ●\n\t\t\t\t16 text 分岔\n\t\t\t17 button 檢修，供電\n\t\t\t\t18 text ●\n\t\t\t\t19 text 檢修\n\t\t\t20 button 出口，供電\n\t\t\t\t21 text ●\n\t\t\t\t22 text 出口\n\t\t\t23 button 北站，未供電\n\t\t\t\t24 text ○\n\t\t\t\t25 text 北站\n\t\t\t26 button 回聲，未供電\n\t\t\t\t27 text ○\n\t\t\t\t28 text 回聲\n\t\t\t29 text 目前：入口\n\t\t\t30 text ● 供電　○ 未供電　\n\t\t\t31 button 清除本次路線\n\nThe focused UI element is 11 button 入口，供電"
+    },
+    {
+      "label": "分岔，供電",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 路線圖 · 供電校正\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t6 text 路線圖 · 供電校正\n\t\t\t7 text 路線片已對齊定位槽。\n\t\t\t8 button 取回路線片\n\t\t\t9 text 廣播：「北站，回聲站。」\n\t\t\t10 text 〔站名與燈號不符〕\n\t\t\t11 button 入口，供電\n\t\t\t\t12 text ●\n\t\t\t\t13 text 入口\n\t\t\t14 button 分岔，供電\n\t\t\t\t15 text ●\n\t\t\t\t16 text 分岔\n\t\t\t17 button 檢修，供電\n\t\t\t\t18 text ●\n\t\t\t\t19 text 檢修\n\t\t\t20 button 出口，供電\n\t\t\t\t21 text ●\n\t\t\t\t22 text 出口\n\t\t\t23 button 北站，未供電\n\t\t\t\t24 text ○\n\t\t\t\t25 text 北站\n\t\t\t26 button 回聲，未供電\n\t\t\t\t27 text ○\n\t\t\t\t28 text 回聲\n\t\t\t29 text 目前：入口 → 分岔\n\t\t\t30 text ● 供電　○ 未供電　\n\t\t\t31 button 清除本次路線\n\nThe focused UI element is 14 button 分岔，供電"
+    },
+    {
+      "label": "檢修，供電",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 路線圖 · 供電校正\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t6 text 路線圖 · 供電校正\n\t\t\t7 text 路線片已對齊定位槽。\n\t\t\t8 button 取回路線片\n\t\t\t9 text 廣播：「北站，回聲站。」\n\t\t\t10 text 〔站名與燈號不符〕\n\t\t\t11 button 入口，供電\n\t\t\t\t12 text ●\n\t\t\t\t13 text 入口\n\t\t\t14 button 分岔，供電\n\t\t\t\t15 text ●\n\t\t\t\t16 text 分岔\n\t\t\t17 button 檢修，供電\n\t\t\t\t18 text ●\n\t\t\t\t19 text 檢修\n\t\t\t20 button 出口，供電\n\t\t\t\t21 text ●\n\t\t\t\t22 text 出口\n\t\t\t23 button 北站，未供電\n\t\t\t\t24 text ○\n\t\t\t\t25 text 北站\n\t\t\t26 button 回聲，未供電\n\t\t\t\t27 text ○\n\t\t\t\t28 text 回聲\n\t\t\t29 text 目前：入口 → 分岔 → 檢修\n\t\t\t30 text ● 供電　○ 未供電　\n\t\t\t31 button 清除本次路線\n\nThe focused UI element is 17 button 檢修，供電"
+    },
+    {
+      "label": "出口，供電",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container 路線圖 · 供電校正\n\t\t2 text 站務維修 · 近景閱讀\n\t\t3 button 關閉面板\n\t\t4 container\n\t\t\t5 heading 路線圖 · 供電校正, Value: 2, ID: panel-title\n\t\t\t\t6 text 路線圖 · 供電校正\n\t\t\t7 text 路線片已對齊定位槽。\n\t\t\t8 button 取回路線片\n\t\t\t9 text 廣播：「北站，回聲站。」\n\t\t\t10 text 〔站名與燈號不符〕\n\t\t\t11 button 入口，供電\n\t\t\t\t12 text ●\n\t\t\t\t13 text 入口\n\t\t\t14 button 分岔，供電\n\t\t\t\t15 text ●\n\t\t\t\t16 text 分岔\n\t\t\t17 button 檢修，供電\n\t\t\t\t18 text ●\n\t\t\t\t19 text 檢修\n\t\t\t20 button 出口，供電\n\t\t\t\t21 text ●\n\t\t\t\t22 text 出口\n\t\t\t23 button 北站，未供電\n\t\t\t\t24 text ○\n\t\t\t\t25 text 北站\n\t\t\t26 button 回聲，未供電\n\t\t\t\t27 text ○\n\t\t\t\t28 text 回聲\n\t\t\t29 text 目前：入口 → 分岔 → 檢修 → 出口\n\t\t\t30 text ● 供電　○ 未供電　維修門已開啟\n\t\t\t31 button 清除本次路線\n\t\t32 text 琥珀燈連成黃線。維修門已開啟；選擇前進度已保存。\n\nThe focused UI element is 20 button 出口，供電"
+    },
+    {
+      "label": "關閉面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container ui\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t9 button Description: 透明路線片，已安裝, Help: 透明路線片\n\t\t\t\t10 button Description: 電池，已安裝, Help: 電池\n\t\t\t11 container\n\t\t\t\t12 text 第零層\n\t\t\t\t13 heading 月台, Value: 2\n\t\t\t\t\t14 text 月台\n\t\t\t15 container\n\t\t\t\t16 button 派工\n\t\t\t\t17 button 筆記\n\t\t\t\t18 button 提示\n\t\t\t19 container\n\t\t\t\t20 text E · 路線圖定位槽\n\t\t\t\t21 button 設定\n\t\t\t22 container\n\t\t\t\t23 button Description: 靠近並調查返回站務室, Help: 返回站務室\n\t\t\t\t24 button Description: 靠近並調查指示燈箱, Help: 指示燈箱\n\t\t\t\t25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽\n\t\t\t\t26 button Description: 靠近並調查維修門, Help: 維修門\n\nThe focused UI element is 25 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽"
+    },
+    {
+      "label": "靠近並調查維修門",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 維修門 · 往地下一層\n\t\t\t5 text 站務維修 · 近景閱讀\n\t\t\t6 button 關閉面板\n\t\t\t7 heading 維修門 · 往地下一層, Value: 2, ID: panel-title\n\t\t\t\t8 text 維修門 · 往地下一層\n\t\t\t9 text 供電黃線已校正。門後通往仍有積水的維修層。今夜派工允許你繼續保全資料。原紀錄尚不足以回答妹妹的去向。\n\t\t\t10 button 下樓，進入 B1 維修層\n\nThe focused UI element is 4 container 維修門 · 往地下一層"
+    },
+    {
+      "label": "下樓，進入 B1 維修層",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 工單不是一封即時求救\n\t\t\t5 text 站務檔案 · B1\n\t\t\t6 button 關閉或返回面板\n\t\t\t7 container\n\t\t\t\t8 heading 工單不是一封即時求救, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 工單不是一封即時求救\n\t\t\t\t10 text 維修門後有排水與門禁兩套裝置。先在配電室辨認線束；泵房能驗證實際流向。今夜安全處置已完成，不需要你留在把手旁。 站務原件 · 僅供核對\n\t\t\t\t11 heading 今夜派工與安全處置單, Value: 2\n\t\t\t\t\t12 text 今夜派工與安全處置單\n\t\t\t\t13 text 派工對象：維修員林澄。工作：停用封存導引控制器，保全事故資料。林澄因林沐失蹤案申請本次任務。進場前已清通工作井檢修通路，修復隔離門保持扣及止動銷；開門後可機械保持，不必留人壓把手。舊控制設定與資料尚未清除，須先備份再永久停用。現有電路提供受控檢修，沒有今夜倒數封鎖。入口網路於今晚 01:16 接通。\n\nThe focused UI element is 4 container 工單不是一封即時求救"
+    },
+    {
+      "label": "關閉或返回面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 container 四格隨身物品\n\t\t\t\t6 text 隨身\n\t\t\t\t7 button Description: 門禁卡，已取得, Help: 門禁卡\n\t\t\t\t8 button Description: 撬片，已取得, Help: 撬片\n\t\t\t\t9 button Description: 同組檢修旁路鑰匙，未取得, Help: 同組檢修旁路鑰匙\n\t\t\t\t10 button Description: 唯讀證據包，未取得, Help: 唯讀證據包\n\t\t\t11 text B1\n\t\t\t12 heading 配電室, Value: 2\n\t\t\t\t13 text 配電室\n\t\t\t14 button 筆記\n\t\t\t15 button 提示\n\t\t\t16 button 設定\n\t\t\t17 button Description: 靠近並調查回路與固定架, Help: 回路與固定架\n\t\t\t18 button Description: 靠近並調查四格供電盤, Help: 四格供電盤\n\t\t\t19 button Description: 靠近並調查現場工單, Help: 現場工單\n\t\t\t20 button ◀ 上一室\n\t\t\t21 text 方向鍵行走 · E 調查\n\t\t\t22 button 下一室 ▶\n\t\t\t23 button 樓層通道\n\nThe focused UI element is 23 button 樓層通道"
+    },
+    {
+      "label": "設定",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 設定與存檔\n\t\t\t5 text 站務檔案 · B1\n\t\t\t6 button 關閉或返回面板\n\t\t\t7 container\n\t\t\t\t8 heading 設定與存檔, Value: 2, ID: panel-title\n\t\t\t\t\t9 text 設定與存檔\n\t\t\t\t10 checkbox (settable, integer) Description: 大字閱讀, Value: 0\n\t\t\t\t11 checkbox (settable, integer) Description: 減少動態, Value: 0\n\t\t\t\t12 checkbox (settable, integer) Description: 回放字幕, Value: 1\n\t\t\t\t13 checkbox (settable, integer) Description: 全部靜音, Value: 0\n\t\t\t\t14 text 總音量\n\t\t\t\t15 slider (settable, float) Description: 總音量, Value: 0.44999998807907104, Details: 0.45\n\t\t\t\t16 text 環境\n\t\t\t\t17 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2\n\t\t\t\t18 text 音效\n\t\t\t\t19 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35\n\t\t\t\t20 text 訊號標記\n\t\t\t\t21 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4\n\t\t\t\t22 text 全部音訊資訊有文字。無配音、倒數或閃爍。整合進度與原版、B1 試玩存檔分開。\n\t\t\t\t23 button 匯出目前整合進度\n\t\t\t\t24 button 匯入整合 JSON 副本\n\t\t\t\t25 button 匯出本機原文供排查\n\t\t\t\t26 button 返回整合主選單\n\nThe focused UI element is 4 container 設定與存檔"
+    },
+    {
+      "label": "返回整合主選單",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 text 整合主線 · L0 → B1 → B2 → B3\n\t\t\t6 heading 黃燈之後, Value: 2\n\t\t\t\t7 text 黃燈之後\n\t\t\t8 text 繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。\n\t\t\t9 button 繼續調查\n\t\t\t10 button 開始新調查\n\t\t\t11 button 匯出目前進度\n\t\t\t12 button 匯入整合 JSON\n\nThe focused UI element is 9 button 繼續調查"
+    },
+    {
+      "label": "主選單拒絕無效檔",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 text 整合主線 · L0 → B1 → B2 → B3\n\t\t\t6 heading 黃燈之後, Value: 2\n\t\t\t\t7 text 黃燈之後\n\t\t\t8 text 繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。\n\t\t\t9 button 繼續調查\n\t\t\t10 button 開始新調查\n\t\t\t11 button 匯出目前進度\n\t\t\t12 button 匯入整合 JSON\n\t\t\t13 text 此 JSON 不是有效整合存檔，目前進度未改動。\n\nThe focused UI element is 12 button 匯入整合 JSON"
+    },
+    {
+      "label": "主選單提示語意",
+      "text": "此 JSON 不是有效整合存檔，目前進度未改動。",
+      "ariaLive": "polite"
+    },
+    {
+      "label": "無效後選 TI 實際通關檔，確認頁清除錯誤",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container 匯入已驗證的整合進度？\n\t\t\t5 text 站務檔案 · B1\n\t\t\t6 button 關閉或返回面板\n\t\t\t7 heading 匯入已驗證的整合進度？, Value: 2, ID: panel-title\n\t\t\t\t8 text 匯入已驗證的整合進度？\n\t\t\t9 text 將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。\n\t\t\t10 button 先匯出目前進度\n\t\t\t11 button 確認匯入此副本\n\nThe focused UI element is 4 container 匯入已驗證的整合進度？"
+    },
+    {
+      "label": "確認匯入此副本",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 text 原始記錄已保全 · 外部受理\n\t\t\t6 heading 結局：黃燈之後, Value: 2\n\t\t\t\t7 text 結局：黃燈之後\n\t\t\t8 text 簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。 今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。 她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。\n\t\t\t9 button 回到總控，重看證據\n\t\t\t10 button 匯出通關進度\n\t\t\t11 button 主選單\n\nThe focused UI element is 9 button 回到總控，重看證據"
+    },
+    {
+      "label": "TI 通關檔實際匯入",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n0 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t1 container stage\n\t\t2 container Description: 車站俯視像素場景, ID: world\n\t\t\t3 image\n\t\t4 container\n\t\t\t5 text 原始記錄已保全 · 外部受理\n\t\t\t6 heading 結局：黃燈之後, Value: 2\n\t\t\t\t7 text 結局：黃燈之後\n\t\t\t8 text 簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。 今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。 她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。\n\t\t\t9 button 回到總控，重看證據\n\t\t\t10 button 匯出通關進度\n\t\t\t11 button 主選單\n\nThe focused UI element is 9 button 回到總控，重看證據"
+    },
+    {
+      "label": "匯入通關檔後重新載入仍是告別結局",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 text 原始記錄已保全 · 外部受理\n\t\t\t7 heading 結局：黃燈之後, Value: 2\n\t\t\t\t8 text 結局：黃燈之後\n\t\t\t9 text 簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。 今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。 她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。\n\t\t\t10 button 回到總控，重看證據\n\t\t\t11 button 匯出通關進度\n\t\t\t12 button 主選單\n\nThe focused UI element is 10 button 回到總控，重看證據"
+    },
+    {
+      "label": "通關匯入重載後再實際匯出",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container ui\n\t\t\t6 container\n\t\t\t\t7 text 原始記錄已保全 · 外部受理\n\t\t\t\t8 heading 結局：黃燈之後, Value: 2\n\t\t\t\t\t9 text 結局：黃燈之後\n\t\t\t\t10 text 簽領單、連續影像、救援與醫療移交，把林沐與匿名個案連在一起。當年把手故障，她留下讓人群通過；自動復位覆寫了放行。更正申請與原件分開保存，外部單位已受理重新核對，尚未完成官方認定。 今晚收到的是舊工單補送。廣播不再重播；照明仍亮，升降梯帶你回到地面。 她不是在等末班車。她留在那裡，直到最後一個人離開。現在，換我走出去。\n\t\t\t\t11 button 回到總控，重看證據\n\t\t\t\t12 button 匯出通關進度\n\t\t\t\t13 button 主選單\n\t\t\t14 text 已送出目前記憶體進度的下載請求。\n\nThe focused UI element is 12 button 匯出通關進度"
+    },
+    {
+      "label": "回到總控，重看證據",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 最後一次復位\n\t\t\t6 text 站務檔案 · B3\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 最後一次復位, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 最後一次復位\n\t\t\t\t11 text D 權限只說明執行資格，不等於有人當場刷卡。總控原件能回答觸發方式，也留下救援與移交資料。先隔離兩路導引。 站務原件 · 僅供核對\n\t\t\t\t12 heading 電源邊界與安全停機牌, Value: 2\n\t\t\t\t\t13 text 電源邊界與安全停機牌\n\t\t\t\t14 text A 主分線供照明，經 B 供導引，另經 K-CTRL 供檢修終端與復位控制器；C 備援分線供升降梯，經 D 供導引。B/D 切斷後終端仍可讀。B1 四格是現場負載上限，不含此獨立控制支路。安全停機請求須「備份完成＋停用完成」才接受；實體 K-CTRL 可提前斷電，資料只是暫不可讀，復電可補做。K-CTRL 不切照明或升降梯。停用完成寫入持久設定，收到指令不算完成；離站前仍核對全部條件。\n\nThe focused UI element is 5 container 最後一次復位"
+    },
+    {
+      "label": "關閉或返回面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，已取得, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，已取得, Help: 撬片\n\t\t\t\t10 button Description: 同組檢修旁路鑰匙，已取得, Help: 同組檢修旁路鑰匙\n\t\t\t\t11 button Description: 唯讀證據包，已取得, Help: 唯讀證據包\n\t\t\t12 text B3\n\t\t\t13 heading 配電觀察室, Value: 2\n\t\t\t\t14 text 配電觀察室\n\t\t\t15 button 筆記\n\t\t\t16 button 提示\n\t\t\t17 button 設定\n\t\t\t18 button Description: 靠近並調查雙路配電與銘牌, Help: 雙路配電與銘牌\n\t\t\t19 button Description: 靠近並調查電源邊界標牌, Help: 電源邊界標牌\n\t\t\t20 button Description: 靠近並調查實體 K-CTRL, Help: 實體 K-CTRL\n\t\t\t21 button ◀ 上一室\n\t\t\t22 text 方向鍵行走 · E 調查\n\t\t\t23 button 下一室 ▶\n\t\t\t24 button 樓層通道\n\nThe focused UI element is 24 button 樓層通道"
+    },
+    {
+      "label": "樓層通道",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 維修通道 · 已完成的通路保持\n\t\t\t6 text 站務檔案 · B3\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 維修通道 · 已完成的通路保持, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 維修通道 · 已完成的通路保持\n\t\t\t\t11 button 返回第零層月台\n\t\t\t\t12 button B1 維修層\n\t\t\t\t13 button B2 封存層\n\t\t\t\t14 button B3 總控層\n\t\t\t\t15 text 進度和已讀文件跨層保留。未解開的門會說明前置條件。\n\nThe focused UI element is 5 container 維修通道 · 已完成的通路保持"
+    },
+    {
+      "label": "返回第零層月台",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container ui\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t10 button Description: 透明路線片，已安裝, Help: 透明路線片\n\t\t\t\t11 button Description: 電池，已安裝, Help: 電池\n\t\t\t12 container\n\t\t\t\t13 text 第零層\n\t\t\t\t14 heading 月台, Value: 2\n\t\t\t\t\t15 text 月台\n\t\t\t16 container\n\t\t\t\t17 button 派工\n\t\t\t\t18 button 筆記\n\t\t\t\t19 button 提示\n\t\t\t20 container\n\t\t\t\t21 text E · 維修門\n\t\t\t\t22 button 設定\n\t\t\t23 container\n\t\t\t\t24 button Description: 靠近並調查返回站務室, Help: 返回站務室\n\t\t\t\t25 button Description: 靠近並調查指示燈箱, Help: 指示燈箱\n\t\t\t\t26 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽\n\t\t\t\t27 button Description: 靠近並調查維修門, Help: 維修門\n\nThe focused UI element is 24 button Description: 靠近並調查返回站務室, Help: 返回站務室"
+    },
+    {
+      "label": "靠近並調查維修門",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 維修門 · 往地下一層\n\t\t\t6 text 站務維修 · 近景閱讀\n\t\t\t7 button 關閉面板\n\t\t\t8 heading 維修門 · 往地下一層, Value: 2, ID: panel-title\n\t\t\t\t9 text 維修門 · 往地下一層\n\t\t\t10 text 供電黃線已校正。維修層積水已排除。隔離門已放行，修復的保持扣讓通路保持開啟。原始證據已保全。外部單位已受理更正申請，尚未完成官方認定。你可以返回各層重看原件。\n\t\t\t11 button 下樓，進入 B1 維修層\n\nThe focused UI element is 5 container 維修門 · 往地下一層"
+    },
+    {
+      "label": "下樓，進入 B1 維修層",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 工單不是一封即時求救\n\t\t\t6 text 站務檔案 · B1\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 工單不是一封即時求救, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 工單不是一封即時求救\n\t\t\t\t11 text 維修門後有排水與門禁兩套裝置。先在配電室辨認線束；泵房能驗證實際流向。今夜安全處置已完成，不需要你留在把手旁。 站務原件 · 僅供核對\n\t\t\t\t12 heading 今夜派工與安全處置單, Value: 2\n\t\t\t\t\t13 text 今夜派工與安全處置單\n\t\t\t\t14 text 派工對象：維修員林澄。工作：停用封存導引控制器，保全事故資料。林澄因林沐失蹤案申請本次任務。進場前已清通工作井檢修通路，修復隔離門保持扣及止動銷；開門後可機械保持，不必留人壓把手。舊控制設定與資料尚未清除，須先備份再永久停用。現有電路提供受控檢修，沒有今夜倒數封鎖。入口網路於今晚 01:16 接通。\n\nThe focused UI element is 5 container 工單不是一封即時求救"
+    },
+    {
+      "label": "關閉或返回面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，已取得, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，已取得, Help: 撬片\n\t\t\t\t10 button Description: 同組檢修旁路鑰匙，已取得, Help: 同組檢修旁路鑰匙\n\t\t\t\t11 button Description: 唯讀證據包，已取得, Help: 唯讀證據包\n\t\t\t12 text B1\n\t\t\t13 heading 隔離門前廳, Value: 2\n\t\t\t\t14 text 隔離門前廳\n\t\t\t15 button 筆記\n\t\t\t16 button 提示\n\t\t\t17 button 設定\n\t\t\t18 button Description: 靠近並調查當年故障單, Help: 當年故障單\n\t\t\t19 button Description: 靠近並調查隔離門與放行, Help: 隔離門與放行\n\t\t\t20 button Description: 靠近並調查樓層通道, Help: 樓層通道\n\t\t\t21 button ◀ 上一室\n\t\t\t22 text 方向鍵行走 · E 調查\n\t\t\t23 button 下一室 ▶\n\t\t\t24 button 樓層通道\n\nThe focused UI element is 24 button 樓層通道"
+    },
+    {
+      "label": "設定",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 設定與存檔\n\t\t\t6 text 站務檔案 · B1\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 設定與存檔, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 設定與存檔\n\t\t\t\t11 checkbox (settable, integer) Description: 大字閱讀, Value: 0\n\t\t\t\t12 checkbox (settable, integer) Description: 減少動態, Value: 0\n\t\t\t\t13 checkbox (settable, integer) Description: 回放字幕, Value: 1\n\t\t\t\t14 checkbox (settable, integer) Description: 全部靜音, Value: 0\n\t\t\t\t15 text 總音量\n\t\t\t\t16 slider (settable, float) Description: 總音量, Value: 0.44999998807907104, Details: 0.45\n\t\t\t\t17 text 環境\n\t\t\t\t18 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2\n\t\t\t\t19 text 音效\n\t\t\t\t20 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35\n\t\t\t\t21 text 訊號標記\n\t\t\t\t22 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4\n\t\t\t\t23 text 全部音訊資訊有文字。無配音、倒數或閃爍。整合進度與原版、B1 試玩存檔分開。\n\t\t\t\t24 button 匯出目前整合進度\n\t\t\t\t25 button 匯入整合 JSON 副本\n\t\t\t\t26 button 匯出本機原文供排查\n\t\t\t\t27 button 返回整合主選單\n\nThe focused UI element is 5 container 設定與存檔"
+    },
+    {
+      "label": "返回整合主選單",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 text 整合主線 · L0 → B1 → B2 → B3\n\t\t\t7 heading 黃燈之後, Value: 2\n\t\t\t\t8 text 黃燈之後\n\t\t\t9 text 繼續追查已讀原件，找出廣播、撤離與復位之間的矛盾。\n\t\t\t10 button 繼續調查\n\t\t\t11 button 開始新調查\n\t\t\t12 button 匯出目前進度\n\t\t\t13 button 匯入整合 JSON\n\nThe focused UI element is 10 button 繼續調查"
+    },
+    {
+      "label": "從通關進度選較早 TI B2 實際下載檔",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 匯入已驗證的整合進度？\n\t\t\t6 text 站務檔案 · B1\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 heading 匯入已驗證的整合進度？, Value: 2, ID: panel-title\n\t\t\t\t9 text 匯入已驗證的整合進度？\n\t\t\t10 text 將替換目前整合進度。先匯出可保留現有進度，原版與獨立 B1 存檔不變。\n\t\t\t11 button 先匯出目前進度\n\t\t\t12 button 確認匯入此副本\n\nThe focused UI element is 5 container 匯入已驗證的整合進度？"
+    },
+    {
+      "label": "確認匯入此副本",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 被刪掉的七分鐘\n\t\t\t6 text 站務檔案 · B2\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 heading 被刪掉的七分鐘, Value: 2, ID: panel-title\n\t\t\t\t9 text 被刪掉的七分鐘\n\t\t\t10 text 工單證明林沐主動留守；還不清楚門為何重鎖。兩台備援時鐘偏差不同，不能直接按顯示時間排事件。\n\nThe focused UI element is 5 container 被刪掉的七分鐘"
+    },
+    {
+      "label": "繼續調查",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，已取得, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，已取得, Help: 撬片\n\t\t\t\t10 button Description: 同組檢修旁路鑰匙，未取得, Help: 同組檢修旁路鑰匙\n\t\t\t\t11 button Description: 唯讀證據包，未取得, Help: 唯讀證據包\n\t\t\t12 text B2\n\t\t\t13 heading 監控室, Value: 2\n\t\t\t\t14 text 監控室\n\t\t\t15 button 筆記\n\t\t\t16 button 提示\n\t\t\t17 button 設定\n\t\t\t18 button Description: 靠近並調查備援校時測試, Help: 備援校時測試\n\t\t\t19 button Description: 靠近並調查事故事件時間線, Help: 事故事件時間線\n\t\t\t20 button Description: 靠近並調查M-042 簽領原件, Help: M-042 簽領原件\n\t\t\t21 button ◀ 上一室\n\t\t\t22 text 方向鍵行走 · E 調查\n\t\t\t23 button 下一室 ▶\n\t\t\t24 button 樓層通道\n\nThe focused UI element is 24 button 樓層通道"
+    },
+    {
+      "label": "設定",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 設定與存檔\n\t\t\t6 text 站務檔案 · B2\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 設定與存檔, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 設定與存檔\n\t\t\t\t11 checkbox (settable, integer) Description: 大字閱讀, Value: 0\n\t\t\t\t12 checkbox (settable, integer) Description: 減少動態, Value: 0\n\t\t\t\t13 checkbox (settable, integer) Description: 回放字幕, Value: 1\n\t\t\t\t14 checkbox (settable, integer) Description: 全部靜音, Value: 0\n\t\t\t\t15 text 總音量\n\t\t\t\t16 slider (settable, float) Description: 總音量, Value: 0.44999998807907104, Details: 0.45\n\t\t\t\t17 text 環境\n\t\t\t\t18 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2\n\t\t\t\t19 text 音效\n\t\t\t\t20 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35\n\t\t\t\t21 text 訊號標記\n\t\t\t\t22 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4\n\t\t\t\t23 text 全部音訊資訊有文字。無配音、倒數或閃爍。整合進度與原版、B1 試玩存檔分開。\n\t\t\t\t24 button 匯出目前整合進度\n\t\t\t\t25 button 匯入整合 JSON 副本\n\t\t\t\t26 button 匯出本機原文供排查\n\t\t\t\t27 button 返回整合主選單\n\nThe focused UI element is 5 container 設定與存檔"
+    },
+    {
+      "label": "較早 B2 匯入重載後匯出",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container 設定與存檔\n\t\t3 text 站務檔案 · B2\n\t\t4 button 關閉或返回面板\n\t\t5 container\n\t\t\t6 heading 設定與存檔, Value: 2, ID: panel-title\n\t\t\t\t7 text 設定與存檔\n\t\t\t8 checkbox (settable, integer) Description: 大字閱讀, Value: 0\n\t\t\t9 checkbox (settable, integer) Description: 減少動態, Value: 0\n\t\t\t10 checkbox (settable, integer) Description: 回放字幕, Value: 1\n\t\t\t11 checkbox (settable, integer) Description: 全部靜音, Value: 0\n\t\t\t12 text 總音量\n\t\t\t13 slider (settable, float) Description: 總音量, Value: 0.44999998807907104, Details: 0.45\n\t\t\t14 text 環境\n\t\t\t15 slider (settable, float) Description: 環境, Value: 0.20000000298023224, Details: 0.2\n\t\t\t16 text 音效\n\t\t\t17 slider (settable, float) Description: 音效, Value: 0.3499999940395355, Details: 0.35\n\t\t\t18 text 訊號標記\n\t\t\t19 slider (settable, float) Description: 訊號標記, Value: 0.4000000059604645, Details: 0.4\n\t\t\t20 text 全部音訊資訊有文字。無配音、倒數或閃爍。整合進度與原版、B1 試玩存檔分開。\n\t\t\t21 button 匯出目前整合進度\n\t\t\t22 button 匯入整合 JSON 副本\n\t\t\t23 button 匯出本機原文供排查\n\t\t\t24 button 返回整合主選單\n\t\t25 text 已送出目前記憶體進度的下載請求。\n\nThe focused UI element is 21 button 匯出目前整合進度"
+    },
+    {
+      "label": "關閉或返回面板",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，已取得, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，已取得, Help: 撬片\n\t\t\t\t10 button Description: 同組檢修旁路鑰匙，未取得, Help: 同組檢修旁路鑰匙\n\t\t\t\t11 button Description: 唯讀證據包，未取得, Help: 唯讀證據包\n\t\t\t12 text B2\n\t\t\t13 heading 監控室, Value: 2\n\t\t\t\t14 text 監控室\n\t\t\t15 button 筆記\n\t\t\t16 button 提示\n\t\t\t17 button 設定\n\t\t\t18 button Description: 靠近並調查備援校時測試, Help: 備援校時測試\n\t\t\t19 button Description: 靠近並調查事故事件時間線, Help: 事故事件時間線\n\t\t\t20 button Description: 靠近並調查M-042 簽領原件, Help: M-042 簽領原件\n\t\t\t21 button ◀ 上一室\n\t\t\t22 text 方向鍵行走 · E 調查\n\t\t\t23 button 下一室 ▶\n\t\t\t24 button 樓層通道\n\nThe focused UI element is 17 button 設定"
+    },
+    {
+      "label": "樓層通道",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 維修通道 · 已完成的通路保持\n\t\t\t6 text 站務檔案 · B2\n\t\t\t7 button 關閉或返回面板\n\t\t\t8 container\n\t\t\t\t9 heading 維修通道 · 已完成的通路保持, Value: 2, ID: panel-title\n\t\t\t\t\t10 text 維修通道 · 已完成的通路保持\n\t\t\t\t11 button 返回第零層月台\n\t\t\t\t12 button B1 維修層\n\t\t\t\t13 button B2 封存層\n\t\t\t\t14 button B3 總控層\n\t\t\t\t15 text 進度和已讀文件跨層保留。未解開的門會說明前置條件。\n\nThe focused UI element is 5 container 維修通道 · 已完成的通路保持"
+    },
+    {
+      "label": "返回第零層月台",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container ui\n\t\t\t6 container 四格隨身物品\n\t\t\t\t7 text 隨身\n\t\t\t\t8 button Description: 門禁卡，在背包, Help: 門禁卡\n\t\t\t\t9 button Description: 撬片，在背包, Help: 撬片\n\t\t\t\t10 button Description: 透明路線片，已安裝, Help: 透明路線片\n\t\t\t\t11 button Description: 電池，已安裝, Help: 電池\n\t\t\t12 container\n\t\t\t\t13 text 第零層\n\t\t\t\t14 heading 月台, Value: 2\n\t\t\t\t\t15 text 月台\n\t\t\t16 container\n\t\t\t\t17 button 派工\n\t\t\t\t18 button 筆記\n\t\t\t\t19 button 提示\n\t\t\t20 container\n\t\t\t\t21 text E · 維修門\n\t\t\t\t22 button 設定\n\t\t\t23 container\n\t\t\t\t24 button Description: 靠近並調查返回站務室, Help: 返回站務室\n\t\t\t\t25 button Description: 靠近並調查指示燈箱, Help: 指示燈箱\n\t\t\t\t26 button Description: 靠近並調查路線圖定位槽, Help: 路線圖定位槽\n\t\t\t\t27 button Description: 靠近並調查維修門, Help: 維修門\n\nThe focused UI element is 24 button Description: 靠近並調查返回站務室, Help: 返回站務室"
+    },
+    {
+      "label": "靠近並調查維修門",
+      "ax": "Browser tab: 29, Title: \"黃燈之後 · 四層完整主線\", URL: \"http://127.0.0.1:4178/\".\n1 AXWebArea 黃燈之後 · 四層完整主線, URL: 127.0.0.1:4178/\n\t2 container stage\n\t\t3 container Description: 車站俯視像素場景, ID: world\n\t\t\t4 image\n\t\t5 container 維修門 · 往地下一層\n\t\t\t6 text 站務維修 · 近景閱讀\n\t\t\t7 button 關閉面板\n\t\t\t8 heading 維修門 · 往地下一層, Value: 2, ID: panel-title\n\t\t\t\t9 text 維修門 · 往地下一層\n\t\t\t10 text 供電黃線已校正。維修層積水已排除。隔離門已放行，修復的保持扣讓通路保持開啟。原紀錄尚不足以回答妹妹的去向。\n\t\t\t11 button 下樓，進入 B1 維修層\n\nThe focused UI element is 5 container 維修門 · 往地下一層"
+    },
+    {
+      "label": "最終 console",
+      "logs": []
+    }
+  ]
+}
