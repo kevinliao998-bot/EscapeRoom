@@ -1,11 +1,12 @@
 {
   "date": "2026-11-05",
-  "observer": "MW / Codex-assisted browser operation; known-answer path, not blind test",
-  "url": "http://localhost:4175/",
+  "observer": "MW / Codex-assisted browser operation; known-answer paths, not blind tests",
+  "url": "http://127.0.0.1:4175/",
   "baseline": "20261ffc44a76f0975647ffb2f3f0f769351081a",
-  "proposal": "32acc19",
+  "initialProposal": "32acc19",
+  "finalProposal": "46f8951f1b1ba74160d28cdf717a07c6aef490e8",
   "finalAssets": [
-    "./assets/index-0_YOlwFJ.js",
+    "./assets/index-y732PHjK.js",
     "./assets/index-BXilyENS.css"
   ],
   "checks": [
@@ -76,13 +77,28 @@
       "case": "Export button requests download of current progress",
       "feedback": "已送出目前記憶體進度的下載請求，請確認下載完成。",
       "limit": "Actual saved download file not independently inspected; serialized payload covered by model test."
+    },
+    {
+      "case": "Final HUAM D01 available immediately on entry",
+      "visible": "現場記錄 · 可在筆記重看\n今夜派工與安全處置單\n\n派工對象：維修員林澄。工作：停用封存導引控制器，保全事故資料。林澄因林沐失蹤案申請本次任務。進場前已清通工作井檢修通路，修復隔離門保持扣及止動銷；開門後可機械保持，不必留人壓把手。舊控制設定與資料尚未清除，須先備份再永久停用。現有電路提供受控檢修，沒有今夜倒數封鎖。入口網路於今晚 01:16 接通。"
+    },
+    {
+      "case": "D02 readable before solving EP03",
+      "visible": "現場記錄 · 可在筆記重看\n當年故障單與保持把手標牌\n\n事故當班記錄：隔離門保持扣折損、止動銷缺失。遠端放行只撤銷電氣鎖定；仍須在泵房持續壓住手動放行把手，才能讓通道保持開啟。人群未過完前不得鬆手。復位門禁命令優先於手動放行。對照今夜 D01：保持扣已修，現在門開後可保持。"
+    },
+    {
+      "case": "Final HUAM build fresh-game full path reaches D03",
+      "visible": "地下一層 · 被中斷的撤離\n她不是只在等待救援。\n現場記錄 · 可在筆記重看\n隔離門內側 · 林沐署名工單\n\n林沐：照明保留。先讓走廊的人出去。我回泵房守住把手；對側清點後給我訊號。請把放行保持到人群過完。\n\n林澄讀到她回泵房守住把手、等待對側清點的安排。他剛完成的程序，正是她當年替其他人爭取的路。今夜保持扣已修復，門能自己保持開啟；你不必再留一個人在泵房。\n\n這一層的工單證明她曾主動幫助撤離，尚不能確認她後來的去向。\n\n地下一層三題已完成\n本獨立試玩在此結束。地下二、三層與最終結局尚未製作。\n留下工單，繼續查看本層匯出本層完成進度"
+    },
+    {
+      "case": "Final HUAM data save reload retains full D03",
+      "text": "現場記錄 · 可在筆記重看\n隔離門內側 · 林沐署名工單\n\n林沐：照明保留。先讓走廊的人出去。我回泵房守住把手；對側清點後給我訊號。請把放行保持到人群過完。"
     }
   ],
-  "finalReloadTitle": "她不是只在等待救援。",
   "console": [],
   "limits": [
-    "No state injection used. Actions were through visible DOM controls and reload.",
-    "Final build smoke reloaded after selected-wire label cleanup and paper-caption contrast correction; full route observations preceded those presentation-only changes.",
+    "No hidden state injection. Actions were visible DOM controls and reload.",
+    "First sixteen observations used initial B1 data. After upstream sync, EP01-03 and B1 core were compared unchanged; final fresh-game full path and new D01/D02/D03 were rechecked.",
     "No independent screen-reader, physical mobile, earphone listening or blind-play acceptance.",
     "Export request observed; actual saved download file left for TI verification."
   ]

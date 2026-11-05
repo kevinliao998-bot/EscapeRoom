@@ -11,6 +11,7 @@ import {
   loads,
   valves,
   proposal,
+  documents,
   type State,
   type Action,
   type Circuit,
@@ -287,4 +288,28 @@ test("B1-11｜遍歷可達設備狀態，每個非終局均有合法操作路徑
   console.log(
     `B1 可達設備狀態 ${states.size}；每個非終局都有通關路徑。部分接線另枚舉 1546 種。`,
   );
+});
+
+test("B1-13｜最新 D01/D02 可在開門前閱讀，D03 僅完成後揭露且逐字取自來源", () => {
+  let s = fresh();
+  s = step(s, { type: "read", doc: "intake" });
+  s = step(s, { type: "read", doc: "gateHistory" });
+  s = step(s, { type: "read", doc: "lin" });
+  assert.deepEqual(s.read, ["intake", "gateHistory"]);
+  for (const [id, source] of [
+    ["intake", "D01"],
+    ["gateHistory", "D02"],
+    ["lin", "D03"],
+  ] as const) {
+    assert.equal(
+      documents[id].text,
+      proposal.documents.find((d) => d.id === source)!.text,
+    );
+  }
+  assert.match(documents.gateHistory.text, /保持扣已修/);
+  assert.match(documents.lin.text, /回泵房守住把手/);
+  s = step(safe(), { type: "power", load: "lock" });
+  s = step(s, { type: "door" });
+  assert.ok(s.read.includes("lin"));
+  assert.ok(restore(JSON.stringify(s)));
 });

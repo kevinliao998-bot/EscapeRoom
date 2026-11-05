@@ -1,14 +1,14 @@
 # 《黃燈之後》地下一層 · MW 獨立試玩交接
 
-本輪由使用者明確選定「先獨立製作地下一層三房間、三謎題，測試後交 TI／小雪」。本入口只實作配電室、泵房與隔離門前廳，最後停在林沐署名工單。地下二、三層及最終結局未製作；沒有將候選結局當成事實。
+本輪由使用者明確選定「先獨立製作地下一層三房間、三謎題，測試後交 TI／小雪」。本入口只實作配電室、泵房與隔離門前廳，最後停在林沐署名工單。地下二、三層及最終結局未製作；沒有將後續告別結局當成事實。
 
 原遊戲的 `Game/`、`content/story.json`、入口、套件、設定、封存及既有驗收文件均未修改。`npm run dev` 仍開原遊戲；B1 使用自己的入口、設定、產物及存檔。
 
 ## 版本與來源
 
 - 產品基準：`main@20261ffc44a76f0975647ffb2f3f0f769351081a`。
-- SC 提案來源：[codex/expanded-story-plan@32acc19](https://github.com/kevinliao998-bot/EscapeRoom/tree/32acc19)，對照 `docs/Expanded-Story-Plan.md`、`docs/Expanded-Story-Verify.md` 的 EV03–EV05、EP01–EP03。
-- `proposal.json` 是該提交 `content/expanded-story-proposal.json` 的逐位元組快照，Git blob 為 `db93d3e7fabb4a3bf4533557db5ed702eba2f1cd`。只使用 EP01–EP03、三級提示及 midpointReveal。保留整份原稿供核對，其餘候選資料不在遊戲中呈現。
+- SC 提案來源：[HUAM@46f8951（包含 SC@ce00c8d 的提案及因果補充）](https://github.com/kevinliao998-bot/EscapeRoom/tree/46f8951)，對照 `docs/Expanded-Story-Plan.md`、`docs/Expanded-Story-Verify.md` 的 EV03–EV05、EP01–EP03。
+- `proposal.json` 是 HUAM@46f8951 的 `content/expanded-story-proposal.json` 的逐位元組快照，Git blob 為 `6fec278b1f1276ef9748f1be97d06980a9e3ccff`。使用 EP01–EP03、三級提示，以及 D01 派工安全單、D02 當年故障單和 D03 完整署名工單。保留整份原稿供核對，其餘後段資料不在遊戲中呈現。
 - SC 分支基於較早的版本，不能整支覆蓋目前 main；本輪只新增 `Expansion/`。未整合另一條英文語言分支。
 
 ## 啟動與建置
@@ -49,7 +49,7 @@ node node_modules/vite/bin/vite.js preview --config Expansion/vite.config.ts
 | 工單揭露   | 水位安全、泵浦停止、止回閥閉合、照明及門鎖供電時，隔離門放行。呈現原文「照明保留。先讓走廊的人出去。」；不確認林沐去向                 | EV05／B1-06         |
 | 存讀檔     | `amber-expansion-b1-v1`，設定另用 `amber-expansion-b1-prefs`。不讀寫原版 key。損壞原文保留；寫入失敗時匯出目前記憶體進度               | B1-07–10            |
 
-初始閥門 A/B/C/D 都開、回路未辨認、所有分路未送電。回路識別後先恢復照明、通訊及排風，共 3 格。這些是本切片的 MW 初始狀態，SC 原稿沒有規定其初值。已讀文件及三級提示持久保存；沒有消耗品、追逐或倒數。
+初始閥門 A/B/C/D 都開、回路未辨認、所有分路未送電。回路識別後先恢復照明、通訊及排風，共 3 格。這些是本切片的 MW 初始狀態，SC 原稿沒有規定其初值。今夜開始即交付 D01；隔離門前可查 D02，開門後才顯示 D03，逐字取自新補的可讀證據。已讀文件及三級提示持久保存；沒有消耗品、追逐或倒數。
 
 ```mermaid
 flowchart TD
@@ -82,3 +82,5 @@ node Tests/check-source-integrity.mjs 20261ffc44a76f0975647ffb2f3f0f769351081a
 4. 實際下載 B1 JSON，核對還原後的水位、閥門、供電、工單與已讀線索；確認原版存檔仍可繼續。匯出目前記憶體的序列化已有單元測試，但本輪未獨立檢查下載到磁碟的 JSON。
 5. 補實體手機觸控、耳機音量與小屏閱讀；檢查遮罩與文字對比。來源色板及宣告配色腳本不能取代實機閱讀。
 6. 有問題留重現步驟及版本交 MW 修正；SC 檢查工單揭露與新增場景素材。完成組員審查前不自行合併到 main，不處理其他分支或封存。
+
+提交前同步註記：製作期間 SC 將後段告別結局定案，TI 在 `46f8951` 加入因果文件。EP01–EP03、B1 層級及 midpointReveal 與初始 `32acc19` 相同；已更新快照並接入 D01–D03。後段生死證據仍不在本層提前呈現。

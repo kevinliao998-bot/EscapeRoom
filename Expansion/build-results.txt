@@ -5,5 +5,5 @@ rendering chunks...
 computing gzip size...
 ../dist-b1.local/index.html                     0.74 kB │ gzip:   0.45 kB
 ../dist-b1.local/assets/index-BXilyENS.css     12.36 kB │ gzip:   3.54 kB
-../dist-b1.local/assets/index-0_YOlwFJ.js   1,249.70 kB │ gzip: 350.27 kB
-✓ built in 2.17s
+../dist-b1.local/assets/index-y732PHjK.js   1,260.95 kB │ gzip: 355.44 kB
+✓ built in 2.20s

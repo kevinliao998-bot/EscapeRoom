@@ -185,9 +185,9 @@ function panelContent() {
     case "trace":
       return `<h2>排風葉片後的檢修窗</h2>${state.traceSeen ? file("trace") + pipeDiagram() : `<div class="inspection-window">${state.power.fan ? "排風葉片擋住視線" : "內部沒有作業照明"}</div><p>檢修窗可從另一側看清接頭。先處理妨礙觀察的設備狀態。</p>`}${button("重新沿管線觀察", "trace")}${button("前往配電室", "move:distribution")}`;
     case "door":
-      return `<h2>隔離門 · 通往封存層</h2><div class="door-readings"><span>水位感測器<strong>${state.water === "safe" ? "安全線以下" : "高於安全線"}</strong></span><span>門鎖供電<strong>${state.power.lock ? "接通" : "關閉"}</strong></span><span>止回閥<strong>${state.checkClosed ? "閉合" : "開啟"}</strong></span></div>${state.door ? file("lin") + button("重看這份撤離工單", "open:reveal") : `<p>觀察窗外的水位與門鎖連動。門內側似乎壓著一張紙，現在還看不清。</p>${button("嘗試開啟隔離門", "door", 'class="primary"')}`}${button("閱讀水位保護牌", "open:doc-sensor")}${button("返回配電室", "move:distribution")}`;
+      return `<h2>隔離門 · 通往封存層</h2><div class="door-readings"><span>水位感測器<strong>${state.water === "safe" ? "安全線以下" : "高於安全線"}</strong></span><span>門鎖供電<strong>${state.power.lock ? "接通" : "關閉"}</strong></span><span>止回閥<strong>${state.checkClosed ? "閉合" : "開啟"}</strong></span></div>${state.door ? file("lin") + button("重看這份撤離工單", "open:reveal") : `<p>觀察窗外的水位與門鎖連動。門內側似乎壓著一張紙，現在還看不清。</p>${button("嘗試開啟隔離門", "door", 'class="primary"')}`}${button("閱讀當年故障單與保持把手標牌", "open:doc-gateHistory")}${button("閱讀水位保護牌", "open:doc-sensor")}${button("返回配電室", "move:distribution")}`;
     case "notebook":
-      return `<h2>林澄的調查筆記</h2><p class="inner-voice">${goal(state)}</p>${state.read.length ? state.read.map(file).join("") : "<p>先翻閱工單、銘牌與管線圖。筆記只保存你已觀察的內容。</p>"}`;
+      return `<h2>林澄的調查筆記</h2>${button("取出今夜派工與安全處置單", "open:doc-intake")}<p class="inner-voice">${goal(state)}</p>${state.read.length ? state.read.map(file).join("") : "<p>先翻閱工單、銘牌與管線圖。筆記只保存你已觀察的內容。</p>"}`;
     case "hints":
       return `<h2>調查方向</h2><p>提示不扣資源，也不替你操作設備。</p><nav class="hint-tabs">${(["EP01", "EP02", "EP03"] as Puzzle[]).map((p, i) => button(["回路", "水路", "轉供"][i], `hintTab:${p}`, `aria-pressed="${selectedHint === p}"`)).join("")}</nav>${hints[
         selectedHint
@@ -216,7 +216,7 @@ function panelContent() {
     case "reset":
       return `<h2>重新開始地下一層？</h2><p>只會覆寫這個瀏覽器的 B1 試玩進度。可以先匯出存檔。</p>${button("先匯出目前進度", "export")}${button("確認開始新的 B1 調查", "start", 'class="primary"')}`;
     case "reveal":
-      return `<div class="story-reveal"><small>地下一層 · 被中斷的撤離</small><h2>她不是只在等待救援。</h2>${file("lin")}<p>林澄看著那個名字。他剛完成的照明、排水和開門程序，正是她曾試著讓其他人離開的路。</p><p class="inner-voice">這張工單證明她曾主動幫助撤離。它沒有告訴你，她後來去了哪裡。</p><div class="slice-end">地下一層三題已完成<br><small>本獨立試玩在此結束。地下二、三層與最終結局尚未製作。</small></div>${button("留下工單，繼續查看本層", "close", 'class="primary"')}${button("匯出本層完成進度", "export")}</div>`;
+      return `<div class="story-reveal"><small>地下一層 · 被中斷的撤離</small><h2>她不是只在等待救援。</h2>${file("lin")}<p>林澄讀到她回泵房守住把手、等待對側清點的安排。他剛完成的程序，正是她當年替其他人爭取的路。今夜保持扣已修復，門能自己保持開啟；你不必再留一個人在泵房。</p><p class="inner-voice">這一層的工單證明她曾主動幫助撤離，尚不能確認她後來的去向。</p><div class="slice-end">地下一層三題已完成<br><small>本獨立試玩在此結束。地下二、三層與最終結局尚未製作。</small></div>${button("留下工單，繼續查看本層", "close", 'class="primary"')}${button("匯出本層完成進度", "export")}</div>`;
     default:
       return "";
   }
@@ -270,7 +270,7 @@ function render() {
   const index = rooms.indexOf(state.room);
   document.querySelector("#scene-ui")!.innerHTML =
     mode === "menu"
-      ? `<section class="start-card"><small>三個房間 · 三個機關 · 獨立存檔</small><h1>被中斷的<br><span>撤離</span></h1><p>你是維修員林澄。妹妹失蹤一年後，手機收到以她名字傳來的語音。循著第零層的線索，你來到這一層。</p><p>隔離門被積水封住。廣播要求原地等待，設備留下的痕跡卻指向另一種做法。</p><div>${hasSave ? button(state.door ? "繼續 · 重看撤離工單" : "繼續本層調查", "continue", 'class="primary"') : button("開始地下一層試玩", "start", 'class="primary"')}${hasSave ? button("開始新試玩", "new") : ""}</div><small>只製作地下一層，後續樓層與最終結局尚未製作。</small>${warning ? `<p class="notice">${warning}</p>` : ""}</section>`
+      ? `<section class="start-card"><small>三個房間 · 三個機關 · 獨立存檔</small><h1>被中斷的<br><span>撤離</span></h1><p>你是維修員林澄，因妹妹失蹤案申請今夜的停機與資料保全工作。手機收到以她名字傳來的語音；循著第零層線索，你來到這一層。</p><p>隔離門被積水封住。廣播要求原地等待，設備留下的痕跡卻指向另一種做法。</p><div>${hasSave ? button(state.door ? "繼續 · 重看撤離工單" : "繼續本層調查", "continue", 'class="primary"') : button("開始地下一層試玩", "start", 'class="primary"')}${hasSave ? button("開始新試玩", "new") : ""}</div><small>只製作地下一層，後續樓層與最終結局尚未製作。</small>${warning ? `<p class="notice">${warning}</p>` : ""}</section>`
       : `<div class="scene-label"><small>地下 1 層 / MAINTENANCE</small><h1>${roomNames[state.room]}</h1></div><div class="hotspots ${showSpots ? "reveal-spots" : ""}">${hotspots[state.room].map((s, i) => button(`<span class="inspect-dot" aria-hidden="true">＋</span><span class="hotspot-name">${s.label}</span>`, `inspect:${s.id}-${i}`, `class="hotspot" style="left:${s.x}%;top:${s.y}%;width:${s.w}%;height:${s.h}%" aria-label="${s.label}" title="${s.label}"`)).join("")}</div><div class="scene-exits">${index > 0 ? button(`← ${roomNames[rooms[index - 1]]}`, `move:${rooms[index - 1]}`) : "<span>來時的維修通道</span>"}${index < 2 ? button(`${roomNames[rooms[index + 1]]} →`, `move:${rooms[index + 1]}`) : button(state.door ? "隔離門 · 已放行 →" : "隔離門 · 保護鎖定", "inspect:door-exit")}</div><div class="radio-caption">${state.power.comm ? "廣播：請原地等待，保持通訊。" : state.wired ? "通訊已切斷 · 以現場設備讀數為準" : "供電中斷 · 設備等待辨認"}</div>`;
   document.querySelector("#footer")!.innerHTML =
     `<div class="objective"><small>${state.door ? "本層完成" : "林澄的調查"}</small><p>${mode === "play" ? goal(state) : "先用現場證據，驗證廣播的指示。"}</p></div><div class="equipment-state"><span>負載 <b>${consumption(state)}／4</b></span><span>水位 <b>${state.water === "safe" ? "安全" : "高"}</b></span>${button(showSpots ? "收起調查標記" : "顯示可調查處", "spots", `aria-pressed="${showSpots}"`)}</div><p class="feedback" role="status">${!panel ? warning || message : ""}</p>`;
@@ -333,13 +333,13 @@ app.addEventListener("click", (event) => {
     return;
   }
   if (action === "start") {
-    state = fresh();
+    state = act(fresh(), { type: "read", doc: "intake" }).state;
     started = true;
     selected = null;
     mode = "play";
-    panel = "";
+    panel = "doc-intake";
     history = [];
-    message = "找到並閱讀牆面工單，再開始操作設備。";
+    message = "派工單說明今夜的安全條件。讀完後可關閉，開始調查配電室。";
     persist();
     render();
     window.scrollTo(0, 0);

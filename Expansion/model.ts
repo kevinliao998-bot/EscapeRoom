@@ -20,7 +20,17 @@ export const loadNames: Record<Load, string> = {
 };
 export type Valve = "A" | "B" | "C" | "D";
 export const valves: Valve[] = ["A", "B", "C", "D"];
+const sourceDocument = (id: string) =>
+  proposal.documents.find((d) => d.id === id)!;
 export const documents = {
+  intake: {
+    title: sourceDocument("D01").title,
+    text: sourceDocument("D01").text,
+  },
+  gateHistory: {
+    title: sourceDocument("D02").title,
+    text: sourceDocument("D02").text,
+  },
   work: {
     title: "回路工單 · 牆面副本",
     text: "照明在通訊左側，排風在通訊右側。左右不要求相鄰。五條回路各使用一次。",
@@ -55,7 +65,7 @@ export const documents = {
   },
   lin: {
     title: "隔離門內側 · 林沐署名工單",
-    text: proposal.midpointReveal.text,
+    text: sourceDocument("D03").text,
   },
 } as const;
 export type Doc = keyof typeof documents;
