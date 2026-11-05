@@ -22,6 +22,8 @@
 
 ## 開發與展示
 
+未來四層擴充版仍是**提案，尚未加入目前遊戲**。故事走向、九題機關與告別結局見 [擴充故事計畫](docs/Expanded-Story-Plan.md)；本次補寫的因果、玩家可讀原文與推論界線見 [證據文件](docs/Expanded-Story-Evidence.md)，檢查方式見 [擴充驗收](docs/Expanded-Story-Verify.md)。擴充資料另存於 `content/expanded-story-proposal.json`，不替換短版 `content/story.json`。
+
 原始碼開發需要 Node.js 22.18+ 或 24（測試使用原生 TypeScript 去型別功能）。
 
 ```sh
