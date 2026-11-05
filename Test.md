@@ -141,6 +141,8 @@ node Tests/check-source-integrity.mjs 20261ffc44a76f0975647ffb2f3f0f769351081a
 | TI-MF-04 | 前置未完成時跳層、讀未解封原件被拒，初始道具與資料不被清除。 |
 | TI-MF-05 | 主檔損壞時讀前一份有效整合進度；壞原文另存，不寫短版或 B1 存檔 key。 |
 
-本輪已由新局以鍵盤完成全部十四個主要解謎節點，查原件、停機復原並到告別結局；實際下載 B2 及通關 JSON，均以真實 restore 核對。**回訪劇情文字 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16) 尚未修正，匯回、手機、實聽及盲測仍在本輪驗收中；不合併 main 或宣稱可交件。**
+本輪已由新局以鍵盤完成全部十四個主要解謎節點，查原件、停機復原並到告別結局；實際下載 B2 及通關 JSON，均以真實 restore 核對，並由使用者協助選檔後在遊戲確認套用。B2 匯回後重載正常，最後一次通關檔匯回後重載尚待補驗。**回訪劇情文字 [Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16) 及匯入提示 [Issue #17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17) 待 Li 修正；不合併 main 或宣稱可交件。**
+
+本輪真人資料見 [human-results.json](Tests/evidence/2026-11-05-campaign/human-results.json)：Redmi K80 的旋轉、續接、大字／面板、兩份下載與自行匯回回報正常；耳機回報能聽見，音量舒適度未明確回覆。Windows Narrator 核取名稱／狀態、滑桿數字、Q-017 內文及結局已做基礎實聽抽查，不代表僅靠讀屏完整通關。首次盲測 P02 約 45 分鐘進 B3 後卡住，未通關，提示使用及旁人協助未提供，不記為零。
 
 新增素材唯讀檢查使用 `Tests/check-campaign-assets.py`，工具依賴版本列於 `Tests/requirements-ti-assets.txt`；不改 MW 的素材清單。實際下載檢查器為 `Tests/check-campaign-export.ts`，需傳入真正下載的 JSON 路徑，不將人工建立的狀態冒充下載結果。

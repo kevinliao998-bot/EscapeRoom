@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-05",
+  "productHead": "8fb2223d56e1ef714921c2b9af3051ed4532116b",
+  "source": "本輪使用者實際回報；不是工具自行聽音或觀察實體手機",
+  "blindTest": {
+    "participant": "匿名 P02",
+    "priorExposureReported": "沒玩過舊版，也沒玩過四層新版",
+    "deviceReported": "Redmi K80／Android／Google Chrome，系統與瀏覽器版號未提供",
+    "openedAndStartedReported": true,
+    "minutesReported": 45,
+    "completedReported": false,
+    "reachedReported": "B3",
+    "stuckReported": "進 B3 就卡住了",
+    "hintsUsed": null,
+    "hintLevels": null,
+    "observerAssistance": null,
+    "observerOpinion": "難度沒問題，可能玩的人太心急沒辦法靜下心來玩。",
+    "interpretation": "已執行首次盲測，當次未通關；心急是觀察者的看法，現有資料不足以確定卡住原因或推論其他玩家表現。"
+  },
+  "narrator": {
+    "platform": "Windows Narrator／電腦 Chrome",
+    "checkboxNameReported": "回放字幕",
+    "checkboxCheckedStateReported": true,
+    "sliderNumberReported": "0.5",
+    "sliderNameVerbatimReported": null,
+    "q017BodyReportedReadable": true,
+    "endingTitleBodyButtonsReportedReadable": true,
+    "stoppedReported": true,
+    "scope": "核取名稱與狀態、滑桿數字、長篇文件及結局的實聽抽查；非僅靠讀屏獨立完整通關。"
+  },
+  "phoneAdditionalChecks": {
+    "rawReport": "都沒問題",
+    "rotationProgressReportedNormal": true,
+    "reloadContinueReportedNormal": true,
+    "largeTextPanelScrollCloseReportedNormal": true,
+    "currentProgressAndRawDownloadsReportedPresent": true,
+    "ownProgressImportReportedNormal": true,
+    "endingOnPhoneSeparatelyTested": false,
+    "scope": "使用者依整組問題回報正常，未提供逐步錄影或系統／瀏覽器版號；不推論其他手機。"
+  },
+  "headphoneGameAudio": {
+    "rawReport": "能",
+    "audibleReported": true,
+    "promptScope": "提問包含 B3 操作音及原控制台三聲標記，使用者只綜合回答能，未逐項描述。",
+    "comfortExplicitlyReported": null,
+    "harshOrSuddenLoudnessExplicitlyReported": null
+  },
+  "desktopFilePicker": {
+    "operator": "使用者協助系統選檔，TI 操作遊戲並觀察結果",
+    "invalidFirstAttemptReportedSelected": true,
+    "invalidFirstAttemptVisibleError": false,
+    "invalidFirstAttemptOutcome": "未觀察到拒絕說明，未算通過；改從主選單補查",
+    "actualB2DownloadConfirmationReported": true,
+    "b2ImportAppliedObserved": true,
+    "b2ReloadObserved": true,
+    "invalidFromMenuNoErrorReported": true,
+    "invalidFromMenuNoErrorObserved": true,
+    "oldErrorInValidConfirmationObserved": true,
+    "endImportAppliedObserved": true,
+    "endImportReloadRetest": "工具因無法可靠辨識網址而強制停止，尚未完成"
+  }
+}
