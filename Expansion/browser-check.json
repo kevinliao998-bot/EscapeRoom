@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-05",
+  "observer": "MW / Codex-assisted browser operation; known-answer path, not blind test",
+  "url": "http://localhost:4175/",
+  "baseline": "20261ffc44a76f0975647ffb2f3f0f769351081a",
+  "proposal": "32acc19",
+  "finalAssets": [
+    "./assets/index-0_YOlwFJ.js",
+    "./assets/index-BXilyENS.css"
+  ],
+  "checks": [
+    {
+      "case": "Escape returns to inspected object",
+      "actual": "inspect:doc-work-0"
+    },
+    {
+      "case": "Next Tab continues to next object",
+      "actual": "inspect:wiring-1"
+    },
+    {
+      "case": "Incorrect wiring rejected without clearing draft",
+      "feedback": "回路尚未通過校驗。接線草稿與已讀工單保留；核對固定架、接頭與維修圖。",
+      "slots": "01\n門鎖\n02\n泵浦\n03\n排風\n04\n通訊\n05\n照明"
+    },
+    {
+      "case": "Overload refused",
+      "feedback": "超載保護：目前 3 格，加上泵浦 3 格將超過上限 4 格。開關未接通，其他進度保留。"
+    },
+    {
+      "case": "High water blocks lock power",
+      "feedback": "水位感測器保護：高於安全線，門鎖拒絕接通。已完成的回路保留。"
+    },
+    {
+      "case": "Running pump with C return path does not drain",
+      "feedback": "泵浦有運轉，水位卻不下降。有水回到入口；比對舊圖與檢修窗。"
+    },
+    {
+      "case": "AB open CD closed drains",
+      "feedback": "水位降至安全線。接下來要停泵、確認止回閥，再把電力轉給隔離門。"
+    },
+    {
+      "case": "Reload resumes pump room, safe water, load 4",
+      "visible": "林澄的調查\n\n水退了。讓排水成果留下，再把有限電力轉給隔離門。\n\n負載\n4／4\n水位\n安全\n顯示可調查處"
+    },
+    {
+      "case": "Stop pump closes check valve and retains water",
+      "visible": "水位：安全線以下\n止回閥：閉合",
+      "feedback": "泵浦已關閉。總負載 1／4 格。止回閥已閉合，排水成果保留。"
+    },
+    {
+      "case": "Completion reveals Lin Mu work order, not a final ending",
+      "visible": "地下一層 · 被中斷的撤離\n她不是只在等待救援。\n現場記錄 · 可在筆記重看\n隔離門內側 · 林沐署名工單\n\n照明保留。先讓走廊的人出去。\n\n林澄看著那個名字。他剛完成的照明、排水和開門程序，正是她曾試著讓其他人離開的路。\n\n這張工單證明她曾主動幫助撤離。它沒有告訴你，她後來去了哪裡。\n\n地下一層三題已完成\n本獨立試玩在此結束。地下二、三層與最終結局尚未製作。\n留下工單，繼續查看本層匯出本層完成進度"
+    },
+    {
+      "case": "Completed save restores work order",
+      "title": "她不是只在等待救援。"
+    },
+    {
+      "case": "Dialog Shift+Tab wraps to last control",
+      "actual": "menu"
+    },
+    {
+      "case": "Dialog Tab wraps to close",
+      "actual": "close"
+    },
+    {
+      "case": "Settings rerender retains actual control focus",
+      "actual": "large"
+    },
+    {
+      "case": "Volume slider retains focus through rerender",
+      "value": "0.05",
+      "actual": "volume"
+    },
+    {
+      "case": "Export button requests download of current progress",
+      "feedback": "已送出目前記憶體進度的下載請求，請確認下載完成。",
+      "limit": "Actual saved download file not independently inspected; serialized payload covered by model test."
+    }
+  ],
+  "finalReloadTitle": "她不是只在等待救援。",
+  "console": [],
+  "limits": [
+    "No state injection used. Actions were through visible DOM controls and reload.",
+    "Final build smoke reloaded after selected-wire label cleanup and paper-caption contrast correction; full route observations preceded those presentation-only changes.",
+    "No independent screen-reader, physical mobile, earphone listening or blind-play acceptance.",
+    "Export request observed; actual saved download file left for TI verification."
+  ]
+}
