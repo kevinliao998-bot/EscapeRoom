@@ -1,0 +1,16 @@
+{
+  "backwardToLast": true,
+  "forwardToFirst": true,
+  "wrapBack": {
+    "action": "menu",
+    "label": null,
+    "tag": "BUTTON",
+    "text": "回主選單"
+  },
+  "wrapForward": {
+    "action": "close",
+    "label": "關閉面板",
+    "tag": "BUTTON",
+    "text": "關閉 ×"
+  }
+}

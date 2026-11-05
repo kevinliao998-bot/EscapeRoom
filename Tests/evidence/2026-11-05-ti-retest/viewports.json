@@ -1,0 +1,40 @@
+[
+  {
+    "requested": {
+      "width": 480,
+      "height": 270
+    },
+    "zoom": 1,
+    "stage": {
+      "width": 480,
+      "height": 270
+    }
+  },
+  {
+    "name": "3x",
+    "bodyClass": "reduced",
+    "height": 810,
+    "rootStyle": "--zoom: 3;",
+    "stageHeight": 810,
+    "stageWidth": 1440,
+    "width": 1440
+  },
+  {
+    "name": "4x",
+    "bodyClass": "reduced",
+    "height": 1080,
+    "rootStyle": "--zoom: 4;",
+    "stageHeight": 1080,
+    "stageWidth": 1920,
+    "width": 1920
+  },
+  {
+    "name": "too-small",
+    "bodyClass": "reduced too-small",
+    "height": 269,
+    "rootStyle": "--zoom: 1;",
+    "stageHeight": 0,
+    "stageWidth": 0,
+    "width": 479
+  }
+]

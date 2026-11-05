@@ -1,0 +1,50 @@
+[
+  {
+    "checked": true,
+    "setting": "large",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": true,
+    "setting": "reduced",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": true,
+    "setting": "subtitles",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "setting": "mute",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "setting": "master",
+    "type": "range",
+    "value": "0.45"
+  },
+  {
+    "checked": false,
+    "setting": "ambient",
+    "type": "range",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "setting": "effects",
+    "type": "range",
+    "value": "0.35"
+  },
+  {
+    "checked": false,
+    "setting": "voice",
+    "type": "range",
+    "value": "0.4"
+  }
+]

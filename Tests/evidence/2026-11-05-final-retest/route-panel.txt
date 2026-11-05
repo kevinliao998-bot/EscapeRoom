@@ -1,0 +1,54 @@
+- main:
+  - generic "車站俯視像素場景"
+  - complementary "四格隨身物品":
+    - generic: 隨身
+    - button "門禁卡，在背包"
+    - button "撬片，在背包"
+    - button "透明路線片，已安裝":
+      - generic: ↗
+    - button "電池，已安裝":
+      - generic: ↗
+  - text: 第零層
+  - heading "月台" [level=2]
+  - navigation:
+    - button "筆記"
+    - button "提示"
+  - generic: E · 路線圖定位槽
+  - button "設定"
+  - button "靠近並調查返回站務室"
+  - button "靠近並調查指示燈箱"
+  - button "靠近並調查路線圖定位槽"
+  - button "靠近並調查維修門"
+  - status: 琥珀燈連成黃線。維修門已開啟；選擇前進度已保存。
+  - dialog "路線圖 · 供電校正":
+    - generic: 站務維修 · 近景閱讀
+    - button "關閉面板": 關閉 ×
+    - heading "路線圖 · 供電校正" [level=2]
+    - paragraph: 路線片已對齊定位槽。
+    - button "取回路線片"
+    - paragraph:
+      - text: 廣播：「北站，回聲站。」
+      - text: 〔站名與燈號不符〕
+    - button "入口，供電":
+      - text: ●
+      - generic: 入口
+    - button "分岔，供電":
+      - text: ●
+      - generic: 分岔
+    - button "檢修，供電":
+      - text: ●
+      - generic: 檢修
+    - button "出口，供電" [active]:
+      - text: ●
+      - generic: 出口
+    - button "北站，未供電":
+      - text: ○
+      - generic: 北站
+    - button "回聲，未供電":
+      - text: ○
+      - generic: 回聲
+    - paragraph:
+      - text: 目前：入口 → 分岔 → 檢修 → 出口
+      - text: ● 供電 ○ 未供電 維修門已開啟
+    - button "清除本次路線"
+    - status: 琥珀燈連成黃線。維修門已開啟；選擇前進度已保存。

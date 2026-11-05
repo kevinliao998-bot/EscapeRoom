@@ -1,0 +1,9 @@
+{
+  "action": null,
+  "checked": false,
+  "label": "總音量",
+  "setting": "master",
+  "tag": "INPUT",
+  "text": "",
+  "value": "0.45"
+}
