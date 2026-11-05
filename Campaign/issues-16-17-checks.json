@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "baseline": "8fb2223d56e1ef714921c2b9af3051ed4532116b",
+  "tiEvidenceRef": "fc000b4",
+  "tests": {
+    "passed": 66,
+    "failed": 0,
+    "skipped": 0
+  },
+  "baselineUI": {
+    "passed": 2,
+    "failed": 9
+  },
+  "typecheck": {
+    "original": "passed",
+    "campaign": "passed"
+  },
+  "build": {
+    "original": "passed",
+    "campaign": "passed",
+    "campaignBundle": "index-BbeGnrc8.js"
+  },
+  "protectedOriginals": {
+    "files": 69,
+    "art": 23,
+    "legacyDocuments": 12,
+    "changed": 0
+  },
+  "paletteSourceColors": 16,
+  "declaredContrastPairs": 8,
+  "hanGlyphsChecked": 818,
+  "sourceFiles": {
+    "main.ts": "d927650b76a749432a93a08c260a76ea871f54e4a633ec4f9bb770f35199ae9b",
+    "prologue.ts": "ee97955a1f8c9a72b25c0fbc55454510ad1e2dc410eb8908f939af4b09965577",
+    "panels.ts": "f6eacf22b239e5ae2352d280ec24cd82d0b36e3083694791f3b0c816f487f6ab",
+    "campaign.test.ts": "93d823c58ff802c9c56583fb64352a7f22aa91290eb9a396673d7a21339b727c",
+    "test-progress.ts": "5469a59672a1a7df61427b3ca7de5731e72fa4a4b98c254309fcc28545f24fdf",
+    "ui.test.ts": "7baaba3d202e2e460cbee0350ab44b4f1957ad864f0a07c0b7c6bd52930e8a53"
+  },
+  "scope": "MW 修復與定向驗證，不代替 TI 獨立複檢、讀屏或真人驗收"
+}

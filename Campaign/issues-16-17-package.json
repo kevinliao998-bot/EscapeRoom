@@ -1,0 +1,10 @@
+{
+  "scope": "修正版解壓包入口冒煙；不是再次全程通關",
+  "url": "http://127.0.0.1:4179/",
+  "server": "內附 play.mjs，PORT=4179",
+  "runtimeBundle": "index-BbeGnrc8.js",
+  "runtimeBytesMatchDist": true,
+  "canvasCount": 1,
+  "entryButtonVisible": true,
+  "console": []
+}
