@@ -1,10 +1,14 @@
-# 黃燈之後 · v2
+# 黃燈之後 · 四層完整主線
 
-原創俯視像素解謎密室逃脫，純前端；Phaser **3.90.0**、TypeScript、Vite。遊戲基準為 PR #6 的 `main-v2`，TI／小雪的測試與文件集中在使用者指定的 `HUAM` 分支。舊作封存於 `archive/v1-legacy`／`v1-legacy-final`，保護文件原稿完整保留於 `_legacy_docs/`。
+原創俯視像素密室逃脫，從第零層一路向下至 B3，包含原五題與 EP01–EP09，共十四個主要解謎節點及告別結局。純前端，使用 Phaser **3.90.0**、TypeScript、Vite。**本次交件入口是 `Campaign/`**；原三場景短版與 B1 獨立試玩入口仍保留。TI／小雪的整合提交集中在 `HUAM`，透過 [PR #13](https://github.com/kevinliao998-bot/EscapeRoom/pull/13) 整合至 main；合併狀態以該 PR 的 GitHub 記錄為準。
+
+舊作封存於 `archive/v1-legacy`／`v1-legacy-final`，原稿保留於 `_legacy_docs/`。遊玩不需帳號、後端或付費服務。
 
 ## 目前整合結果
 
-**四層修正版定向複驗通過（2026-11-06），待 Liao 檢查 TI 的工作**：HUAM 接入 [PR #15](https://github.com/kevinliao998-bot/EscapeRoom/pull/15) 的 `829b865`。完整 85 項測試、三份型別檢查、原版／整合建置及素材核對通過；對修正前入口重放新增測試，保留 2 通過／9 失敗的真實反例。TI 在 Windows Chrome 實際核對首次／排水後／通關後門文字、主選單無效檔拒絕、無效後改選合法檔、B2 與通關檔套用及重載，[Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16)／[#17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17) 的定向複驗均通過。使用者肯定新錯誤訊息會自動朗讀，並補充前次手機耳機音量舒適、無刺耳或突然過大。完整範圍及證據見 [修正版複驗報告](Tests/evidence/2026-11-06-campaign-retest/review.md)。**尚未合併 main、尚未更新公開網站，Liao 尚未核准本輪 TI PR。**
+**四層修正版已完成定向複驗（2026-11-06）**：整合 Li 的 [PR #15](https://github.com/kevinliao998-bot/EscapeRoom/pull/15) `829b865`，TI 提交為 `6b26cf3`。完整 **85 項測試、三份型別檢查、原版／整合建置及素材核對通過**；修正前入口的 2 通過／9 失敗反例仍保留。Windows Chrome 已實際核對三種維修門文案、無效→合法匯入、較早 B2 與通關檔套用及重載，[Issue #16](https://github.com/kevinliao998-bot/EscapeRoom/issues/16)／[#17](https://github.com/kevinliao998-bot/EscapeRoom/issues/17) 已附證據結案。使用者肯定新錯誤訊息會自動朗讀，耳機音量舒適。詳見 [修正版複驗](Tests/evidence/2026-11-06-campaign-retest/review.md)。
+
+**最後確認**：使用者回報「Liao 已經檢查好了，B3 也通關了」，並明確授權合併 main。Liao 的檢查來源記為使用者轉述，沒有偽造 GitHub Approve；B3 通關另作補充，不覆寫第一次盲測。版本、交件與回報界線見 [最後交件紀錄](Tests/evidence/2026-11-06-main-release/review.md)。
 
 四層初驗（2026-11-05）：從新局以鍵盤完成原五題與 EP01–EP09，到告別結局；Redmi K80 的旋轉、續接、面板、兩份下載及自行匯回回報正常，基礎朗讀抽查可讀。新玩家 P02 約 45 分鐘到 B3，當次未通關；沒有把這次盲測改寫為成功。本次修正只重驗相關流程，未再做新玩家盲測、手機結局或僅靠讀屏全程通關。舊失敗與原始真人紀錄保留於 [初驗報告](Tests/evidence/2026-11-05-campaign/review.md)。以下短版歷史不作四層版的真人驗收結果。
 
@@ -22,24 +26,25 @@
 
 修復前的 TI 檢查基準為 `3e5203f`：20 通過、1 失敗。該原始反例與輸出仍完整保留於 [TI 檢查報告](Tests/evidence/2026-11-04-pr6/review.md)。修復改為匯出目前記憶體進度，另提供本機原檔排查包，避免舊檔或損壞原文取代最新進度。最新證據見 [MW 修復與串接報告](Tests/evidence/2026-11-04-save-recovery/review.md)。
 
-正式試玩網址：**待團隊提供並驗證**。以下本機預覽網址不是公開展示連結，GitHub 原始碼頁也不是遊戲網址；本輪未變更部署設定。
+**公開網站尚未更新為這次四層交件版。** 本輪完成 GitHub 整合，不變更部署；以下是本機啟動方式。GitHub 原始碼頁不是遊戲網址。
 
 ## 開發與展示
 
-四層劇情原稿見 [擴充故事計畫](docs/Expanded-Story-Plan.md)、[證據文件](docs/Expanded-Story-Evidence.md) 與 [擴充驗收](docs/Expanded-Story-Verify.md)。本 HUAM 的 `Campaign/` 已有對應可玩候選版，直接使用 `Expansion/proposal.json` 的釘選快照，與 `content/expanded-story-proposal.json` 核對一致；**它尚未成為正式 main 或公開試玩版**。原稿的「提案、未實作」是寫作當時的版本邊界，製作進度以本 README 最新驗收段落為準。
+四層劇情原稿見 [擴充故事計畫](docs/Expanded-Story-Plan.md)、[證據文件](docs/Expanded-Story-Evidence.md) 與 [擴充驗收](docs/Expanded-Story-Verify.md)。`Campaign/` 直接使用 `Expansion/proposal.json` 的釘選快照，與 `content/expanded-story-proposal.json` 核對一致。原稿的「提案、未實作」是寫作當時的版本邊界，現在以本 README 及交件紀錄為準。
 
-### 四層候選版
+### 四層交件版
 
-在倉庫根目錄使用現有 Node 依賴，執行：
+使用 Node.js 24，在倉庫根目錄執行：
 
 ```sh
-node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/campaign.test.ts
+npm ci
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/*.test.ts
 node node_modules/typescript/lib/tsc.js -p Campaign/tsconfig.json
 node node_modules/vite/bin/vite.js build --config Campaign/vite.config.ts
 node node_modules/vite/bin/vite.js preview --config Campaign/vite.config.ts
 ```
 
-開啟終端顯示的網址，預設 `http://127.0.0.1:4176/`。獨立建置在 `dist-campaign.local/`；四層版使用自己的整合存檔，沒有自動繼承短版通關。上述完整測試命令會涵蓋兩個新增目錄；根目錄既有 `npm test` 仍只列 `Tests/*.test.ts`。架構、操作與存檔細節見 [Campaign/README.md](Campaign/README.md)。
+開啟終端顯示的網址，預設 `http://127.0.0.1:4176/`。四層建置輸出在 `dist-campaign.local/`，公開部署時應使用該目錄的全部內容；四層版不會自動繼承短版通關。上方指令包含 Campaign 的呈現測試；既有 `npm test` 只跑 `Tests/*.test.ts`，`npm run dev`／`npm run build` 仍指向下方的原三場景短版。架構、操作與存檔細節見 [Campaign/README.md](Campaign/README.md)。
 
 ### 原三場景短版
 
@@ -60,13 +65,19 @@ npm run dev
 
 ## 存檔與輔助
 
+四層交件版使用獨立存檔鍵 `after-amber-campaign-v1`，保存上一份有效進度，損壞原文另存。地下樓層的設定可匯出目前整合進度、匯出本機原文，以及匯入經驗證的 JSON 副本；匯入前會再次確認。驗證失敗不覆蓋原進度，寫入失敗仍可匯出記憶體最新進度。不同瀏覽器或網址的本機進度分開，移轉請使用遊戲匯出／匯入。跨層回訪保留已開門、文件與鑰匙。
+
+以下是保留的原三場景短版規則：
+
 自動存於瀏覽器本機 `after-amber-v2-save`；保留上一份有效快照。存檔損壞會明示、嘗試上一份。後續保存前會把損壞原文另存於 `after-amber-v2-save-corrupt`，供排查使用。設定中的「匯出存檔」始終保留當前記憶體進度，無須本機寫入成功；「匯出本機原檔（排查用）」另外保存主檔／備援／損壞快照的原始字串，無法讀取時明確提示。下載提示僅表示請求送出，請確認檔案確實已保存。不提供匯入陌生檔案的介面。 兩結局均可在主選單回到最後選擇前。重新開始需確認，與舊版存檔隔離。
 
 設定提供大字、減少動態、音訊字幕、四項音量與靜音。無頻閃、抖鏡、驚嚇；所有聲音線索均有可重看的文字。環境音量控制用於進場的柔和環境提示，不循環播放背景音樂；「訊號標記」為合成音，沒有配音。
 
 ## 結構與協作
 
-- `content/story.json`：最終劇情／答案／提示唯一來源。
+- `Campaign/`：四層交件入口、跨層機關、存檔、介面與呈現測試。
+- `content/expanded-story-proposal.json`：四層劇情、九題與十四份證據原件；執行時使用已核對一致的 `Expansion/proposal.json` 快照。
+- `content/story.json`：原三場景短版及整合版第零層的劇情／答案／提示來源。
 - `Game/src/`：純邏輯、地圖、存檔、Phaser 視圖、可及 HTML 面板、音效。
 - `Game/public/`：原創 PNG、字型與完整授權。
 - `Tests/`：反例、有限抽象狀態及地圖可達性測試。
@@ -86,7 +97,10 @@ MW 負責本次機制與網頁；SC 核對文案及素材權利；TI 需獨立�
 ## 重跑 TI 的測試
 
 ```sh
-# 全部測試；本輪修復後為 24 通過、0 失敗
+# 四層完整集合：本次驗證為 85 通過、0 失敗、0 跳過
+node --experimental-strip-types --test Tests/*.test.ts Expansion/b1.test.ts Campaign/*.test.ts
+
+# 只跑根目錄測試集合，不包含全部四層呈現測試
 npm test
 
 # 只跑 TI 整合測試
@@ -102,7 +116,7 @@ npm run build
 node Tests/check-source-integrity.mjs
 ```
 
-`Test.md` 是此專案對應課程 `TESTS.md` 的既有檔名。驗收對照與結果見「TI 獨立複驗 · 2026-11-05」段；2026-11-04 的失敗輸出保留作歷史對照。本輪已完成上述桌面實際雙結局與下載核對，其他未完成項目照實保留。
+`Test.md` 是此專案對應課程 `TESTS.md` 的既有檔名。最新四層結果見其中 2026-11-06 兩節及本 README 的交件紀錄；短版雙結局、早期失敗與四層初驗均保留作歷史對照，未測範圍照實記錄。
 
 ## 素材檢查
 
