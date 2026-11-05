@@ -18,6 +18,8 @@ const english: Record<string, string> = {
   "事故當夜：": "Night of the incident: ",
   "緊急斷電。": "Emergency power shutdown.",
   "「": "“",
+  "〔接縫〕": "[splice]",
+  "站內維修終端": "Station maintenance terminal",
   "」": "”",
   "記錄能互相印證，也能互相否定。": "Records can corroborate or contradict one another.",
   "別看站名。跟著仍然供電的燈。": "Ignore station names. Follow the lights that still have power.",
