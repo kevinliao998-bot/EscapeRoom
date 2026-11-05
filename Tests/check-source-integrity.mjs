@@ -8,7 +8,7 @@ import path from "node:path";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 // Li 修復後的 main-v2；可傳入另一個完整提交 SHA，核對對應版本。
-const baseline = process.argv[2] || "996a07d68aa996ca93f879e6cba28ad7b322e025";
+const baseline = process.argv[2] || "202f66c67bfaab5f4540252a20df4b5f3572c4d3";
 assert.match(baseline, /^[a-f0-9]{40}$/, "基準必須是完整提交 SHA");
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const read = (name) => readFileSync(path.join(root, name));

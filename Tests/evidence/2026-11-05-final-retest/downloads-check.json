@@ -1,0 +1,12 @@
+{
+  "progressValid": true,
+  "scene": "platform",
+  "lastEnding": "B",
+  "seenEndings": [
+    "A",
+    "B"
+  ],
+  "door": true,
+  "checkpoint": true,
+  "recoveryMatchesProgress": true
+}

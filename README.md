@@ -4,7 +4,11 @@
 
 ## 目前整合結果
 
-最終版擴充驗收**整體尚未通過**：純鍵盤可達雙結局並操作設定／匯出，但「關閉面板後焦點未返回觸發按鈕」未通過，見 [Issue #10](https://github.com/kevinliao998-bot/EscapeRoom/issues/10)，待 Li 修復。使用者以 Redmi K80／Android／Chrome 回報旋轉、重整與重選、大字與面板、兩種下載正常；手機耳機試聽及三聲重播清楚、音量舒適。匿名新玩家 P01 約 20 分鐘自行達結局乙，4 張提示卡用於電池與路線。Windows Narrator 已實聽核對部分設定與筆記文字，僅靠朗讀的完整通關仍未驗收。詳見 [最終版五項擴充驗收](Tests/evidence/2026-11-05-final-acceptance/review.md)，結果限本次設備與一位玩家，不能將自動測試通過視為五項全部通過。
+2026-11-05 最後複驗：產品基準 `main-v2@202f66c`，**29 項測試全部通過，TypeScript／正式建置通過，Issue #10 的面板關閉返回修正已驗證**。正式版從新局以鍵盤操作到甲，重載重看並重選乙；設定重繪保留欄位，兩種實際下載均核對成功。Windows Narrator 的卡槽、紀錄櫃、路線及雙結局分段實聽由使用者肯定回報。完整證據與限制見 [最後複驗與交件紀錄](Tests/evidence/2026-11-05-final-retest/review.md)。這是工具輔助操作與真人實聽，未宣稱視障受試者獨立通關或所有讀屏模式均通過。
+
+同日真人紀錄：Redmi K80／Android／Chrome 的旋轉、重整與重選、大字與面板、兩種下載回報正常；手機耳機試聽及三聲重播清楚、音量舒適。匿名 P01 約 20 分鐘自行達結局乙，4 張提示卡用於電池與路線。這些為使用者先前實測，沒有在焦點修改後重做手機或第二次新玩家盲測，結果限本次設備與一位玩家，見 [原始真人紀錄](Tests/evidence/2026-11-05-final-acceptance/human-results.json)。
+
+使用者已回報 Liao 檢查並同意合併，並授權依序整合 [PR #9](https://github.com/kevinliao998-bot/EscapeRoom/pull/9) 與 [PR #6](https://github.com/kevinliao998-bot/EscapeRoom/pull/6)，保留各人原始提交；實際合併時間與提交以這兩個 PR 的 GitHub 記錄為準。以下為歷次驗收當時的狀態，最新結論以上方最後複驗為準。
 
 2026-11-05，TI 在 `HUAM` 獨立複驗 Li 的修正，對應 `main-v2` 基準 `996a07d`：**24 項測試全部通過，TypeScript 與正式建置通過**。正式版由新遊戲實際到達甲、重載重看，再返回選擇前完成乙；兩種 JSON 實際下載後核對成功，原 INT-07 通過。另確認方向鍵移動、Escape、大字、鍵盤音量調整、三級提示／筆記及 1／3／4 倍舞台尺寸與不足最小視口提示。詳見 [TI 獨立複驗報告](Tests/evidence/2026-11-05-ti-retest/review.md)。這是 Codex 協助的 TI 操作驗收，仍需 Liao 檢查 TI 的 PR；後續真人及完整鍵盤檢查結果以上方擴充驗收為準。
 

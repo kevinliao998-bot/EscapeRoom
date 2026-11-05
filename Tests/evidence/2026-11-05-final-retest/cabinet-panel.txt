@@ -1,0 +1,63 @@
+- main:
+  - generic "車站俯視像素場景"
+  - complementary "四格隨身物品":
+    - generic: 隨身
+    - button "門禁卡，在背包"
+    - button "撬片，在背包"
+    - button "透明路線片，在背包"
+    - button "電池，尚未取得":
+      - generic: ·
+  - text: 第零層
+  - heading "站務室" [level=2]
+  - navigation:
+    - button "筆記"
+    - button "提示"
+  - generic: E · 紀錄櫃／維修簿夾層
+  - button "設定"
+  - button "靠近並調查返回走廊"
+  - button "靠近並調查廣播控制台／電池倉"
+  - button "靠近並調查牆上校準貼紙"
+  - button "靠近並調查紀錄櫃／維修簿夾層"
+  - button "靠近並調查檢修盒"
+  - button "靠近並調查往月台"
+  - status: 取得透明路線片。
+  - dialog "紀錄櫃 · 交叉比對":
+    - generic: 站務維修 · 近景閱讀
+    - button "關閉面板": 關閉 ×
+    - heading "紀錄櫃 · 交叉比對" [level=2]
+    - article:
+      - text: 站務檔案 · 已讀可在筆記重看
+      - heading "事故報告" [level=2]
+      - paragraph:
+        - text: 第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。
+        - text: 頁邊有重寫痕跡；報告沒有提供原始修訂者。
+    - article:
+      - text: 站務檔案 · 已讀可在筆記重看
+      - heading "維修簿" [level=2]
+      - paragraph:
+        - text: 事故當夜，凌晨一點十七分：緊急斷電。
+        - text: 林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。
+        - text: 斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。
+        - text: 此處沒有記下她後來去了哪裡。
+    - article:
+      - text: 站務檔案 · 已讀可在筆記重看
+      - heading "失聯者名冊" [level=2]
+      - paragraph: 事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。
+    - button "再次查看簽名壓痕"
+    - article:
+      - text: 站務檔案 · 已讀可在筆記重看
+      - heading "刮除處的壓痕" [level=2]
+      - paragraph: 側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。
+    - heading "選起點，再選對應證據" [level=3]
+    - button "報告 · 01:17"
+    - button "維修簿 · 凌晨一點十七分"
+    - button "官方 · 林沐從未進站"
+    - button "名冊壓痕 · 林沐"
+    - paragraph: 同一分鐘：已驗證 人員紀錄矛盾：已驗證
+    - heading "證據能支持什麼？" [level=3]
+    - button "時間吻合，所以我知道是誰改動紀錄"
+    - button "紀錄有人為改動，仍不能確認當下聲音身分"
+    - button "名冊有林沐，所以此刻的聲音一定是她"
+    - heading "維修簿夾層已開啟" [level=3]
+    - paragraph: 透明路線片已領取。
+    - status: 取得透明路線片。

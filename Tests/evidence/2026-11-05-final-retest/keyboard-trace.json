@@ -1,0 +1,4014 @@
+[
+  {
+    "key": "Return",
+    "focus": {
+      "action": "begin",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "收起手機，開始調查",
+      "value": ""
+    }
+  },
+  {
+    "activated": "start"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BODY",
+      "text": "隨身\n·\n·\n·\n·\n第零層\n迴圈走廊\n筆記\n提示\n有些細節變了。也有東西一直沒變。\n設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "checked": false,
+      "label": "門禁卡，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "checked": false,
+      "label": "撬片，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "checked": false,
+      "label": "透明路線片，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "checked": false,
+      "label": "電池，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "筆記",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "提示",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n設定與輔助\n大字閱讀（24 px）\n減少動態效果\n顯示音訊回放字幕\n全部靜音\n總音量\n環境\n音效\n訊號標記\n\n無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。\n\n試聽柔和提示音\n\n「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。\n\n匯出存檔匯出本機原檔（排查用）回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "settings"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "continue",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "繼續調查",
+      "value": ""
+    }
+  },
+  {
+    "activated": "menu"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "new",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "重新開始",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n重新開始？\n\n將以新的調查覆寫這個瀏覽器的 v2 進度。你可以先匯出存檔；舊版封存不受影響。\n\n先匯出存檔確認開始新的調查",
+      "value": ""
+    }
+  },
+  {
+    "activated": "new"
+  },
+  {
+    "officialStart": "確認開始新的調查；之後僅用鍵盤，無寫入遊戲狀態"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "先匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "start",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "確認開始新的調查",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "begin",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "收起手機，開始調查",
+      "value": ""
+    }
+  },
+  {
+    "activated": "start"
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定",
+      "value": ""
+    }
+  },
+  {
+    "activated": "begin"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:clock",
+      "checked": false,
+      "label": "靠近並調查時鐘",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sign",
+      "checked": false,
+      "label": "靠近並調查站名牌",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:water",
+      "checked": false,
+      "label": "靠近並調查地面水漬",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:dispenser",
+      "checked": false,
+      "label": "靠近並調查飲水機內側標籤",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cardSlot",
+      "checked": false,
+      "label": "靠近並調查牆腳檢修槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cardSlot",
+      "checked": false,
+      "label": "靠近並調查牆腳檢修槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:cardSlot"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "card",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "拿取門禁卡",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n牆腳檢修槽\n\n卡片已在你的背包。\n\n取得門禁卡。圖示的位置沒有改變。",
+      "value": ""
+    }
+  },
+  {
+    "activated": "card"
+  },
+  {
+    "humanCheck": "卡槽朗讀、Escape 返回與下一次 Tab",
+    "response": "有。是。是。",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n設定與輔助\n大字閱讀（24 px）\n減少動態效果\n顯示音訊回放字幕\n全部靜音\n總音量\n環境\n音效\n訊號標記\n\n無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。\n\n試聽柔和提示音\n\n「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。\n\n匯出存檔匯出本機原檔（排查用）回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:cardSlot",
+      "checked": false,
+      "label": "靠近並調查牆腳檢修槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cart",
+      "checked": false,
+      "label": "靠近並調查清潔推車",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cart",
+      "checked": false,
+      "label": "靠近並調查清潔推車",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "pry",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "拿取撬片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n清潔推車\n\n你已取走撬片。\n\n取得撬片。邊緣薄而結實。",
+      "value": ""
+    }
+  },
+  {
+    "activated": "pry"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:cart",
+      "checked": false,
+      "label": "靠近並調查清潔推車",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:endDoor",
+      "checked": false,
+      "label": "靠近並調查盡頭門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:endDoor",
+      "checked": false,
+      "label": "靠近並調查盡頭門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "enter",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "使用門禁卡，進入站務室",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回走廊",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "enter"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:powerBox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "openBox",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "以撬片打開盒蓋",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n檢修盒\n盒蓋已開啟\n○ 備用電源尚未接通\n啟動備用電源",
+      "value": ""
+    }
+  },
+  {
+    "activated": "openBox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "power",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "啟動備用電源",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n檢修盒\n盒蓋已開啟\n● 備用電源供電中\n\n備用電源已接通。控制台顯示三段波形。",
+      "value": ""
+    }
+  },
+  {
+    "activated": "power"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "close"
+  },
+  {
+    "check": "檢修盒關閉按鈕返回",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "e",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n檢修盒\n盒蓋已開啟\n● 備用電源供電中",
+      "value": ""
+    }
+  },
+  {
+    "check": "E 開啟實際鄰近檢修盒",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n檢修盒\n盒蓋已開啟\n● 備用電源供電中",
+      "value": ""
+    }
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "interruption": "Chrome 控制連線中斷且應用已關閉；重新啟動後由正常存檔繼續，未注入進度"
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回走廊",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "continue"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:sticker"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BODY",
+      "text": "隨身\n·\n·\n第零層\n站務室\n筆記\n提示\nE · 牆上校準貼紙\n設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "checked": false,
+      "label": "門禁卡，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "門禁卡",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "checked": false,
+      "label": "撬片，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "撬片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "checked": false,
+      "label": "透明路線片，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "checked": false,
+      "label": "電池，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "筆記",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "提示",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回走廊",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:console"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "短 ▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "長 ━",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:long",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "長 ━",
+      "value": ""
+    }
+  },
+  {
+    "activated": "wave:long"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "確認校準",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "短 ▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:short",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "短 ▪",
+      "value": ""
+    }
+  },
+  {
+    "activated": "wave:short"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "wave:double",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪",
+      "value": ""
+    }
+  },
+  {
+    "activated": "wave:double"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "長 ━",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "確認校準",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "waveCheck",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "確認校準",
+      "value": ""
+    }
+  },
+  {
+    "activated": "waveCheck"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:cabinet"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "impression",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "以側光檢視刮除處",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "impression",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "再次查看簽名壓痕",
+      "value": ""
+    }
+  },
+  {
+    "activated": "impression"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:report-time",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "報告 · 01:17",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:report-time",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "報告 · 01:17",
+      "value": ""
+    }
+  },
+  {
+    "activated": "endpoint:report-time"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:log-time",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "維修簿 · 凌晨一點十七分",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:log-time",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "維修簿 · 凌晨一點十七分",
+      "value": ""
+    }
+  },
+  {
+    "activated": "endpoint:log-time"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:report-person",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "官方 · 林沐從未進站",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:report-person",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "官方 · 林沐從未進站",
+      "value": ""
+    }
+  },
+  {
+    "activated": "endpoint:report-person"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "endpoint:roster-person",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "名冊壓痕 · 林沐",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "endpoint:roster-person",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "名冊壓痕 · 林沐",
+      "value": ""
+    }
+  },
+  {
+    "activated": "endpoint:roster-person"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:0",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "時間吻合，所以我知道是誰改動紀錄",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:1",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "紀錄有人為改動，仍不能確認當下聲音身分",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "conclude:1",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "紀錄有人為改動，仍不能確認當下聲音身分",
+      "value": ""
+    }
+  },
+  {
+    "activated": "conclude:1"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "conclude:2",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "名冊有林沐，所以此刻的聲音一定是她",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "film",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "取走透明路線片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n紀錄櫃 · 交叉比對\n站務檔案 · 已讀可在筆記重看\n事故報告\n\n第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。\n頁邊有重寫痕跡；報告沒有提供原始修訂者。\n\n站務檔案 · 已讀可在筆記重看\n維修簿\n\n事故當夜，凌晨一點十七分：緊急斷電。\n林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。\n斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。\n此處沒有記下她後來去了哪裡。\n\n站務檔案 · 已讀可在筆記重看\n失聯者名冊\n\n事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。\n\n再次查看簽名壓痕\n站務檔案 · 已讀可在筆記重看\n刮除處的壓痕\n\n側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。\n\n選起點，再選對應證據\n報告 · 01:17\n維修簿 · 凌晨一點十七分\n官方 · 林沐從未進站\n名冊壓痕 · 林沐\n\n同一分鐘：已驗證　人員紀錄矛盾：已驗證\n\n證據能支持什麼？\n時間吻合，所以我知道是誰改動紀錄\n紀錄有人為改動，仍不能確認當下聲音身分\n名冊有林沐，所以此刻的聲音一定是她\n維修簿夾層已開啟\n\n透明路線片已領取。\n\n取得透明路線片。",
+      "value": ""
+    }
+  },
+  {
+    "activated": "film"
+  },
+  {
+    "humanCheck": "紀錄櫃標題與事故報告／維修簿文字",
+    "response": "能"
+  },
+  {
+    "key": "Shift_L+Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BODY",
+      "text": "隨身\n·\n第零層\n站務室\n筆記\n提示\nE · 紀錄櫃／維修簿夾層\n設定\n取得透明路線片。\n站務維修 · 近景閱讀\n關閉 ×\n紀錄櫃 · 交叉比對\n站務檔案 · 已讀可在筆記重看\n事故報告\n\n第零層事故當夜：01:17，無列車進站。人員欄：林沐從未進站。\n頁邊有重寫痕跡；報告沒有提供原始修訂者。\n\n站務檔案 · 已讀可在筆記重看\n維修簿\n\n事故當夜，凌晨一點十七分：緊急斷電。\n林沐曾嘗試停用舊導引系統。系統把乘客留下的聲音片段重新拼接、重播；三聲是重播標記。\n斷路程序：隔離導引支路 → 停止重播 → 保留應急照明。\n此處沒有記下她後來去了哪裡。\n\n站務檔案 · 已讀可在筆記重看\n失聯者名冊\n\n事故當夜的進站簽名，有一行被刮除。紙纖維破開，斜側光下仍可能看見筆壓。\n\n再次查看簽名壓痕\n站務檔案 · 已讀可在筆記重看\n刮除處的壓痕\n\n側光下清楚浮出「林沐」。這與官方「從未進站」互相矛盾；壓痕不能證明當下廣播就是她本人。\n\n選起點，再選對應證據\n報告 · 01:17\n維修簿 · 凌晨一點十七分\n官方 · 林沐從未進站\n名冊壓痕 · 林沐\n\n同一分鐘：已驗證　人員紀錄矛盾：已驗證\n\n證據能支持什麼？\n時間吻合，所以我知道是誰改動紀錄\n紀錄有人為改動，仍不能確認當下聲音身分\n名冊有林沐，所以此刻的聲音一定是她\n維修簿夾層已開啟\n\n透明路線片已領取。\n\n取得透明路線片。",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "checked": false,
+      "label": "門禁卡，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "門禁卡",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "checked": false,
+      "label": "撬片，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "撬片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "checked": false,
+      "label": "透明路線片，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "透明路線片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "checked": false,
+      "label": "電池，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "筆記",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "提示",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回走廊",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "close"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:card",
+      "checked": false,
+      "label": "門禁卡，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "門禁卡",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:pry",
+      "checked": false,
+      "label": "撬片，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "撬片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:film",
+      "checked": false,
+      "label": "透明路線片，在背包",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "透明路線片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "item:battery",
+      "checked": false,
+      "label": "電池，尚未取得",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "·",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "journal",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "筆記",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "hint",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "提示",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回走廊",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:console"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:short",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "短 ▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:double",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "雙短 ▪▪",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "wave:long",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "長 ━",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveUndo",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "移除最後一組",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveClear",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "清空本次草稿",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "waveCheck",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "確認校準",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "broadcast",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "重播三聲標記",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "battery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "取走電池",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n廣播控制台\n\n依牆貼校準三組波形；先觀察長度與段數。\n\n短 ▪\n雙短 ▪▪\n長 ━\n長 ━ ／ 短 ▪ ／ 雙短 ▪▪\n移除最後一組\n清空本次草稿\n確認校準\n站務檔案 · 已讀可在筆記重看\n控制台回放\n\n〔三個等間隔標記：●　●　●〕「別……關掉……」〔接縫〕「末班車到了。」〔三個等間隔標記：●　●　●〕\n相同片段與間隔再次出現。聽來像妹妹，卻無法確認此刻是誰在說話。\n\n重播三聲標記\n彈出的電池倉\n\n電池已領取。\n\n取得電池。",
+      "value": ""
+    }
+  },
+  {
+    "activated": "battery"
+  },
+  {
+    "key": "Escape",
+    "focus": {
+      "action": "spot:console",
+      "checked": false,
+      "label": "靠近並調查廣播控制台／電池倉",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:sticker",
+      "checked": false,
+      "label": "靠近並調查牆上校準貼紙",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:cabinet",
+      "checked": false,
+      "label": "靠近並調查紀錄櫃／維修簿夾層",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:powerBox",
+      "checked": false,
+      "label": "靠近並調查檢修盒",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:platformDoor",
+      "checked": false,
+      "label": "靠近並調查往月台",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:platformDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "checked": false,
+      "label": "靠近並調查指示燈箱",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:lightbox",
+      "checked": false,
+      "label": "靠近並調查指示燈箱",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:lightbox"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "mountBattery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "裝入電池",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n月台指示燈箱\n\n● 供電穩定。琥珀燈指出連續路線。\n\n取回電池",
+      "value": ""
+    }
+  },
+  {
+    "activated": "mountBattery"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:lightbox",
+      "checked": false,
+      "label": "靠近並調查指示燈箱",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "close"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:routeMap"
+  },
+  {
+    "key": "Shift_L+Tab",
+    "focus": {
+      "action": "clearPath",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "清除本次路線",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "mountFilm",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "覆上透明路線片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n路線圖 · 供電校正\n\n路線片已對齊定位槽。\n\n取回路線片\n\n廣播：「北站，回聲站。」\n〔站名與燈號不符〕\n\n●\n入口\n●\n分岔\n●\n檢修\n●\n出口\n○\n北站\n○\n回聲\n\n目前：尚未連線\n● 供電　○ 未供電　\n\n清除本次路線",
+      "value": ""
+    }
+  },
+  {
+    "activated": "mountFilm"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "takeFilm",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "取回路線片",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:entry",
+      "checked": false,
+      "label": "入口，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n入口",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:entry",
+      "checked": false,
+      "label": "入口，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n入口",
+      "value": ""
+    }
+  },
+  {
+    "activated": "node:entry"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:junction",
+      "checked": false,
+      "label": "分岔，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n分岔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:junction",
+      "checked": false,
+      "label": "分岔，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n分岔",
+      "value": ""
+    }
+  },
+  {
+    "activated": "node:junction"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:service",
+      "checked": false,
+      "label": "檢修，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n檢修",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:service",
+      "checked": false,
+      "label": "檢修，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n檢修",
+      "value": ""
+    }
+  },
+  {
+    "activated": "node:service"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:exit",
+      "checked": false,
+      "label": "出口，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n出口",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "node:exit",
+      "checked": false,
+      "label": "出口，供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "●\n出口",
+      "value": ""
+    }
+  },
+  {
+    "activated": "node:exit"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:north",
+      "checked": false,
+      "label": "北站，未供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "○\n北站",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "node:echo",
+      "checked": false,
+      "label": "回聲，未供電",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "○\n回聲",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "clearPath",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "清除本次路線",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "close"
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n路線圖 · 供電校正\n\n路線片已對齊定位槽。\n\n取回路線片\n\n廣播：「北站，回聲站。」\n〔站名與燈號不符〕\n\n●\n入口\n●\n分岔\n●\n檢修\n●\n出口\n○\n北站\n○\n回聲\n\n目前：入口 → 分岔 → 檢修 → 出口\n● 供電　○ 未供電　維修門已開啟\n\n清除本次路線",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:routeMap"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "check": "路線實聽後關閉返回",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "checked": false,
+      "label": "靠近並調查維修門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "checked": false,
+      "label": "靠近並調查維修門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:maintenanceDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:A",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "執行斷路程序，帶著紀錄離站",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "ending:A"
+  },
+  {
+    "humanCheck": "結局甲標題、文字與選項",
+    "response": "能"
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "continue"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "reselect",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回到最後選擇前",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:back",
+      "checked": false,
+      "label": "靠近並調查返回站務室",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "reselect"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:lightbox",
+      "checked": false,
+      "label": "靠近並調查指示燈箱",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:routeMap",
+      "checked": false,
+      "label": "靠近並調查路線圖定位槽",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "checked": false,
+      "label": "靠近並調查維修門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "spot:maintenanceDoor",
+      "checked": false,
+      "label": "靠近並調查維修門",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "",
+      "value": ""
+    }
+  },
+  {
+    "activated": "spot:maintenanceDoor"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:A",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "執行斷路程序，帶著紀錄離站",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "ending:B",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回應廣播中的聲音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "ending:B"
+  },
+  {
+    "humanCheck": "結局乙標題、文字與返回選項",
+    "response": "能"
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "繼續 · 返回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "menu"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "new",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "重新開始",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "reselect",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回到最後選擇前",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定與輔助",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "調查面板",
+      "setting": null,
+      "tag": "SECTION",
+      "text": "站務維修 · 近景閱讀\n關閉 ×\n設定與輔助\n大字閱讀（24 px）\n減少動態效果\n顯示音訊回放字幕\n全部靜音\n總音量\n環境\n音效\n訊號標記\n\n無頻閃、抖鏡或驚嚇。廣播以字幕敘事與合成標記呈現；沒有配音音檔。音訊字幕關閉後，筆記仍保留完整可讀線索。\n\n試聽柔和提示音\n\n「匯出存檔」保留目前進度；「本機原檔」僅供排查損壞資料，兩者不會互相覆寫。\n\n匯出存檔匯出本機原檔（排查用）回主選單",
+      "value": ""
+    }
+  },
+  {
+    "activated": "settings"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "check": "大字重繪保留欄位",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "space",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "large",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "reduced",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": true,
+      "label": null,
+      "setting": "subtitles",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": null,
+      "setting": "mute",
+      "tag": "INPUT",
+      "text": "",
+      "value": "on"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Right",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.5"
+    }
+  },
+  {
+    "check": "滑桿重繪保留欄位",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.5"
+    }
+  },
+  {
+    "key": "Left",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "總音量",
+      "setting": "master",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.45"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "環境",
+      "setting": "ambient",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.2"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "音效",
+      "setting": "effects",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.35"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": null,
+      "checked": false,
+      "label": "訊號標記",
+      "setting": "voice",
+      "tag": "INPUT",
+      "text": "",
+      "value": "0.4"
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "testSound",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "試聽柔和提示音",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "export",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出存檔",
+      "value": ""
+    }
+  },
+  {
+    "activated": "export"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "exportRecovery",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "匯出本機原檔（排查用）",
+      "value": ""
+    }
+  },
+  {
+    "activated": "exportRecovery"
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "menu",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "回主選單",
+      "value": ""
+    }
+  },
+  {
+    "key": "Tab",
+    "focus": {
+      "action": "close",
+      "checked": false,
+      "label": "關閉面板",
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "關閉 ×",
+      "value": ""
+    }
+  },
+  {
+    "key": "Return",
+    "focus": {
+      "action": "settings",
+      "checked": false,
+      "label": null,
+      "setting": null,
+      "tag": "BUTTON",
+      "text": "設定與輔助",
+      "value": ""
+    }
+  },
+  {
+    "activated": "close"
+  }
+]
