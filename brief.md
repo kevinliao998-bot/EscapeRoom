@@ -1,5 +1,7 @@
 # 《黃燈之後》密室逃脫故事簡報
 
+> **未來擴充版：** 四層完整主線與詳細謎題另見 [`docs/Expanded-Story-Plan.md`](docs/Expanded-Story-Plan.md)；其專屬驗證見 [`docs/Expanded-Story-Verify.md`](docs/Expanded-Story-Verify.md)。目前本簡報及 `content/story.json` 仍描述現行短版，擴充內容尚未實作或驗收。
+
 ## 遊戲概念
 
 - **類型：** 第一人稱 2D 點擊式密室逃脫
