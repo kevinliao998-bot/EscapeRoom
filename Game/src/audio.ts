@@ -1,4 +1,5 @@
 export interface Settings {
+  language: "zh-Hant" | "en";
   large: boolean;
   reduced: boolean;
   subtitles: boolean;
@@ -9,6 +10,7 @@ export interface Settings {
   voice: number;
 }
 export const defaults: Settings = {
+  language: "zh-Hant",
   large: false,
   reduced: matchMedia("(prefers-reduced-motion: reduce)").matches,
   subtitles: true,
