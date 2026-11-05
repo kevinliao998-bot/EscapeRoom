@@ -414,7 +414,12 @@ ui.addEventListener("click", (e) => {
     return;
   }
   if (a === "export") {
-    download(exportSave(state), "黃燈之後-v2-存檔.json");
+    download(
+      exportSave(state),
+      settings.language === "en"
+        ? "After-the-Yellow-Light-v2-save.json"
+        : "黃燈之後-v2-存檔.json",
+    );
     feedback = "已送出目前進度的下載請求；請確認檔案已保存。";
     render();
     return;
@@ -422,7 +427,12 @@ ui.addEventListener("click", (e) => {
   if (a === "exportRecovery") {
     const result = exportRecovery();
     if (result.raw !== null)
-      download(result.raw, "黃燈之後-v2-本機原檔-排查用.json");
+      download(
+        result.raw,
+        settings.language === "en"
+          ? "After-the-Yellow-Light-v2-recovery-data.json"
+          : "黃燈之後-v2-本機原檔-排查用.json",
+      );
     feedback =
       result.warning ||
       "已送出本機原檔的下載請求；這是排查資料，請另行匯出目前進度。";
